@@ -1,0 +1,227 @@
+.gift-choice {
+  margin: 20px 0;
+
+  $block-name:                &; // #{$block-name}__element
+
+  .field-select__select {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    font-weight: 700;
+
+    @media (min-width: $screen-xl) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  &__header-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 12);
+    @include col(lg, 4);
+    @include col(xl, 3);
+    background-color: $color-danger;
+
+    @media (min-width: $screen-md) {
+      background: none;
+    }
+  }
+
+  &__content-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 12);
+    @include col(lg, 8);
+    @include col(xl, 9);
+  }
+
+  &__header {
+
+    @media (min-width: $screen-md) {
+      background-color: $color-danger;
+    }
+
+    @media (min-width: $screen-lg) {
+      position: relative;
+      height: 100%;
+      background-image:
+        url(../img/gift-box-img.png),
+        linear-gradient(to top, $white, $white 65px, $color-danger 65px, $color-danger);
+      background-image:
+        url(../img/gift-box-img.webp),
+        linear-gradient(to top, $white, $white 65px, $color-danger 65px, $color-danger);
+      background-repeat: no-repeat;
+      background-position: 5px bottom, 0 bottom;
+      background-size: contain;
+
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        background-image: linear-gradient(135deg, $white, $white 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 25px;
+    color: $white;
+
+    @media (min-width: $screen-lg) {
+      padding-top: 50px;
+      padding-bottom: 185px;
+    }
+
+    span {
+      width: auto;
+      margin-right: 40px;
+      text-align: center;
+
+      @media (min-width: $screen-lg) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 25px;
+      }
+    }
+
+    svg {
+      width: 62px;
+      height: 64px;
+      fill: currentColor;
+
+      @media (min-width: $screen-lg) {
+        width: 123px;
+        height: 128px;
+      }
+    }
+  }
+
+  &__subtitle {
+    display: block;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      flex: 1 1;
+      margin-right: 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin: 0;
+    }
+
+    span {
+      color: $color-danger;
+    }
+  }
+
+  &__content {
+
+  }
+
+  &__form {
+
+  }
+
+  &__top {
+    margin-bottom: 35px;
+
+    .field-select {
+
+      @media (min-width: $screen-md) {
+        flex-basis: calc(50% - 10px);
+      }
+
+      @media (min-width: $screen-xl) {
+        flex-basis: calc(67% - 10px);
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-top: 50px;
+      margin-bottom: 25px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__filters-inner {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__filters-title {
+
+    @media (min-width: $screen-md) {
+      width: 100%;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-top: 0;
+    }
+
+    &--price {
+      margin-bottom: 20px;
+    }
+  }
+
+  .field-checkbox {
+    margin-bottom: 0;
+
+    @media (min-width: $screen-md) {
+      width: calc(50% - 10px);
+    }
+  }
+
+  &__filters-category {
+    margin-bottom: 35px;
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: baseline;
+      width: calc(66.66% - 10px);
+      margin-bottom: 0;
+    }
+  }
+
+  &__filters-price {
+
+    @media (min-width: $screen-md) {
+      width: calc(33.34% - 10px);
+    }
+  }
+
+  &__submit-wrapper {
+
+    p {
+      font-weight: 700;
+      line-height: 1.2;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+  }
+}

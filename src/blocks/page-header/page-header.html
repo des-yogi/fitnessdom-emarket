@@ -1,0 +1,216 @@
+<!--DEV
+
+@ @include('blocks/page-header/page-header.html')
+
+-->
+
+<header class="page-header" role="banner">
+
+  <div class="page-header__top">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="page-header__logo-col">
+          <a href="/" class="logo" title="FitnessDom">
+            <picture>
+              <source srcset="img/fitnessdom-header-logo.svg" media="(min-width: 480px)">
+              <img src="img/fitnessdom-header-logo-mob.svg" alt="FitnessDom logo" width="130" height="19">
+            </picture>
+          </a>
+        </div>
+
+        <div class="page-header__nav-col">
+          <div class="page-header__nav-container">
+
+            <nav id="main-nav" class="main-nav" role="navigation">
+              <ul class="main-nav__list">
+                <li class="main-nav__item  main-nav__item--active">
+                  <a href="#" class="main-nav__link">
+                    <span>
+                      <svg width="24" height="24" role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#faq-icon"></use>
+                      </svg>
+                    </span>FAQ
+                  </a>
+                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list  main-nav__list--lvl-2">
+                      <li class="main-nav__item  main-nav__item--lvl-2">
+                        <a href="#" class="main-nav__link  main-nav__link--lvl-2">
+                          Оплата и доставка
+                        </a>
+                      </li>
+                      <li class="main-nav__item  main-nav__item--lvl-2">
+                        <a href="#" class="main-nav__link  main-nav__link--lvl-2">
+                          Сервисный центр
+                        </a>
+                      </li>
+                      <li class="main-nav__item  main-nav__item--lvl-2">
+                        <a href="#" class="main-nav__link  main-nav__link--lvl-2">
+                          Сотрудничество
+                        </a>
+                      </li>
+                      <li class="main-nav__item  main-nav__item--lvl-2">
+                        <a href="#" class="main-nav__link  main-nav__link--lvl-2">
+                          Вопросы-ответы
+                        </a>
+                      </li>
+                      <li class="main-nav__item  main-nav__item--lvl-2">
+                        <a href="#" class="main-nav__link  main-nav__link--lvl-2">
+                          О магазине
+                        </a>
+                      </li>
+                      <li class="main-nav__item  main-nav__item--lvl-2">
+                        <a href="#" class="main-nav__link  main-nav__link--lvl-2">
+                          Контакты
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span>
+                      <svg width="24" height="24" role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#news-icon"></use>
+                      </svg>
+                    </span>Акции и новости
+                  </a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span>
+                      <svg width="24" height="24" role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#stor-icon"></use>
+                      </svg>
+                    </span>Магазин
+                  </a>
+                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list  main-nav__list--lvl-2">
+                      <li class="main-nav__item  main-nav__item--lvl-2">
+                        <span class="main-nav__stor-address">
+                          ул. Борисоглебская, 17/1 <br>(м. Контрактова Площа)
+                        </span>
+                        <a href="tel:+380505137467" class="main-nav__link  main-nav__link--lvl-2  main-nav__link--tel">
+                          +380 (50) 513 74 67
+                        </a>
+                        <span class="main-nav__stor-worktime">
+                          ПН-ПТ&nbsp;10.00-19.00&emsp;СБ&nbsp;11.00-15.00
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link">
+                    <span>
+                      <svg width="24" height="24" role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#tel-call-icon"></use>
+                      </svg>
+                    </span>Позвонить
+                  </a>
+                  <div class="main-nav__sublist-wrapper  main-nav__sublist-wrapper--lvl-2">
+                    <ul class="main-nav__list  main-nav__list--lvl-2">
+                      <li class="main-nav__item  main-nav__item--lvl-2">
+                        <span class="main-nav__stor-address">
+                          Оформить заказ
+                        </span>
+                        <a href="tel:+380505137467" class="main-nav__link  main-nav__link--lvl-2  main-nav__link--tel">
+                          +380 (50) 513 74 67
+                        </a>
+                        <span class="main-nav__stor-address  main-nav__stor-address--min">
+                          Служба поддержки клиентов
+                        </span>
+                        <a href="tel:+380505137467" class="main-nav__link  main-nav__link--lvl-2  main-nav__link--tel">
+                          +380 (50) 513 74 67
+                        </a>
+                        <a href="tel:+380505137467" class="main-nav__link  main-nav__link--lvl-2  main-nav__link--tel">
+                          +380 (50) 513 74 67
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" class="main-nav__link" data-toggle="modal" data-target="#loginModal">
+                    <span>
+                      <svg width="24" height="24" role="img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#user-icon"></use>
+                      </svg>
+                    </span>Личный кабинет
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="lang-switcher  dropdown" id="lang-switcher">
+              <button class="dropdown-toggle" type="button" id="lang-switcher-toggler" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">RU</button>
+              <div class="dropdown-menu" aria-labelledby="lang-switcher">
+                <a class="dropdown-item" href="#">UA</a>
+                <a class="dropdown-item" href="#">RU</a>
+              </div>
+            </div>
+
+            <a href="#mobile-nav" class="burger" aria-label="Мобильное меню"><span></span></a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="page-header__bottom">
+
+    <div class="container">
+      <div class="row">
+
+        <div class="page-header__bottom-dropdown-col">
+          <div class="dropdown page-header__catalog-menu-wrapper">
+            <button class="btn dropdown-toggle" type="button" id="catalogMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <svg width="24" height="24" role="img">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#catalog-icon"></use>
+              </svg>
+              <span>Каталог товаров</span>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="catalogMenu">
+              @@include('../../blocks/sf-menu/sf-menu.html')
+            </div>
+          </div>
+        </div>
+
+        <div class="page-header__bottom-search-col">
+          <div class="field-search">
+            <form id="search-form" class="field-search__form" action="/" method="post">
+              <input class="field-search__input" type="search" name="search" value="" placeholder="Поиск">
+            </form>
+          </div>
+        </div>
+
+        <div class="page-header__bottom-shop-col">
+          <div class="page-header__bottom-shop">
+            <a href="#" class="btn  btn--icon  page-header__compare" data-num="10">
+              <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use></svg>
+              <span>Сравнение</span>
+            </a>
+            <a href="#" class="btn  btn--icon  page-header__favorite" data-num="12">
+              <svg width="26" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use></svg>
+              <span>Избранное</span>
+            </a>
+            <a href="#" class="btn  btn--icon  page-header__cart" data-num="15" aria-label="Корзина магазина">
+              <svg width="24" height="24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use></svg>
+              <div class="page-header__cart-inner">
+                <div class="page-header__cart-title">Сумма</div>
+                <div class="page-header__cart-price">1 169 756<sup>грн</sup></div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</header>

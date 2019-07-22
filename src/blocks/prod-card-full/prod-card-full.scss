@@ -1,0 +1,125 @@
+.prod-card-full {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+      // padding: 20px 20px 17px;
+  background-color: $white;
+  box-shadow: $shadow;
+  border-radius: $border-radius;
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadow--hover;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__compare,
+  &__favorite {
+    position: absolute;
+    top: 0;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $white;
+    }
+  }
+
+  &__compare {
+    left: 0;
+    border-top-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+
+    &:hover,
+    &:focus {
+      background-color: $main-color;
+    }
+  }
+
+  &__favorite {
+    right: 0;
+    border-top-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+
+    &:hover,
+    &:focus {
+      background-color: $color-danger;
+    }
+  }
+
+  &__img {
+    padding: 20px 20px 10px;
+  }
+
+  &__text {
+    padding: 0 20px;
+    //margin-top: 10px;
+    //margin-bottom: 15px;
+  }
+
+  &__title {
+    margin: 0;
+    // font-size: 16px;
+  }
+
+  &__link {
+    max-height: 60px;
+    overflow-y: hidden;
+  }
+
+  &__bottom {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+    padding-left: 20px;
+    padding-right: 73px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .btn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  &__price-block {
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+    min-width: 90px;
+    font-weight: 700;
+  }
+
+  &__price-old {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: $text-muted;
+  }
+
+  &__price-new {
+    font-size: 22px;
+  }
+
+  &__logo-link {
+    flex-basis: 70px;
+    width: 100%;
+    max-height: 40px;
+    transform: translateY(-5px);
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+}

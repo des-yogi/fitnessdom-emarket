@@ -1,0 +1,33 @@
+.index-special-offer-block {
+  position: relative;
+  display: block;
+  box-shadow: $shadow;
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadow--hover;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__figure {
+    margin: 0;
+  }
+
+  &__img {
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    z-index: 1;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 1.2em;
+  }
+}

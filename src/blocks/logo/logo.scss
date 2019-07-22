@@ -1,0 +1,22 @@
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+
+  $block-name:                &; // #{$block-name}__element
+
+  img {
+    display: block;
+    width: 130px;
+    //height: 19px;
+
+    @media (min-width: $screen-sm) {
+      max-width: none;
+      width: 249px;
+    }
+
+    @media (min-width: $screen-xl) {
+      width: 230px;
+    }
+  }
+}

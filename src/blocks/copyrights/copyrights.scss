@@ -1,0 +1,84 @@
+.copyrights {
+  padding-top: 20px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media (min-width: $screen-xl) {
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @media (min-width: $screen-xl) {
+      display: inline-block;
+      vertical-align: top;
+      width: 178px;
+      height: 32px;
+      margin-right: 40px;
+    }
+  }
+
+  &__owner {
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.35;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      width: auto;
+      margin-right: 20px;
+    }
+  }
+
+  &__link {
+    width: 100%;
+    margin-bottom: 15px;
+    opacity: 0.35;
+
+    @media (min-width: $screen-md) {
+      width: calc(33.33% - 10px);
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+
+    @media (min-width: $screen-xl) {
+      width: auto;
+    }
+
+    &:hover,
+    &:focus {
+      color: $white;
+      opacity: 1;
+    }
+  }
+
+  &__developer {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    opacity: 0.6;
+
+    @media (min-width: $screen-md) {
+      width: auto;
+      margin-bottom: 0;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}

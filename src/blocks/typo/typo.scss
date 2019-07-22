@@ -1,0 +1,317 @@
+// Этот блок ответственен ТОЛЬКО за типографику проекта.
+
+/* noto-sans-regular - latin_cyrillic */
+@font-face {
+  font-display: swap;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'),
+       url('../fonts/noto-sans-v8-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/noto-sans-v8-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* noto-sans-700 - latin_cyrillic */
+@font-face {
+  font-display: swap;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+       url('../fonts/noto-sans-v8-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/noto-sans-v8-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* source-sans-pro-regular - latin_cyrillic */
+@font-face {
+  font-display: swap;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'),
+       url('../fonts/source-sans-pro-v12-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v12-cyrillic_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* source-sans-pro-700 - latin_cyrillic */
+@font-face {
+  font-display: swap;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'),
+       url('../fonts/source-sans-pro-v12-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/source-sans-pro-v12-cyrillic_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+body {
+  // ТОЛЬКО типографика!
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+  word-break: break-word;
+  text-align: left;
+  color: $text-color;
+  background-color: $body-bg;
+
+  text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size * 1.143;
+  }
+
+  // text-rendering: optimizeLegibility;
+  // Partial support in Android browser versions is due to a serious bug where text-rendering: optimizeLegibility causes custom web fonts to not render!!!
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-family: $font-family--headings;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $title-color;
+
+  & > a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0.75em;
+}
+
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.h1,
+h1 {
+  font-size: $font-size--h1;
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size--h1 * 1.167;
+  }
+}
+
+.h2,
+h2 {
+  font-size: $font-size--h2;
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size--h2 * 1.182;
+  }
+}
+
+.h3,
+h3 {
+  font-size: $font-size--h3;
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size--h3 * 1.1;
+  }
+}
+
+.h4,
+h4 {
+  font-size: $font-size--h4;
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size--h4 * 1.125;
+  }
+}
+
+.h5,
+h5 {
+  font-size: $font-size--h5;
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size--h5 * 1.143;
+  }
+}
+
+.h6,
+h6 {
+  font-size: $font-size--h6;
+
+  @media (min-width: $screen-lg) {
+    font-size: $font-size--h6 * 1.143;
+  }
+}
+
+.p,
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+address,
+figure {
+  //margin-top: 0.5em;
+  // margin-bottom: 0.5em;
+  color: currentColor;
+
+  & + & {
+    margin-top: 0.5em;
+  }
+}
+
+address {
+  font-style: normal;
+}
+
+ul,
+ol {
+  padding-left: 1.3em;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li {
+  line-height: inherit;
+}
+
+hr {
+  box-sizing: content-box; // Проблема Firefox
+  height: 0;               // Проблема Firefox
+  overflow: visible;       // Проблема Edge и IE
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+.small,
+small {
+  font-size: $font-size * 0.75;
+}
+
+sub,
+sup {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
+  font-size: 60%;
+}
+
+sup {
+  transform: translateY(17%);
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+blockquote {
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin-left: 0;
+
+  @media (min-width: $screen-sm) {
+    margin-left: 1.5rem;
+  }
+
+  & + dt {
+    margin-top: 0.5em;
+  }
+}
+
+// samp,
+code,
+kbd,
+pre {
+  // font-family: $font-family--monospace;
+}
+
+code {
+  padding: 0.06em 0.3em;
+  color: $text-color;
+  background-color: rgba(#000, 0.08);
+  border-radius: $border-radius;
+}
+
+kbd {
+  padding: 0.06em 0.3em;
+  color: $text-color;
+  background-color: $gray-lightest;
+  border-radius: $border-radius;
+
+  kbd {
+    padding: 0;
+  }
+}
+
+pre {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+  overflow-x: auto;
+  tab-size: 2;
+  background-color: rgba(#000, 0.08);
+
+  code {
+    background: transparent;
+  }
+}
+
+a {
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+  }
+}

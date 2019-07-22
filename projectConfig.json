@@ -1,0 +1,123 @@
+{
+  "blocks": {
+    "accordion": [],
+    "breadcrumbs": [],
+    "btn": [],
+    "burger": [],
+    "close": [],
+    "dropdown": [],
+    "embed-responsive": [],
+    "field-text": [
+      "--error"
+    ],
+    "field-checkbox": [
+      "__input-wrap--error"
+    ],
+    "field-radio": [
+      "__input-wrap--error"
+    ],
+    "field-toggler": [],
+    "field-range": [],
+    "field-select": [
+      "--error"
+    ],
+    "field-actions": [],
+    "field-num": [],
+    "field-search": [],
+    "fields-group": [],
+    "form": [],
+    "is-mobile": [],
+    "lang-switcher": [],
+    "loader": [],
+    "logo": [],
+    "main-nav": [],
+    "modal": [],
+    "nouislider": [],
+    "object-fit-polyfill": [],
+    "page": [],
+    "page-footer": [],
+    "page-header": [],
+    "pagination": [],
+    "scroll-link": [],
+    "sprite-png": [
+      "__demo"
+    ],
+    "sprite-svg": [],
+    "table": [],
+    "table-mobile-scroll": [],
+    "table-responsive": [],
+    "tabs": [],
+    "to-top": [],
+    "typo": [],
+    "star-rating": [],
+    "countdown": [],
+    "prod-card-full": [],
+    "prod-card-simple": [],
+    "gift-choice": [],
+    "days-special-offer": [],
+    "catalog-card": [],
+    "article-card": [],
+    "prod-slider": [],
+    "together-cheaper-block": [],
+    "review-article": [],
+    "prod-header": [],
+    "prod-action": [],
+    "prod-cart": [],
+    "seo-text-article": [],
+    "map": [],
+    "socials": [],
+    "subscription-block": [],
+    "brands": [],
+    "index-special-offer-block": [],
+    "card-label": [],
+    "prod-card-full-list": [],
+    "star-rating-marks": [],
+    "brand-logo": [],
+    "instagram-block": [],
+    "mobile-nav": [],
+    "sf-menu": [],
+    "copyrights": [],
+    "special-offer-banner": [],
+    "prod-specification": [],
+    "review-block": []
+  },
+  "addCssBefore": [
+    "./src/scss/variables.scss",
+    "./src/scss/mixins.scss",
+    "../../node_modules/mmenu-js/dist/mmenu.css",
+    "../../node_modules/swiper/dist/css/swiper.css"
+  ],
+  "addCssAfter": [
+    "./src/scss/print.scss"
+  ],
+  "singleCompiled": [],
+  "addJsBefore": [
+    "./node_modules/picturefill/dist/picturefill.min.js",
+    "./node_modules/blazy/blazy.min.js",
+    "./node_modules/nouislider/distribute/nouislider.js",
+    "./node_modules/svg4everybody/dist/svg4everybody.js",
+    "./node_modules/mmenu-js/dist/mmenu.js",
+    "./node_modules/jquery/dist/jquery.min.js",
+    "./node_modules/object-fit-images/dist/ofi.js",
+    "./node_modules/swiper/dist/js/swiper.js",
+    "./node_modules/ellipsis.js/ellipsis.js",
+    "./node_modules/superfish/dist/js/hoverIntent.js",
+    "./node_modules/superfish/dist/js/superfish.js",
+    "./src/js/libs/popper.min.js",
+    "./src/js/libs/jquery.downCount.js",
+    "./src/js/libs/util.min.js"
+  ],
+  "addJsAfter": [
+    "./src/js/global-script.js"
+  ],
+  "addImages": [
+    "./src/img/*.{jpg,jpeg,gif,png,svg,ico,webp}"
+  ],
+  "copiedCss": [],
+  "copiedJs": [],
+  "dirs": {
+    "srcPath": "./src/",
+    "buildPath": "./build/",
+    "blocksDirName": "blocks"
+  }
+}

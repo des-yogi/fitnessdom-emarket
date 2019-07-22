@@ -1,0 +1,42 @@
+.field-search {
+  padding: 10px 0;
+
+  @media (min-width: $screen-md) {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__form {
+    width: 100%;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 10px 12px 45px;
+    background-color: $input-bg;
+    background-image: svg-load('../blocks/field-search/bg-img/search-icon.svg', fill=$text-muted);
+    background-repeat: no-repeat;
+    background-position: left 15px center;
+    border: none;
+    border-radius: $border-radius;
+
+    &:hover,
+    &:focus {
+      background-image: svg-load('../blocks/field-search/bg-img/search-icon.svg', fill=$main-color);
+      background-repeat: no-repeat;
+      background-position: left 15px center;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    @media (min-width: $screen-xl) {
+      border-right: 4px solid $main-color;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.card-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  z-index: 1;
+  top: 70px;
+  left: 0;
+  pointer-events: none;
+
+  $block-name:                &; // #{$block-name}__element
+
+  span {
+    padding: 7px 15px;
+    font-family: $font-family--headings;
+    font-weight: 700;
+    font-size: 14px;
+    border-top-right-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    color: $white;
+  }
+
+  span + span {
+    margin-top: 15px;
+  }
+
+  &__special-offer {
+    background-color: $color-danger;
+  }
+
+  &__top-sale {
+    background-color: $color-warning;
+  }
+}

@@ -1,0 +1,95 @@
+.days-special-offer {
+  background-color: $white;
+  box-shadow: $shadow;
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadow--hover;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    padding: 15px 25px 20px;
+    margin: 0;
+    color: $white;
+    background-color: $color-danger;
+
+    @media (min-width: $screen-xl) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+
+    #{$block-name}__price-new {
+      color: $text-color;
+    }
+
+    &:hover,
+    &:focus {
+      #{$block-name}__price-new {
+        color: $text-color;
+      }
+    }
+  }
+
+  &__img {
+    padding: 0 25px;
+
+    @media (min-width: $screen-xl) {
+      padding: 0 40px;
+    }
+  }
+
+  &__price-block {
+    flex-basis: 100%;
+    align-self: flex-end;
+    padding: 0 25px;
+    font-family: $font-family--headings;
+    font-weight: 700;
+    text-align: center;
+
+    @media (min-width: $screen-xl) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__price-old {
+    font-size: 16px;
+    text-decoration: line-through;
+    color: $text-muted;
+  }
+
+  &__price-new {
+    font-size: 24px;
+  }
+
+  &__subtitle {
+    padding: 0 25px 25px;
+    margin-bottom: 0;
+    text-align: center;
+    color: currentColor;
+
+    @media (min-width: $screen-xl) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  &__countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: $color-danger;
+
+    @media (min-width: $screen-xl) {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+}

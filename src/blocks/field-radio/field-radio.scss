@@ -1,0 +1,115 @@
+$line-height:                 1.375em !default;
+
+.field-radio {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: block;
+  margin-bottom: 0.5em;
+
+  &__title {
+    display: block;
+    font-weight: 700;
+    line-height: $line-height;
+    margin-bottom: 0.4em;
+  }
+
+  &__input-wrap {
+
+    & + & {
+      margin-top: 0.5em;
+    }
+  }
+
+  &__name {
+    position: relative;
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 65px;
+    padding-right: 25px;
+    font-weight: 400;
+    line-height: $line-height;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $body-bg;
+
+      #{$block-name}__name-text {
+        color: $main-color;
+      }
+    }
+  }
+
+  &__name-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+    &:before {
+      content: '';
+      position: absolute;
+      //top: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 25px;
+      width: 22px;
+      height: 22px;
+      border: 2px solid $text-color;
+      border-radius: 50%;
+
+      @at-root input:checked ~ & {
+        border-color: $main-color;
+      }
+    }
+
+    @at-root input:focus ~ &:before {
+      @include field-focus;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: calc(25px + 5px);
+      width: 12px;
+      height: 12px;
+      opacity: 0;
+      border-radius: 50%;
+      background-color: $main-color;
+      transition: opacity $transition-time;
+
+      @at-root input:checked ~ & {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__input {
+    position: absolute;
+    top: 0.8em;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-50%);
+
+    &:focus,
+    &:active {
+      @include field-focus;
+    }
+
+    // сокрытие инпута в случае использования своей радиокнопки
+    opacity: 0;
+  }
+
+  &__help-text-wrap {
+    padding-left: 1.5em;
+  }
+
+  &__help-text {
+    @include field-help-text;
+  }
+}

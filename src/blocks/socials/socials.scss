@@ -1,0 +1,16 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__link {
+    margin-left: 20px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}

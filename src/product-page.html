@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Страница товара</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div id="page" class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main-content" role="main">
+
+        <div class="container">
+
+          @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+          <section class="special-offer-banner">
+            <h4 class="special-offer-banner__title">Скидка на продукцию компании Assault Fitness и True Form Runner</h4>
+            <ul class="countdown">
+              <li>
+                <span class="days">00</span><!-- <span>д</span> -->
+                <!-- <p class="days_ref">Дней</p> -->
+              </li>
+              <li class="seperator">:</li>
+              <li>
+                <span class="hours">00</span><!-- <span>ч</span> -->
+                <!-- <p class="hours_ref">Час.</p> -->
+              </li>
+              <li class="seperator">:</li>
+              <li>
+                <span class="minutes">00</span><!-- <span>м</span> -->
+                <!-- <p class="minutes_ref">Минут</p> -->
+              </li>
+               <li class="seperator">:</li>
+               <li>
+                <span class="seconds">00</span><!-- <span>с</span> -->
+                <!-- <p class="seconds_ref">Секунд</p> -->
+              </li>
+            </ul>
+          </section>
+
+          @@include('blocks/prod-slider/prod-slider.html')
+
+          @@include('blocks/prod-specification/prod-specification.html')
+
+          <section>
+
+            <h2 class="together-cheaper-block__title">Вместе дешевле</h2>
+
+            <div class="together-cheaper-block__wrapper">
+
+              <div class="row">
+
+                <div class="col-cheaper-left">
+
+                  <div class="row">
+
+                    <div class="col-cheaper-inner">
+
+                      <article class="prod-card-simple  prod-card-simple--mod  prod-card-simple--mod--first" tabindex="0">
+                        <div class="row">
+
+                          <div class="prod-card-simple__col">
+
+                            <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-simple__img" title="Товар">
+                              <picture>
+                                <source srcset="img/prod-card-simple-3.webp" media="(min-width: 1280px)" type="image/webp">
+                                <source srcset="img/prod-card-simple-3.jpg" media="(min-width: 1280px)">
+                                <!-- 175x175 -->
+                                <source srcset="img/prod-card-simple-3.webp" media="(min-width: 992px)" type="image/webp">
+                                <source srcset="img/prod-card-simple-3.jpg" media="(min-width: 992px)">
+                                <!-- 285x285 -->
+                                <source srcset="img/prod-card-simple-3.webp" media="(min-width: 768px)" type="image/webp">
+                                <source srcset="img/prod-card-simple-3.jpg" media="(min-width: 768px)">
+                                <!-- 210x210 -->
+                                <source srcset="img/prod-card-simple-3.webp" media="(min-width: 480px)" type="image/webp">
+                                <source srcset="img/prod-card-simple-3.jpg" media="(min-width: 480px)">
+                                <!-- 270x270 -->
+                                <source srcset="img/prod-card-simple-3.webp" type="image/webp">
+                                <img src="img/prod-card-simple-3.jpg" alt="Фото Товара" width="210" height="210">
+                              </picture>
+                            </a>
+
+                          </div>
+
+                          <div class="prod-card-simple__col">
+                            <div class="prod-card-simple__text">
+                              <h3 class="h4  prod-card-simple__title  clamp_l">
+                                <a href="#" class="">Polar M200 optical HR белый с металлической застежкой</a>
+                              </h3>
+                              <span class="prod-code">Арт: 052 424 425 2567</span>
+                              <div class="prod-card-simple__price-block">
+                                <span class="prod-card-simple__price-old">8 456</span>
+                                <span class="prod-card-simple__price-new">7 456<sup>грн.</sup></span>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </article>
+
+                    </div>
+
+                    <div class="col-cheaper-inner">
+                      @@include('blocks/together-cheaper-block/together-cheaper-block.html')
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="col-cheaper-right">
+                  <div class="together-cheaper-block__sale">
+
+                    <div class="together-cheaper-block__sale-price">
+                      <span class="together-cheaper-block__old-price">150 400</span>
+                      <span class="together-cheaper-block__new-price">1 148 400 <sup>грн</sup></span>
+                    </div>
+
+                    <div class="together-cheaper-block__btn-wrapper">
+                      <button class="btn btn--text-icon  together-cheaper-block__submit" type="button">
+                        <svg width="24" height="24" role="img">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                        </svg>
+                        Купить комплект
+                      </button>
+                      <span class="prod-code  together-cheaper-block__code">Код комплекта: <span>245 256 5205</span></span>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </section>
+
+
+          <section>
+            <h2>Похожие товары</h2>
+
+            <div class="row">
+
+            <div class="col-1-2-3">
+              @@include('blocks/prod-card-simple/prod-card-simple.html')
+            </div>
+
+            <div class="col-1-2-3">
+              @@include('blocks/prod-card-simple/prod-card-simple.html')
+            </div>
+
+            <div class="col-1-2-3">
+              @@include('blocks/prod-card-simple/prod-card-simple.html')
+            </div>
+
+          </div>
+
+          </section>
+
+          <section class="review-block">
+
+            <div class="row">
+
+              <div class="review-block__articles-col">
+
+                <h2 class="review-block__title">Отзывы о товаре</h2>
+
+                @@include('blocks/review-article/review-article.html')
+
+                @@include('blocks/review-article/review-article.html')
+
+              </div>
+
+              <div class="review-block__form-col">
+                <form id="review-form" class="review-block__form" action="/" method="post">
+                  <h3 class="review-block__form-title">Написать отзыв</h3>
+                  <p class="review-block__form-descr">Используйте данную форму для того, чтобы оставить отзыв о товаре или задать вопрос.</p>
+
+                  <div class="review-block__form-row">
+
+                    <div class="review-block__form-inner">
+
+                      <div class="review-block__form-group">
+                        <label class="field-text">
+                          <span class="field-text__name">Ваше имя<span>*</span></span>
+                          <span class="field-text__input-wrap">
+                            <input class="field-text__input" type="text" name="name" placeholder="">
+                            <span class="field-text__help-text  error"></span>
+                          </span>
+                        </label>
+                      </div>
+
+                      <div class="review-block__form-group">
+                        <label class="field-text">
+                          <span class="field-text__name">E-mail<span>*</span></span>
+                          <span class="field-text__input-wrap">
+                            <input class="field-text__input" type="email" name="email" placeholder="">
+                            <span class="field-text__help-text  error"></span>
+                          </span>
+                        </label>
+                      </div>
+
+                    </div>
+
+                    <div class="review-block__form-inner">
+                      <div class="review-block__form-group">
+                        <label class="field-text">
+                          <span class="field-text__name">Ваш отзыв<span>*</span></span>
+                          <span class="field-text__input-wrap">
+                            <textarea class="field-text__input" name="message"></textarea>
+                            <span class="field-text__help-text  error"></span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="review-block__form-inner">
+                      <div class="review-block__form-group">
+                        <span class="field-text__name  field-text__name--rate">Рейтинг<span>*</span></span>
+                        @@include('blocks/star-rating/star-rating.html')
+                      </div>
+                    </div>
+
+                    <div class="review-block__form-inner">
+                      <div class="review-block__form-group">
+                        <button class="btn  review-block__form-submit" type="button">Добавить сообщение</button>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </form>
+              </div>
+
+            </div>
+
+          </section>
+
+          <section>
+            <h2>Просмотренные товары</h2>
+
+            <div class="row">
+
+              <div class="col-1-2-3-4">
+                @@include('blocks/prod-card-full/prod-card-full.html')
+              </div>
+
+              <div class="col-1-2-3-4">
+                @@include('blocks/prod-card-full/prod-card-full.html')
+              </div>
+
+              <div class="col-1-2-3-4">
+                @@include('blocks/prod-card-full/prod-card-full.html')
+              </div>
+
+              <div class="col-1-2-3-4">
+                @@include('blocks/prod-card-full/prod-card-full.html')
+              </div>
+
+            </div>
+
+          </section>
+
+          <article class="seo-text-article">
+            <h2>О компании (сео-текст)</h2>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Буквенных своих, раз коварный бросил. Сих заманивший журчит за, текстами запятой рукопись, лучше собрал подзаголовок безопасную предупредила пояс предложения однажды своих использовало, рукописи, эта обеспечивает подпоясал. Составитель заголовок наш предложения маленькая, ручеек осталось домах имеет парадигматическая приставка единственное коварных, грамматики живет семантика, обеспечивает за пустился своих агенство.</p>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись строчка ты, о скатился рукописи бросил. Вершину гор до взобравшись, эта, толку инициал.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quod deleniti numquam facere perferendis vero earum, est velit nisi ipsam. Eum non laboriosam repellendus necessitatibus dolor modi quas similique, quo ipsum doloremque corporis animi totam nihil, quam officia in, porro dolore quidem eius reprehenderit! Ratione facilis maiores recusandae harum officiis illum sit quae. Aspernatur officia labore ipsam rerum ipsa aut hic. Tenetur facilis quisquam, ducimus, vero dolores excepturi voluptates sequi quia nulla, repudiandae veritatis velit, cumque! A aspernatur, rerum quo sequi animi, cupiditate sunt ut! Quaerat nulla animi id, eius quos quas voluptatem voluptate veritatis quasi aliquam deleniti totam culpa veniam impedit molestias fugiat et perspiciatis doloribus sunt consectetur facilis dicta! Quasi dolor animi magnam, reprehenderit inventore commodi corporis, cupiditate nobis, eligendi eveniet, optio hic incidunt soluta.</p>
+          </article>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <!-- mobile-nav -->
+  @@include('blocks/mobile-nav/mobile-nav.html')
+
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalTitle" aria-hidden="true" aria-modal="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title  visually-hidden" id="loginModalTitle">Форма входа и регистрации</h5>
+          <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button> -->
+        </div>
+        <div class="modal-body">
+          Содержимое окна Вход / Регистрация
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" data-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn">ОК</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

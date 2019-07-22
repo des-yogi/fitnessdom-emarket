@@ -1,0 +1,105 @@
+.review-block {
+
+  @media (min-width: $screen-md) {
+    padding: 20px;
+    box-shadow: $shadow;
+  }
+
+  @media (min-width: $screen-xl) {
+    padding: 40px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  .row {
+    padding: 20px 0;
+    box-shadow: $shadow;
+
+    @media (min-width: $screen-md) {
+      padding: 0;
+      box-shadow: none;
+    }
+  }
+
+  .star-rating {
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__articles-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 12);
+    @include col(xl, 7);
+  }
+
+  &__form-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 12);
+    @include col-offset(xl, 1);
+    @include col(xl, 4);
+  }
+
+  &__form {
+
+  }
+
+  &__form-title {
+
+    @media (min-width: $screen-md) {
+      margin-top: 40px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-top: 0;
+    }
+  }
+
+  &__form-descr {
+
+  }
+
+  &__form-row {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__form-inner {
+
+    @media (min-width: $screen-md) {
+      width: calc(50% - 10px);
+    }
+
+    @media (min-width: $screen-xl) {
+      width: 100%;
+    }
+  }
+
+  &__form-group {
+
+    textarea {
+
+      @media (min-width: $screen-md) {
+        height: 125px;
+      }
+    }
+  }
+
+  &__form-submit {
+    width: 100%;
+  }
+}

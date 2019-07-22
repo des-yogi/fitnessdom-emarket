@@ -1,0 +1,33 @@
+.special-offer-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 20px;
+  color: $white;
+  background-color: $color-danger;
+
+  @media (min-width: $screen-md) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  .countdown {
+    flex-basis: auto;
+  }
+
+  &__title {
+    flex: 0 1 auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 20px;
+    line-height: 1.35em;
+    text-align: center;
+    color: currentColor;
+  }
+}

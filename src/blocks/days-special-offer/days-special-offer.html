@@ -1,0 +1,38 @@
+<!--DEV
+
+@ @include('blocks/days-special-offer/days-special-offer.html')
+
+-->
+
+<div class="days-special-offer">
+  <h2 class="days-special-offer__title">Предложения дня</h2>
+
+  <a href="#" class="days-special-offer__link" title="Товар">
+    <div class="embed-responsive  embed-responsive--1-1  days-special-offer__img">
+      <picture>
+        <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+        <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+        <!-- 360x360 -->
+        <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+        <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+        <!-- 425x425 -->
+        <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+        <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+        <!-- 530x530 -->
+        <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+        <img class="b-lazy" data-src="img/prod-cart-img-1.jpg" src=data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== alt="Фото Товара" width="410" height="410">
+      </picture>
+    </div>
+
+    <div class="days-special-offer__price-block">
+      <span class="days-special-offer__price-old">128 456</span>
+      <span class="days-special-offer__price-new">137 456<sup>грн.</sup></span>
+    </div>
+
+    <h3 class="days-special-offer__subtitle">Polar M430 White</h3>
+  </a>
+
+  <div class="days-special-offer__countdown">
+    @@include('../../blocks/countdown/countdown.html')
+  </div>
+</div>

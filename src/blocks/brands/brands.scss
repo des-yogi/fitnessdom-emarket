@@ -1,0 +1,9 @@
+// В этом файле должны быть стили для БЭМ-блока brands, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.brands {
+
+  $block-name:                &; // #{$block-name}__element
+
+}

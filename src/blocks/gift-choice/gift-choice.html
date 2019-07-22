@@ -1,0 +1,132 @@
+<!--DEV
+
+@ @include('blocks/gift-choice/gift-choice.html')
+
+-->
+
+<section class="gift-choice">
+  <div class="row">
+
+    <div class="gift-choice__header-col">
+      <div class="gift-choice__header">
+        <h2 class="gift-choice__title">
+          <span>Подбор <br>подарка</span>
+          <svg width="62" height="64" role="img">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#gift-img"></use>
+          </svg>
+        </h2>
+      </div>
+    </div>
+
+    <div class="gift-choice__content-col">
+      <div class="gift-choice__content">
+        <form id="gift-choice-form" class="gift-choice__form" action="/" method="post">
+          <div class="gift-choice__top">
+            <span class="h2  gift-choice__subtitle">Подобрать <span>подарок</span>:</span>
+
+            <div class="field-select">
+              <span class="field-select__select-wrap">
+                <select id="select-gift-field" class="field-select__select">
+                  <option label="Значение 1" value="1">Значение 1</option>
+                  <option label="Значение 2" value="2">Значение 2</option>
+                  <option label="Значение 3" value="3">Значение 3</option>
+                </select>
+              </span>
+            </div>
+          </div>
+
+          <div class="gift-choice__filters-inner">
+
+            <div class="gift-choice__filters-category">
+              <h4 class="gift-choice__filters-title">Категории товаров</h4>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="" value="">
+                  <span class="field-checkbox__name-text">Функциональный тренинг</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="" value="">
+                  <span class="field-checkbox__name-text">Силовые тренажеры</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="" value="" checked>
+                  <span class="field-checkbox__name-text">Пульсометры Polar</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="" value="">
+                  <span class="field-checkbox__name-text">Тяжелая атлетика</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="" value="">
+                  <span class="field-checkbox__name-text">Реабилитация</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="" value="">
+                  <span class="field-checkbox__name-text">Йога, Pilates</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="" value="">
+                  <span class="field-checkbox__name-text">Аква-аэробика</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="" value="">
+                  <span class="field-checkbox__name-text">Кардиотренажеры</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="" value="">
+                  <span class="field-checkbox__name-text">Свободные веса</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="" value="">
+                  <span class="field-checkbox__name-text">Весы Tanita</span>
+                </label>
+              </div>
+              <div class="field-checkbox">
+                <label class="field-checkbox__name">
+                  <input class="field-checkbox__input" type="checkbox" name="" value="">
+                  <span class="field-checkbox__name-text">Бокс, единоборства</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="gift-choice__filters-price">
+              <h4 class="gift-choice__filters-title  gift-choice__filters-title--price">Цена <span>грн.</span></h4>
+              <div class="nouislider">
+                <div class="nouislider__range-inputs">
+                  <input class="nouislider__input" type="number" id="input-with-keypress-0" value="" name="min-price">
+                  <input class="nouislider__input" type="number" id="input-with-keypress-1" value="" name="max-price">
+                </div>
+                <div id="price-slider" class="nouislider__price-slider"></div>
+              </div>
+              <div class="gift-choice__submit-wrapper">
+                <button class="btn  gift-choice__submit">Подобрать</button>
+                <p>Сделайте подарок ещё более особенным!</p>
+              </div>
+            </div>
+
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,26 @@
+.catalog-card {
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  background-color: $white;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  overflow: hidden;
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadow--hover;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__img {
+    border-bottom: 1px solid $border-light;
+  }
+
+  &__title {
+    padding: 15px 20px;
+    margin: 0;
+    color: currentColor;
+  }
+}

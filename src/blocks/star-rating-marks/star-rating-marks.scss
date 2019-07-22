@@ -1,0 +1,17 @@
+.star-rating-marks {
+  margin-bottom: 10px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__unit {
+    display: inline-block;
+    vertical-align: top;
+    width: 17px;
+    height: 16px;
+    fill: $icon-color;
+
+    &--marked {
+      fill: $main-color;
+    }
+  }
+}

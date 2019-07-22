@@ -1,0 +1,72 @@
+.review-article {
+  border-top: 2px solid $border-light;
+
+  @media (min-width: $screen-xl) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  & + & {
+    margin-top: 20px;
+  }
+
+  &__user-icon {
+    display: none;
+
+    @media (min-width: $screen-xl) {
+      display: inline-block;
+      width: 68px;
+      height: 68px;
+      flex-basis: 68px;
+      margin-right: 20px;
+    }
+  }
+
+  &__content {
+
+    @media (min-width: $screen-xl) {
+      flex: 1 1;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: flex-start;
+
+    .star-rating-marks {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+
+  &__name {
+    margin-right: 20px;
+
+    @media (min-width: $screen-xl) {
+      margin-top: 0;
+    }
+  }
+
+  &__publishedon {
+    color: $text-muted;
+  }
+
+  &__body {
+
+    p {
+      margin: 0;
+    }
+
+    p + p {
+      margin-top: 0.5em;
+    }
+  }
+}

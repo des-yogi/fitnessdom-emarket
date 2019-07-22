@@ -1,0 +1,230 @@
+.prod-card-simple {
+  height: 100%;
+  padding: 15px 15px 0;
+  background-color: $white;
+  box-shadow: $shadow;
+  border-radius: $border-radius;
+
+  &:hover,
+  &:active {
+    box-shadow: $shadow--hover;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 20px 20px 0;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  .row {
+    height: 100%;
+    //align-content: space-between;
+
+    @media (min-width: $screen-md) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-left: -20px;
+      margin-right: -20px;
+    }
+  }
+
+  &__col {
+    @include col(xs, 6, $grid-columns, 30px);
+    @include col(lg, 6);
+    flex: 1 1;
+
+    @media (min-width: $screen-lg) {
+      padding-left: 10px;
+      padding-right: 20px;
+    }
+
+    &:first-child {
+      padding-right: 0;
+      @include col(lg, 6);
+
+      @media (min-width: $screen-md) {
+        padding-right: 10px;
+      }
+
+      @media (min-width: $screen-lg) {
+        padding-left: 20px;
+      }
+    }
+  }
+
+  &__controls {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 12);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-top: 15px;
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (min-width: $screen-md) {
+      margin-top: 20px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .btn {
+      flex: 1 1;
+      padding: 18px 20px;
+      background: none;
+      border: none;
+      color: inherit;
+      border-top: 1px solid $border-light;
+      border-radius: 0;
+
+      @media (min-width: $screen-md) {
+        padding: 20px 10px;
+      }
+
+      svg {
+        display: inline-block;
+        vertical-align: middle;
+        fill: currentColor;
+      }
+
+      &:hover,
+      &:focus {
+        outline: none;
+        color: $white;
+      }
+
+      &--cart {
+        color: $color-success;
+        border-top-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+
+        &:hover,
+        &:focus {
+          color: $white;
+          background-color: $color-success;
+        }
+      }
+    }
+  }
+
+  &__compare {
+
+    &:hover,
+    &:focus {
+      background-color: $main-color;
+      border-top-right-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+  }
+
+  &__favorite {
+
+    &:hover,
+    &:focus {
+      background-color: $color-danger;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+    }
+  }
+
+  &__img {
+
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__price-block {
+    margin-top: auto;
+    font-family: $font-family--headings;
+    font-weight: 700;
+    color: $text-muted;
+
+    span {
+      display: block;
+    }
+  }
+
+  &__price-old {
+    font-size: 16px;
+    text-decoration: line-through;
+  }
+
+  &__price-new {
+    font-size: 24px;
+  }
+
+  &--mod {
+    max-width: 100%;
+    padding: 15px 0;
+    box-shadow: none;
+
+    &:hover,
+    &:active {
+      box-shadow: none;
+      outline: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 20px 0;
+    }
+
+    #{$block-name}__price-block {
+      margin-top: 10px;
+      margin-bottom: auto;
+    }
+
+    & > .row {
+      box-sizing: border-box !important;
+    }
+
+    &--first {
+      position: relative;
+
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: 5;
+        bottom: -15px;
+        left: 50%;
+        transform: translateX( calc(-50% - 50px) );
+        width: 24px;
+        height: 24px;
+        //background-color: red;
+        background: svg-load('../blocks/prod-card-simple/bg-img/plus-big-icon.svg', fill=$color-danger);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (min-width: $screen-md) {
+          transform: translateX( calc(-50% - 30px) );
+          /* left: calc(100% + 35px);
+          bottom: 50%; */
+        }
+
+        @media (min-width: $screen-xl) {
+          left: calc(100% + 35px);
+          bottom: 50%;
+        }
+      }
+    }
+  }
+}

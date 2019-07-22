@@ -1,0 +1,40 @@
+.article-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $white;
+  box-shadow: $shadow;
+  border-radius: $border-radius;
+  overflow: hidden;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__img {
+
+    img {
+      @include object-fit(cover);
+    }
+  }
+
+  &__text {
+    flex: 1 1;
+    padding: 15px 10px;
+
+    @media (min-width: $screen-md) {
+      padding: 15px;
+    }
+
+    @media (min-width: $screen-lg) {
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__link {
+
+  }
+}

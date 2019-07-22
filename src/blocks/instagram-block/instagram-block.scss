@@ -1,0 +1,104 @@
+.instagram-block {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+  &__col {
+    @include col(xs, 6, $grid-columns, 20px);
+    @include col(md, 3);
+    @include col(xl, 2);
+    margin-bottom: 20px;
+
+    &--double {
+      @include col(xs, 12, $grid-columns, 20px);
+      @include col(md, 6);
+      @include col(xl, 4);
+    }
+  }
+
+  &__descr {
+    position: relative;
+    padding: 20px 0 17px 60px;
+    margin: 0;
+    line-height: 1.5;
+    color: $white;
+
+    a {
+      color: inherit;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    &::before {
+      display: inline-block;
+      vertical-align: middle;
+      position: absolute;
+      left: 0;
+      top: 22px;
+      content: "";
+      width: 40px;
+      height: 40px;
+      background: svg-load('../blocks/instagram-block/bg-img/instagram-icon.svg', fill=$white);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 40px;
+    }
+  }
+
+  &__img {
+    display: block;
+
+    &:hover,
+    &:focus {
+
+      &::after {
+        display: block;
+        content: attr(data-title);
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        min-height: 16px;
+        padding: 12px 10px;
+        font-size: 12px;
+        text-align: center;
+        color: $white;
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: 20px;
+    text-decoration: none;
+    color: $white;
+    background-color: $main-color;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: darken($main-color, 15%);
+    }
+  }
+
+  &__text {
+    margin: 0;
+    color: currentColor;
+    background: svg-load('../blocks/instagram-block/bg-img/right-arrow-icon.svg', fill=$white);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 9px 20px;
+  }
+}

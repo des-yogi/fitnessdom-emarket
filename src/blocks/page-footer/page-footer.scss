@@ -1,0 +1,254 @@
+.page-footer {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  color: $white;
+  background-color: $footer-bg;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 0;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .container--bg {
+
+    @media (min-width: $screen-xl) {
+      background-image:
+        linear-gradient(to right, $footer-bg, $footer-bg 50%, $footer-bg--dark 50%);
+    }
+  }
+
+  &__menu-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 12);
+    @include col(xl, 4);
+  }
+
+  &__contacts-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 12);
+    @include col(xl, 8);
+    background-color: $footer-bg--dark;
+
+    @media (min-width: $screen-md) {
+      background: none;
+    }
+  }
+
+  &__menu {
+
+    @media (min-width: $screen-xl) {
+      padding-top: 40px;
+    }
+  }
+
+  &__title {
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+    color: currentColor !important;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 20px !important;
+    }
+  }
+
+  &__menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    //margin-bottom: 10px;
+  }
+
+  &__menu-item {
+    width: calc(50% - 10px);
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-md) {
+      width: calc(33.33% - 10px);
+    }
+
+    @media (min-width: $screen-xl) {
+      width: calc(50% - 10px);
+    }
+  }
+
+  &__menu-link {
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    @media (min-width: $screen-xl) {
+      font-size: 16px;
+    }
+  }
+
+  &__contacts {
+
+    @media (min-width: $screen-md) {
+      position: relative;
+      z-index: 0;
+      padding-left: 20px;
+      // background-color: $footer-bg--dark;
+
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: -20px;
+        //width: 100%;
+        height: 100%;
+        background-color: $footer-bg--dark;
+      }
+    }
+
+    @media (min-width: $screen-xl) {
+      background-color: $footer-bg--dark;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__contacts-inner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media (min-width: $screen-xl) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__tel {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(sm, 6);
+    @include col(md, 3);
+    @include col(xl, 3);
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__tel-item {
+    margin-bottom: 10px;
+  }
+
+  &__tel-link {
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  &__worktime {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(sm, 6);
+    @include col-offset(md, 1);
+    @include col(md, 3);
+    @include col-offset(xl, 0);
+    @include col(xl, 3);
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+      transform: translateX(-20px);
+    }
+
+    @media (min-width: $screen-xl) {
+      transform: none;
+    }
+  }
+
+  &__worktime-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  &__worktime-item {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  &__subscription {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 5);
+    @include col(xl, 6);
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      flex: 1 1;
+      margin-bottom: 0;
+    }
+  }
+
+  &__subscription-inner {
+
+    .field-text {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__subscription-btn {
+    width: 100%;
+  }
+
+  &__address {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 12);
+
+    @media (min-width: $screen-md) {
+      margin-top: 20px;
+    }
+  }
+
+  &__address-info {
+    margin-bottom: 10px;
+    font-size: 16px;
+
+    @media (min-width: $screen-md) {
+      font-size: 16px;
+    }
+  }
+
+  &__address-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__map {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    // text-decoration: none;
+
+    @media (min-width: $screen-md) {
+      width: auto;
+      margin-bottom: 0;
+    }
+
+    span {
+      margin-left: 15px;
+    }
+  }
+}

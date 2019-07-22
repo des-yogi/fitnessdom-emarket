@@ -1,0 +1,210 @@
+.prod-card-full-list {
+  display: none;
+  position: relative;
+  border-radius: $border-radius;
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadow--hover;
+  }
+
+  @media (min-width: $screen-md) {
+    display: block;
+        // padding: 15px 15px;
+    margin-bottom: 20px;
+    background-color: $white;
+    box-shadow: $shadow;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  .card-label {
+    top: 25px;
+  }
+
+  &__img-col {
+    @include col(md, 4);
+  }
+
+  &__text-col {
+    @include col(md, 5);
+    //@include col(xl, 4);
+  }
+
+  &__rate-col {
+    @include col(md, 3);
+    //@include col(xl, 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__img {
+    padding: 20px;
+  }
+
+  &__text {
+    flex-wrap: wrap;
+    display: flex;
+    height: 100%;
+    padding: 20px 0 10px;
+  }
+
+  &__title {
+    flex-basis: 100%;
+    margin: 0;
+  }
+
+  &__list {
+    flex-basis: 100%;
+  }
+
+  &__list-inner {
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-family: $font-family--headings;
+
+    @media (min-width: $screen-lg) {
+      font-size: 14px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__value {
+    margin-left: 10px;
+  }
+
+  &__price-block {
+    flex-basis: 100%;
+    align-self: flex-end;
+    font-family: $font-family--headings;
+    font-weight: 700;
+  }
+
+  &__price-old {
+    font-size: 20px;
+    text-decoration: line-through;
+    color: $text-muted;
+  }
+
+  &__price-new {
+    font-size: 32px;
+  }
+
+  &__rate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    //margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  &__review-link {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 5px;
+    margin-bottom: 10px;
+
+    span {
+      color: $main-color;
+    }
+  }
+
+  &__availability {
+    font-weight: 700;
+    color: $main-color;
+  }
+
+  &__bottom {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 17px;
+    padding-right: 20px;
+  }
+
+  &__logo-link {
+    max-width: 75px;
+    flex-basis: 75px;
+
+    @media (min-width: $screen-xl) {
+      margin-right: 20px;
+    }
+
+    img {
+      display: block;
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    flex: 1 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @media (min-width: $screen-xl) {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+  }
+
+  &__compare,
+  &__favorite {
+    margin-bottom: 15px;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 0;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $white;
+    }
+  }
+
+  &__compare {
+    border-top-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+
+    @media (min-width: $screen-xl) {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $main-color;
+    }
+  }
+
+  &__favorite {
+    border-top-right-radius: $border-radius;
+    border-bottom-left-radius: $border-radius;
+
+    @media (min-width: $screen-xl) {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-danger;
+    }
+  }
+}

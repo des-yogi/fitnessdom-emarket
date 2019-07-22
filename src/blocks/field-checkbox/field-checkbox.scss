@@ -1,0 +1,143 @@
+$line-height:                 1.375em !default;
+
+.field-checkbox {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: block;
+  margin-bottom: 0.5em;
+
+  &__title {
+    display: block;
+    font-weight: 700;
+    line-height: $line-height;
+    margin-bottom: 0.4em;
+  }
+
+  &__input-wrap {
+
+    & + & {
+      margin-top: 0.5em;
+    }
+  }
+
+  &__name {
+    position: relative;
+    display: block;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 35px;
+    padding-right: 0;
+    font-weight: 400;
+    line-height: $line-height;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+
+      #{$block-name}__name-text {
+        color: $main-color;
+      }
+    }
+
+    /* &.selected {
+      background-color: $body-bg;
+    } */
+  }
+
+  &__name-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+
+    // свой чекбокс с картинкой
+
+    &:hover,
+    &:focus {
+
+      &:before {
+        border-color: $main-color;
+      }
+    }
+
+    &:before,
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-51%);
+    }
+
+    &:before {
+      left: 0;
+      content: "";
+      width: 20px;
+      height: 20px;
+      //background-color: $border-light;
+      background-color: $border-light;
+      border: 2px solid $border-light;
+      border-radius: $border-radius;
+      // background-image: svg-load('../blocks/field-checkbox/bg-img/checkbox.svg', fill=$text-color);
+      // background-size: 100%;
+    }
+
+    @at-root input:checked + #{$block-name}__name-text {
+      color: $main-color;
+    }
+
+    @at-root input:checked ~ &:before {
+      background-color: $white;
+      border-color: $main-color;
+      //background-image: svg-load('../blocks/field-checkbox/bg-img/checkbox--checked.svg', fill=$main-color);
+    }
+
+    @at-root input:checked ~ &:after {
+      left: 5px;
+      width: 10px;
+      height: 10px;
+      background-color: $main-color;
+      border-radius: 1px;
+    }
+
+    & > span {
+      font-weight: 400;
+      color: $text-muted;
+    }
+  }
+
+  &__input {
+    position: absolute;
+    top: 0.7em;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-50%);
+
+    &:focus,
+    &:active {
+      @include field-focus;
+
+      & + #{$block-name}__name-text {
+        color: $main-color;
+
+        &:before {
+          background-color: $white;
+          border-color: $main-color;
+        }
+      }
+    }
+
+    // сокрытие инпута в случае использования своего чекбокса
+    opacity: 0;
+  }
+
+  &__help-text-wrap {
+    padding-left: 1.5em;
+  }
+
+  &__help-text {
+    @include field-help-text;
+  }
+}
