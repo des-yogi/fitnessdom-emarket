@@ -3,10 +3,6 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  .field-search__form {
-
-  }
-
   .field-search__input {
     transition: all 0.25s ease-out;
 
@@ -17,6 +13,11 @@
       left: 14px;
       right: 14px;
       border-right: 4px solid $main-color;
+
+      @media (min-width: $screen-md) {
+        position: static;
+        width: 100%;
+      }
     }
   }
 
