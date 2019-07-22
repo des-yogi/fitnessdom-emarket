@@ -1,0 +1,58 @@
+.login-modal {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .modal-body {
+    padding: 50px 20px 20px;
+
+    .btn[data-dismiss=modal] {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      padding: 10px;
+      background-color: $color-danger;
+
+      &:hover,
+      &:focus {
+        background-color: darken($color-danger, 10%);
+      }
+
+      svg {
+        display: block;
+      }
+    }
+  }
+
+  &__group {
+
+    button,
+    a {
+      width: 100%;
+    }
+
+    a + a {
+      margin-top: 20px;
+    }
+  }
+
+  &__link {
+
+    &--fb {
+      background-color: #507cc0;
+
+      &:hover,
+      &:focus {
+        background-color: darken(#507cc0, 10%);
+      }
+    }
+
+    &--google {
+      background-color: #ea4335;
+
+      &:hover,
+      &:focus {
+        background-color: darken(#ea4335, 10%);
+      }
+    }
+  }
+}

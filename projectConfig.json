@@ -79,7 +79,8 @@
     "copyrights": [],
     "special-offer-banner": [],
     "prod-specification": [],
-    "review-block": []
+    "review-block": [],
+    "login-modal": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

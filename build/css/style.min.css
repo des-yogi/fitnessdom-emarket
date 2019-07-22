@@ -3446,12 +3446,12 @@ a[href^="tel:"] {
     background-color: #5499f0;
     pointer-events: none; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-06554124071216589.png);
+  background-image: url(../img/sprite-07392345803837976.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-06554124071216589.png);
+  background-image: url(../img/sprite-07392345803837976.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -5417,6 +5417,31 @@ input:checked + .prod-slider__color-text {
   padding-right: 15px; }
 .review-block__form-submit {
   width: 100%; }
+.login-modal .modal-body {
+  padding: 50px 20px 20px; }
+.login-modal .modal-body .btn[data-dismiss=modal] {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #f05454; }
+.login-modal .modal-body .btn[data-dismiss=modal]:hover, .login-modal .modal-body .btn[data-dismiss=modal]:focus {
+      background-color: #ec2525; }
+.login-modal .modal-body .btn[data-dismiss=modal] svg {
+      display: block; }
+.login-modal__group button,
+.login-modal__group a {
+  width: 100%; }
+.login-modal__group a + a {
+  margin-top: 20px; }
+.login-modal__link--fb {
+  background-color: #507cc0; }
+.login-modal__link--fb:hover, .login-modal__link--fb:focus {
+    background-color: #3b63a3; }
+.login-modal__link--google {
+  background-color: #ea4335; }
+.login-modal__link--google:hover, .login-modal__link--google:focus {
+    background-color: #d62516; }
 @media (min-width: 480px) {
       .logo img {
         max-width: none;
@@ -5646,6 +5671,9 @@ input:checked + .prod-slider__color-text {
       .page-footer__map {
         width: auto;
         margin-bottom: 0; }
+        .page-header .field-search__input:focus {
+          position: static;
+          width: 100%; }
       .page-header__logo-col {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 41.66667%;
