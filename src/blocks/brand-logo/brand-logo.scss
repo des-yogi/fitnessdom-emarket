@@ -1,5 +1,23 @@
 .brand-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 10px;
+  box-shadow: $shadow;
+  border-radius: $border-radius;
+
+  &:hover,
+  &:focus {
+    box-shadow: $shadow--hover;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  img {
+    display: block;
+    @include object-fit(contain);
+  }
 }

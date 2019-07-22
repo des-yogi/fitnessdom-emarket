@@ -80,7 +80,9 @@
     "special-offer-banner": [],
     "prod-specification": [],
     "review-block": [],
-    "login-modal": []
+    "login-modal": [],
+    "main-slider": [],
+    "popular-slider": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

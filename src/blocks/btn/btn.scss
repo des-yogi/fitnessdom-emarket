@@ -110,7 +110,7 @@
     &:focus {
       outline: none;
       color: $white;
-      background-color: $color-success;
+      background-color: $color-success !important;
     }
 
     svg {

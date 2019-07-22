@@ -1,11 +1,13 @@
 .prod-card-full-list {
   display: none;
   position: relative;
+  border: 2px solid $border-light;
   border-radius: $border-radius;
 
   &:hover,
   &:focus {
-    box-shadow: $shadow--hover;
+    //box-shadow: $shadow--hover;
+    border-color: $main-color;
   }
 
   @media (min-width: $screen-md) {
@@ -13,7 +15,7 @@
         // padding: 15px 15px;
     margin-bottom: 20px;
     background-color: $white;
-    box-shadow: $shadow;
+    // box-shadow: $shadow;
   }
 
   $block-name:                &; // #{$block-name}__element
