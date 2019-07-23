@@ -177,6 +177,7 @@
     max-width: 100%;
     padding: 15px 0;
     box-shadow: none;
+    border: none;
 
     &:hover,
     &:active {
@@ -198,33 +199,35 @@
     }
 
     &--first {
-      position: relative;
 
-      &::before {
-        display: block;
-        content: "";
-        position: absolute;
-        z-index: 5;
-        bottom: -15px;
-        left: 50%;
-        transform: translateX( calc(-50% - 50px) );
-        width: 24px;
-        height: 24px;
-        //background-color: red;
-        background: svg-load('../blocks/prod-card-simple/bg-img/plus-big-icon.svg', fill=$color-danger);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+      #{$block-name}__col:first-child {
+        position: relative;
 
-        @media (min-width: $screen-md) {
-          transform: translateX( calc(-50% - 30px) );
-          /* left: calc(100% + 35px);
-          bottom: 50%; */
-        }
+        &::after {
+          display: block;
+          content: "";
+          position: absolute;
+          z-index: 5;
+          bottom: -25px;
+          left: 50%;
+          transform: translateX( calc(-50% ) );
+          width: 24px;
+          height: 24px;
+          //background-color: red;
+          background: svg-load('../blocks/prod-card-simple/bg-img/plus-big-icon.svg', fill=$color-danger);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
 
-        @media (min-width: $screen-xl) {
-          left: calc(100% + 35px);
-          bottom: 50%;
+          @media (min-width: $screen-md) {
+            bottom: -18px;
+          }
+
+          @media (min-width: $screen-xl) {
+            left: initial;
+            right: -230px;
+            bottom: 50%;
+          }
         }
       }
     }

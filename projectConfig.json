@@ -82,7 +82,11 @@
     "review-block": [],
     "login-modal": [],
     "main-slider": [],
-    "popular-slider": []
+    "popular-slider": [],
+    "brands-slider": [],
+    "special-offer-slider": [],
+    "last-from-blog-slider": [],
+    "double-tabs": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

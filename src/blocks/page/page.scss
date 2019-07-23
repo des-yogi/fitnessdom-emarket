@@ -478,3 +478,8 @@ a {
     background: svg-load('../blocks/prod-slider/bg-img/right-arrow-icon.svg', fill=$main-color);
   }
 }
+
+.swiper-pagination-current,
+.swiper-pagination-total {
+  font-weight: 700;
+}

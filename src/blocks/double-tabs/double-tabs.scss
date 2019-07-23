@@ -1,0 +1,10 @@
+.double-tabs {
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 80px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+}

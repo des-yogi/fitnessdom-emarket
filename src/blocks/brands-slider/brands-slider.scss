@@ -1,0 +1,25 @@
+.brands-slider {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: $shadow;
+
+  @media (min-width: $screen-md) {
+    padding: 5px 10px;
+    margin-top: 20px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+
+  .brand-logo {
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  &__slide {
+    box-sizing: border-box;
+  }
+}

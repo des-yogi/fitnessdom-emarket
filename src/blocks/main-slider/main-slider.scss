@@ -1,9 +1,144 @@
-// В этом файле должны быть стили для БЭМ-блока main-slider, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .main-slider {
+  margin-bottom: 15px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 20px;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  .swiper-pagination {
+
+  }
+
+  &__container {
+
+  }
+
+  &__row {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    //transform: none;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__slide {
+    box-sizing: border-box;
+  }
+
+  &__img {
+
+    img {
+      @include object-fit(cover);
+    }
+  }
+
+  &__title-col {
+    @include col-offset(xs, 3);
+    @include col(xs, 6);
+  }
+
+  &__title {
+    padding: 10px 0;
+    margin: 0;
+    font-family: $font-family--headings;
+    font-weight: 700;
+    //font-size: 12px;
+    font-size: calc(0.75rem + ((1vw - 3.2px) * 2.0833));
+    text-transform: uppercase;
+    color: $white;
+
+    @media (min-width: $screen-md) {
+      padding: 15px;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding: 20px;
+      font-size: 32px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 5px;
+    display: block;
+    // font-size: 10px;
+    font-size: calc(0.625rem + ((1vw - 3.2px) * 1.4583));
+
+    @media (min-width: $screen-md) {
+      margin-top: 10px;
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 24px;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    padding-top: 10px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 20px;
+    }
+
+    div {
+      position: static;
+    }
+  }
+
+  &__pagination {
+    flex: 1 1;
+    text-align: left;
+
+    span {
+      width: 20px;
+      height: 4px;
+      border-radius: 1px;
+
+      @media (min-width: $screen-md) {
+        width: 40px;
+      }
+    }
+
+    span + span {
+      margin-left: 15px;
+
+      @media (min-width: $screen-md) {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    flex-basis: 20%;
+
+    @media (min-width: $screen-sm) {
+      flex-basis: 15%;
+    }
+
+    & > div {
+      transform: none;
+
+      &:last-child {
+        margin-left: 15px;
+
+        @media (min-width: $screen-sm) {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
 }
