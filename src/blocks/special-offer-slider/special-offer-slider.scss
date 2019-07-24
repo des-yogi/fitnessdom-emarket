@@ -1,9 +1,85 @@
-// В этом файле должны быть стили для БЭМ-блока special-offer-slider, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .special-offer-slider {
+  margin-top: 40px;
+
+  @media (min-width: $screen-md) {
+    margin-top: 0;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  &__col-title {
+    @include col(xs, 9, $grid-columns, 30px);
+    @include col(sm, 8, $grid-columns, 30px);
+    @include col(md, 8);
+  }
+
+  &__col-controls {
+    @include col(xs, 3, $grid-columns, 30px);
+    @include col(sm, 4, $grid-columns, 30px);
+    @include col(md, 4);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: right;
+
+    @media (min-width: $screen-md) {
+      align-items: center;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 15px;
+    }
+  }
+
+  &__controls {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      position: static;
+      transform: none;
+    }
+
+    div + div {
+
+    }
+  }
+
+  &__prev {
+
+  }
+
+  &__next {
+    margin-left: 10px;
+
+    @media (min-width: $screen-sm) {
+      margin-left: 0;
+    }
+  }
+
+  &__pagination {
+    display: none;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+      margin-left: 15px;
+      margin-right: 15px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  &__container {
+
+  }
+
+  &__slide {
+    box-sizing: border-box;
+  }
 }

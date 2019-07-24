@@ -258,6 +258,14 @@
                 <a class="nav-link  tabs__link" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="false">Новинки</a>
               </li>
 
+              <li class="double-tabs__controls-wrapper">
+                <div class="double-tabs__controls">
+                  <div class="swiper-button-prev  double-tabs__prev-hits"></div>
+                  <div class="double-tabs__pagination"></div>
+                  <div class="swiper-button-next  double-tabs__next-hits"></div>
+                </div>
+              </li>
+
             </ul>
 
             <div class="tab-content  tabs__content-wrapper" id="hitsTabContent">
@@ -267,16 +275,373 @@
                 <div id="hits-slider" class="swiper-container  hits-slider__container">
 
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 4</div>
-                    <div class="swiper-slide">Slide 5</div>
-                    <div class="swiper-slide">Slide 6</div>
-                    <div class="swiper-slide">Slide 7</div>
-                    <div class="swiper-slide">Slide 8</div>
-                    <div class="swiper-slide">Slide 9</div>
-                    <div class="swiper-slide">Slide 10</div>
+
+                    <div class="swiper-slide">
+                      <article class="prod-card-full">
+                        <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full__img" title="Товар">
+                          <picture>
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+                            <!-- 360x360 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+                            <!-- 425x425 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+                            <!-- 530x530 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+                            <img class="swiper-lazy" data-src="img/prod-cart-img-1.jpg" alt="Фото Товара" width="410" height="410">
+                          </picture>
+                          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </a>
+
+                        <div class="prod-card-full__text">
+                          <h3 class="h4  prod-card-full__title  clamp">
+                            <a href="#" class="prod-card-full__link">Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black</a>
+                          </h3>
+                          <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+                        </div>
+
+                        <div class="prod-card-full__bottom">
+
+                          <div class="prod-card-full__price-block">
+                            <span class="prod-card-full__price-old">118 456</span>
+                            <span class="prod-card-full__price-new">137 456<sup>грн</sup></span>
+                          </div>
+
+                          <a href="#" class="prod-card-full__logo-link" title="Airex">
+                            <img src="img/airex.jpg" alt="Airex">
+                          </a>
+
+                          <button class="btn  btn--icon  btn--cart  prod-card-full__cart" type="button" title="Добавить в корзину">
+                            <svg width="24" height="24" role="img">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                        <button class="btn  btn--icon  prod-card-full__compare" type="button" title="Добавить к сравнению">
+                          <svg width="24" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                          </svg>
+                        </button>
+
+                        <button class="btn  btn--icon  prod-card-full__favorite" type="button" title="Добавить в избранное">
+                          <svg width="26" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                          </svg>
+                        </button>
+
+                        @@include('blocks/card-label/card-label.html')
+                      </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <article class="prod-card-full">
+                        <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full__img" title="Товар">
+                          <picture>
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+                            <!-- 360x360 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+                            <!-- 425x425 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+                            <!-- 530x530 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+                            <img class="swiper-lazy" data-src="img/prod-cart-img-1.jpg" alt="Фото Товара" width="410" height="410">
+                          </picture>
+                          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </a>
+
+                        <div class="prod-card-full__text">
+                          <h3 class="h4  prod-card-full__title  clamp">
+                            <a href="#" class="prod-card-full__link">Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black</a>
+                          </h3>
+                          <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+                        </div>
+
+                        <div class="prod-card-full__bottom">
+
+                          <div class="prod-card-full__price-block">
+                            <span class="prod-card-full__price-old">118 456</span>
+                            <span class="prod-card-full__price-new">137 456<sup>грн</sup></span>
+                          </div>
+
+                          <a href="#" class="prod-card-full__logo-link" title="Airex">
+                            <img src="img/airex.jpg" alt="Airex">
+                          </a>
+
+                          <button class="btn  btn--icon  btn--cart  prod-card-full__cart" type="button" title="Добавить в корзину">
+                            <svg width="24" height="24" role="img">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                        <button class="btn  btn--icon  prod-card-full__compare" type="button" title="Добавить к сравнению">
+                          <svg width="24" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                          </svg>
+                        </button>
+
+                        <button class="btn  btn--icon  prod-card-full__favorite" type="button" title="Добавить в избранное">
+                          <svg width="26" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                          </svg>
+                        </button>
+
+                        @@include('blocks/card-label/card-label.html')
+                      </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <article class="prod-card-full">
+                        <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full__img" title="Товар">
+                          <picture>
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+                            <!-- 360x360 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+                            <!-- 425x425 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+                            <!-- 530x530 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+                            <img class="swiper-lazy" data-src="img/prod-cart-img-1.jpg" alt="Фото Товара" width="410" height="410">
+                          </picture>
+                          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </a>
+
+                        <div class="prod-card-full__text">
+                          <h3 class="h4  prod-card-full__title  clamp">
+                            <a href="#" class="prod-card-full__link">Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black</a>
+                          </h3>
+                          <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+                        </div>
+
+                        <div class="prod-card-full__bottom">
+
+                          <div class="prod-card-full__price-block">
+                            <span class="prod-card-full__price-old">118 456</span>
+                            <span class="prod-card-full__price-new">137 456<sup>грн</sup></span>
+                          </div>
+
+                          <a href="#" class="prod-card-full__logo-link" title="Airex">
+                            <img src="img/airex.jpg" alt="Airex">
+                          </a>
+
+                          <button class="btn  btn--icon  btn--cart  prod-card-full__cart" type="button" title="Добавить в корзину">
+                            <svg width="24" height="24" role="img">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                        <button class="btn  btn--icon  prod-card-full__compare" type="button" title="Добавить к сравнению">
+                          <svg width="24" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                          </svg>
+                        </button>
+
+                        <button class="btn  btn--icon  prod-card-full__favorite" type="button" title="Добавить в избранное">
+                          <svg width="26" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                          </svg>
+                        </button>
+
+                        @@include('blocks/card-label/card-label.html')
+                      </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <article class="prod-card-full">
+                        <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full__img" title="Товар">
+                          <picture>
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+                            <!-- 360x360 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+                            <!-- 425x425 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+                            <!-- 530x530 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+                            <img class="swiper-lazy" data-src="img/prod-cart-img-1.jpg" alt="Фото Товара" width="410" height="410">
+                          </picture>
+                          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </a>
+
+                        <div class="prod-card-full__text">
+                          <h3 class="h4  prod-card-full__title  clamp">
+                            <a href="#" class="prod-card-full__link">Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black</a>
+                          </h3>
+                          <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+                        </div>
+
+                        <div class="prod-card-full__bottom">
+
+                          <div class="prod-card-full__price-block">
+                            <span class="prod-card-full__price-old">118 456</span>
+                            <span class="prod-card-full__price-new">137 456<sup>грн</sup></span>
+                          </div>
+
+                          <a href="#" class="prod-card-full__logo-link" title="Airex">
+                            <img src="img/airex.jpg" alt="Airex">
+                          </a>
+
+                          <button class="btn  btn--icon  btn--cart  prod-card-full__cart" type="button" title="Добавить в корзину">
+                            <svg width="24" height="24" role="img">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                        <button class="btn  btn--icon  prod-card-full__compare" type="button" title="Добавить к сравнению">
+                          <svg width="24" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                          </svg>
+                        </button>
+
+                        <button class="btn  btn--icon  prod-card-full__favorite" type="button" title="Добавить в избранное">
+                          <svg width="26" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                          </svg>
+                        </button>
+
+                        @@include('blocks/card-label/card-label.html')
+                      </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <article class="prod-card-full">
+                        <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full__img" title="Товар">
+                          <picture>
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+                            <!-- 360x360 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+                            <!-- 425x425 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+                            <!-- 530x530 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+                            <img class="swiper-lazy" data-src="img/prod-cart-img-1.jpg" alt="Фото Товара" width="410" height="410">
+                          </picture>
+                          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </a>
+
+                        <div class="prod-card-full__text">
+                          <h3 class="h4  prod-card-full__title  clamp">
+                            <a href="#" class="prod-card-full__link">Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black</a>
+                          </h3>
+                          <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+                        </div>
+
+                        <div class="prod-card-full__bottom">
+
+                          <div class="prod-card-full__price-block">
+                            <span class="prod-card-full__price-old">118 456</span>
+                            <span class="prod-card-full__price-new">137 456<sup>грн</sup></span>
+                          </div>
+
+                          <a href="#" class="prod-card-full__logo-link" title="Airex">
+                            <img src="img/airex.jpg" alt="Airex">
+                          </a>
+
+                          <button class="btn  btn--icon  btn--cart  prod-card-full__cart" type="button" title="Добавить в корзину">
+                            <svg width="24" height="24" role="img">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                        <button class="btn  btn--icon  prod-card-full__compare" type="button" title="Добавить к сравнению">
+                          <svg width="24" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                          </svg>
+                        </button>
+
+                        <button class="btn  btn--icon  prod-card-full__favorite" type="button" title="Добавить в избранное">
+                          <svg width="26" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                          </svg>
+                        </button>
+
+                        @@include('blocks/card-label/card-label.html')
+                      </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <article class="prod-card-full">
+                        <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full__img" title="Товар">
+                          <picture>
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+                            <!-- 360x360 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+                            <!-- 425x425 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+                            <!-- 530x530 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+                            <img class="swiper-lazy" data-src="img/prod-cart-img-1.jpg" alt="Фото Товара" width="410" height="410">
+                          </picture>
+                          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </a>
+
+                        <div class="prod-card-full__text">
+                          <h3 class="h4  prod-card-full__title  clamp">
+                            <a href="#" class="prod-card-full__link">Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black</a>
+                          </h3>
+                          <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+                        </div>
+
+                        <div class="prod-card-full__bottom">
+
+                          <div class="prod-card-full__price-block">
+                            <span class="prod-card-full__price-old">118 456</span>
+                            <span class="prod-card-full__price-new">137 456<sup>грн</sup></span>
+                          </div>
+
+                          <a href="#" class="prod-card-full__logo-link" title="Airex">
+                            <img src="img/airex.jpg" alt="Airex">
+                          </a>
+
+                          <button class="btn  btn--icon  btn--cart  prod-card-full__cart" type="button" title="Добавить в корзину">
+                            <svg width="24" height="24" role="img">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                        <button class="btn  btn--icon  prod-card-full__compare" type="button" title="Добавить к сравнению">
+                          <svg width="24" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                          </svg>
+                        </button>
+
+                        <button class="btn  btn--icon  prod-card-full__favorite" type="button" title="Добавить в избранное">
+                          <svg width="26" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                          </svg>
+                        </button>
+
+                        @@include('blocks/card-label/card-label.html')
+                      </article>
+                    </div>
+
                   </div>
 
                 </div>
@@ -288,16 +653,373 @@
                 <div id="news-slider" class="swiper-container  news-slider__container">
 
                   <div class="swiper-wrapper">
-                    <div class="swiper-slide">Slide 11</div>
-                    <div class="swiper-slide">Slide 22</div>
-                    <div class="swiper-slide">Slide 33</div>
-                    <div class="swiper-slide">Slide 44</div>
-                    <div class="swiper-slide">Slide 55</div>
-                    <div class="swiper-slide">Slide 66</div>
-                    <div class="swiper-slide">Slide 77</div>
-                    <div class="swiper-slide">Slide 88</div>
-                    <div class="swiper-slide">Slide 99</div>
-                    <div class="swiper-slide">Slide 00</div>
+
+                    <div class="swiper-slide">
+                      <article class="prod-card-full">
+                        <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full__img" title="Товар">
+                          <picture>
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+                            <!-- 360x360 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+                            <!-- 425x425 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+                            <!-- 530x530 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+                            <img class="swiper-lazy" data-src="img/prod-cart-img-1.jpg" alt="Фото Товара" width="410" height="410">
+                          </picture>
+                          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </a>
+
+                        <div class="prod-card-full__text">
+                          <h3 class="h4  prod-card-full__title  clamp">
+                            <a href="#" class="prod-card-full__link">Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black</a>
+                          </h3>
+                          <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+                        </div>
+
+                        <div class="prod-card-full__bottom">
+
+                          <div class="prod-card-full__price-block">
+                            <span class="prod-card-full__price-old">118 456</span>
+                            <span class="prod-card-full__price-new">137 456<sup>грн</sup></span>
+                          </div>
+
+                          <a href="#" class="prod-card-full__logo-link" title="Airex">
+                            <img src="img/airex.jpg" alt="Airex">
+                          </a>
+
+                          <button class="btn  btn--icon  btn--cart  prod-card-full__cart" type="button" title="Добавить в корзину">
+                            <svg width="24" height="24" role="img">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                        <button class="btn  btn--icon  prod-card-full__compare" type="button" title="Добавить к сравнению">
+                          <svg width="24" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                          </svg>
+                        </button>
+
+                        <button class="btn  btn--icon  prod-card-full__favorite" type="button" title="Добавить в избранное">
+                          <svg width="26" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                          </svg>
+                        </button>
+
+                        @@include('blocks/card-label/card-label.html')
+                      </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <article class="prod-card-full">
+                        <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full__img" title="Товар">
+                          <picture>
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+                            <!-- 360x360 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+                            <!-- 425x425 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+                            <!-- 530x530 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+                            <img class="swiper-lazy" data-src="img/prod-cart-img-1.jpg" alt="Фото Товара" width="410" height="410">
+                          </picture>
+                          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </a>
+
+                        <div class="prod-card-full__text">
+                          <h3 class="h4  prod-card-full__title  clamp">
+                            <a href="#" class="prod-card-full__link">Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black</a>
+                          </h3>
+                          <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+                        </div>
+
+                        <div class="prod-card-full__bottom">
+
+                          <div class="prod-card-full__price-block">
+                            <span class="prod-card-full__price-old">118 456</span>
+                            <span class="prod-card-full__price-new">137 456<sup>грн</sup></span>
+                          </div>
+
+                          <a href="#" class="prod-card-full__logo-link" title="Airex">
+                            <img src="img/airex.jpg" alt="Airex">
+                          </a>
+
+                          <button class="btn  btn--icon  btn--cart  prod-card-full__cart" type="button" title="Добавить в корзину">
+                            <svg width="24" height="24" role="img">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                        <button class="btn  btn--icon  prod-card-full__compare" type="button" title="Добавить к сравнению">
+                          <svg width="24" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                          </svg>
+                        </button>
+
+                        <button class="btn  btn--icon  prod-card-full__favorite" type="button" title="Добавить в избранное">
+                          <svg width="26" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                          </svg>
+                        </button>
+
+                        @@include('blocks/card-label/card-label.html')
+                      </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <article class="prod-card-full">
+                        <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full__img" title="Товар">
+                          <picture>
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+                            <!-- 360x360 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+                            <!-- 425x425 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+                            <!-- 530x530 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+                            <img class="swiper-lazy" data-src="img/prod-cart-img-1.jpg" alt="Фото Товара" width="410" height="410">
+                          </picture>
+                          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </a>
+
+                        <div class="prod-card-full__text">
+                          <h3 class="h4  prod-card-full__title  clamp">
+                            <a href="#" class="prod-card-full__link">Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black</a>
+                          </h3>
+                          <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+                        </div>
+
+                        <div class="prod-card-full__bottom">
+
+                          <div class="prod-card-full__price-block">
+                            <span class="prod-card-full__price-old">118 456</span>
+                            <span class="prod-card-full__price-new">137 456<sup>грн</sup></span>
+                          </div>
+
+                          <a href="#" class="prod-card-full__logo-link" title="Airex">
+                            <img src="img/airex.jpg" alt="Airex">
+                          </a>
+
+                          <button class="btn  btn--icon  btn--cart  prod-card-full__cart" type="button" title="Добавить в корзину">
+                            <svg width="24" height="24" role="img">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                        <button class="btn  btn--icon  prod-card-full__compare" type="button" title="Добавить к сравнению">
+                          <svg width="24" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                          </svg>
+                        </button>
+
+                        <button class="btn  btn--icon  prod-card-full__favorite" type="button" title="Добавить в избранное">
+                          <svg width="26" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                          </svg>
+                        </button>
+
+                        @@include('blocks/card-label/card-label.html')
+                      </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <article class="prod-card-full">
+                        <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full__img" title="Товар">
+                          <picture>
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+                            <!-- 360x360 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+                            <!-- 425x425 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+                            <!-- 530x530 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+                            <img class="swiper-lazy" data-src="img/prod-cart-img-1.jpg" alt="Фото Товара" width="410" height="410">
+                          </picture>
+                          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </a>
+
+                        <div class="prod-card-full__text">
+                          <h3 class="h4  prod-card-full__title  clamp">
+                            <a href="#" class="prod-card-full__link">Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black</a>
+                          </h3>
+                          <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+                        </div>
+
+                        <div class="prod-card-full__bottom">
+
+                          <div class="prod-card-full__price-block">
+                            <span class="prod-card-full__price-old">118 456</span>
+                            <span class="prod-card-full__price-new">137 456<sup>грн</sup></span>
+                          </div>
+
+                          <a href="#" class="prod-card-full__logo-link" title="Airex">
+                            <img src="img/airex.jpg" alt="Airex">
+                          </a>
+
+                          <button class="btn  btn--icon  btn--cart  prod-card-full__cart" type="button" title="Добавить в корзину">
+                            <svg width="24" height="24" role="img">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                        <button class="btn  btn--icon  prod-card-full__compare" type="button" title="Добавить к сравнению">
+                          <svg width="24" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                          </svg>
+                        </button>
+
+                        <button class="btn  btn--icon  prod-card-full__favorite" type="button" title="Добавить в избранное">
+                          <svg width="26" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                          </svg>
+                        </button>
+
+                        @@include('blocks/card-label/card-label.html')
+                      </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <article class="prod-card-full">
+                        <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full__img" title="Товар">
+                          <picture>
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+                            <!-- 360x360 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+                            <!-- 425x425 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+                            <!-- 530x530 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+                            <img class="swiper-lazy" data-src="img/prod-cart-img-1.jpg" alt="Фото Товара" width="410" height="410">
+                          </picture>
+                          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </a>
+
+                        <div class="prod-card-full__text">
+                          <h3 class="h4  prod-card-full__title  clamp">
+                            <a href="#" class="prod-card-full__link">Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black</a>
+                          </h3>
+                          <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+                        </div>
+
+                        <div class="prod-card-full__bottom">
+
+                          <div class="prod-card-full__price-block">
+                            <span class="prod-card-full__price-old">118 456</span>
+                            <span class="prod-card-full__price-new">137 456<sup>грн</sup></span>
+                          </div>
+
+                          <a href="#" class="prod-card-full__logo-link" title="Airex">
+                            <img src="img/airex.jpg" alt="Airex">
+                          </a>
+
+                          <button class="btn  btn--icon  btn--cart  prod-card-full__cart" type="button" title="Добавить в корзину">
+                            <svg width="24" height="24" role="img">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                        <button class="btn  btn--icon  prod-card-full__compare" type="button" title="Добавить к сравнению">
+                          <svg width="24" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                          </svg>
+                        </button>
+
+                        <button class="btn  btn--icon  prod-card-full__favorite" type="button" title="Добавить в избранное">
+                          <svg width="26" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                          </svg>
+                        </button>
+
+                        @@include('blocks/card-label/card-label.html')
+                      </article>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <article class="prod-card-full">
+                        <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full__img" title="Товар">
+                          <picture>
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
+                            <!-- 360x360 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 768px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 768px)">
+                            <!-- 425x425 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 480px)" type="image/webp">
+                            <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 480px)">
+                            <!-- 530x530 -->
+                            <source data-srcset="img/prod-cart-img-1.webp" type="image/webp">
+                            <img class="swiper-lazy" data-src="img/prod-cart-img-1.jpg" alt="Фото Товара" width="410" height="410">
+                          </picture>
+                          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                        </a>
+
+                        <div class="prod-card-full__text">
+                          <h3 class="h4  prod-card-full__title  clamp">
+                            <a href="#" class="prod-card-full__link">Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black Assault AirRunner Curve Black</a>
+                          </h3>
+                          <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+                        </div>
+
+                        <div class="prod-card-full__bottom">
+
+                          <div class="prod-card-full__price-block">
+                            <span class="prod-card-full__price-old">118 456</span>
+                            <span class="prod-card-full__price-new">137 456<sup>грн</sup></span>
+                          </div>
+
+                          <a href="#" class="prod-card-full__logo-link" title="Airex">
+                            <img src="img/airex.jpg" alt="Airex">
+                          </a>
+
+                          <button class="btn  btn--icon  btn--cart  prod-card-full__cart" type="button" title="Добавить в корзину">
+                            <svg width="24" height="24" role="img">
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                            </svg>
+                          </button>
+
+                        </div>
+
+                        <button class="btn  btn--icon  prod-card-full__compare" type="button" title="Добавить к сравнению">
+                          <svg width="24" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                          </svg>
+                        </button>
+
+                        <button class="btn  btn--icon  prod-card-full__favorite" type="button" title="Добавить в избранное">
+                          <svg width="26" height="24" role="img">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                          </svg>
+                        </button>
+
+                        @@include('blocks/card-label/card-label.html')
+                      </article>
+                    </div>
+
                   </div>
 
                 </div>
@@ -308,164 +1030,337 @@
 
           </div>
 
-          <div class="row">
-
-            <div class="col-1-2-3-4">
-              @@include('blocks/prod-card-full/prod-card-full.html')
-            </div>
-
-            <div class="col-1-2-3-4">
-              @@include('blocks/prod-card-full/prod-card-full.html')
-            </div>
-            <div class="col-1-2-3-4">
-              @@include('blocks/prod-card-full/prod-card-full.html')
-            </div>
-            <div class="col-1-2-3-4">
-              @@include('blocks/prod-card-full/prod-card-full.html')
-            </div>
-
-          </div>
-
-          @@include('blocks/prod-card-full-list/prod-card-full-list.html')
-
-          <div class="row">
-
-            <div class="col-1-2-3">
-              @@include('blocks/prod-card-simple/prod-card-simple.html')
-            </div>
-
-            <div class="col-1-2-3">
-              @@include('blocks/prod-card-simple/prod-card-simple.html')
-            </div>
-
-            <div class="col-1-2-3">
-              @@include('blocks/prod-card-simple/prod-card-simple.html')
-            </div>
-
-          </div>
-
-          @@include('blocks/days-special-offer/days-special-offer.html')
-
           @@include('blocks/gift-choice/gift-choice.html')
 
-          <div class="row">
-            <div class="col-1-2-3">
-              @@include('blocks/article-card/article-card.html')
-            </div>
-            <div class="col-1-2-3">
-              <article class="article-card">
-                <a href="#" class="embed-responsive  embed-responsive--4-3  article-card__img">
-                  <picture>
-                    <source srcset="img/article-card-img-1.webp" media="(min-width: 992px)" type="image/webp">
-                    <source srcset="img/article-card-img-1.jpg" media="(min-width: 992px)">
-                    <!-- 390x292 -->
-                    <source srcset="img/article-card-img-1.webp" media="(min-width: 768px)" type="image/webp">
-                    <source srcset="img/article-card-img-1.jpg" media="(min-width: 768px)">
-                    <!-- 465x349 -->
-                    <source srcset="img/article-card-img-1.webp" media="(min-width: 480px)" type="image/webp">
-                    <source srcset="img/article-card-img-1.jpg" media="(min-width: 480px)">
-                    <!-- 570x427 -->
-                    <source srcset="img/article-card-img-1.webp" type="image/webp">
-                    <img src="img/article-card-img-1.jpg" alt="Заголовок статьи" width="450" height="337">
-                  </picture>
-                </a>
-                <div class="article-card__text">
-                  <div class="publishedon">23 Cентября / 2019</div>
-                  <h4 class="article-card__title">
-                    <a href="#" class="article-card__link">Новое пополнение товара! Технологическая дорожка для ходьбы Новое пополнение товара! Технологическая дорожка для ходьбы</a>
-                  </h4>
-                </div>
-                <span class="label-top-left">Новости</span>
-              </article>
-            </div>
-          </div>
+          <section class="special-offer">
 
-          <article class="seo-text-article">
-            <h2>О компании (сео-текст)</h2>
-            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Буквенных своих, раз коварный бросил. Сих заманивший журчит за, текстами запятой рукопись, лучше собрал подзаголовок безопасную предупредила пояс предложения однажды своих использовало, рукописи, эта обеспечивает подпоясал. Составитель заголовок наш предложения маленькая, ручеек осталось домах имеет парадигматическая приставка единственное коварных, грамматики живет семантика, обеспечивает за пустился своих агенство.</p>
-            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись строчка ты, о скатился рукописи бросил. Вершину гор до взобравшись, эта, толку инициал.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quod deleniti numquam facere perferendis vero earum, est velit nisi ipsam. Eum non laboriosam repellendus necessitatibus dolor modi quas similique, quo ipsum doloremque corporis animi totam nihil, quam officia in, porro dolore quidem eius reprehenderit! Ratione facilis maiores recusandae harum officiis illum sit quae. Aspernatur officia labore ipsam rerum ipsa aut hic. Tenetur facilis quisquam, ducimus, vero dolores excepturi voluptates sequi quia nulla, repudiandae veritatis velit, cumque! A aspernatur, rerum quo sequi animi, cupiditate sunt ut! Quaerat nulla animi id, eius quos quas voluptatem voluptate veritatis quasi aliquam deleniti totam culpa veniam impedit molestias fugiat et perspiciatis doloribus sunt consectetur facilis dicta! Quasi dolor animi magnam, reprehenderit inventore commodi corporis, cupiditate nobis, eligendi eveniet, optio hic incidunt soluta.</p>
-          </article>
+            <div class="row">
 
-          <div class="row">
-            <div class="col-1-2-3-4">
-              @@include('blocks/catalog-card/catalog-card.html')
-            </div>
-            <div class="col-1-2-3-4">
-              <a href="#" class="catalog-card" aria-labelledby="catalog-card-item">
-                <div class="embed-responsive  embed-responsive--4-3  catalog-card__img">
-                  <picture>
-                    <source data-srcset="img/catalog-img-2.webp" media="(min-width: 1280px)" type="image/webp">
-                    <source data-srcset="img/catalog-img-2.jpg" media="(min-width: 1280px)">
-                    <!-- 285x214 -->
-                    <source data-srcset="img/catalog-img-2.webp" media="(min-width: 992px)" type="image/webp">
-                    <source data-srcset="img/catalog-img-2.jpg" media="(min-width: 992px)">
-                    <!-- 400x300 -->
-                    <source data-srcset="img/catalog-img-2.webp" media="(min-width: 768px)" type="image/webp">
-                    <source data-srcset="img/catalog-img-2.jpg" media="(min-width: 768px)">
-                    <!-- 465x349 -->
-                    <source data-srcset="img/catalog-img-2.webp" media="(min-width: 480px)" type="image/webp">
-                    <source data-srcset="img/catalog-img-2.jpg" media="(min-width: 480px)">
-                    <!-- 570x427 -->
-                    <source data-srcset="img/catalog-img-2.webp" type="image/webp">
-                    <img class="b-lazy" data-src="img/catalog-img-2.jpg" alt="Заголовок Каталога" width="450" height="337">
-                  </picture>
+              <div class="special-offer__col-day">
+                @@include('blocks/days-special-offer/days-special-offer.html')
+              </div>
+
+              <div class="special-offer__col-week">
+
+                <div class="special-offer-slider">
+
+                  <div class="row">
+
+                    <div class="special-offer-slider__col-title">
+                      <h2 class="special-offer-slider__title">Предложение недели</h2>
+                    </div>
+
+                    <div class="special-offer-slider__col-controls">
+                      <div class="special-offer-slider__controls">
+                        <div class="swiper-button-prev  special-offer-slider__prev"></div>
+                        <div class="special-offer-slider__pagination"></div>
+                        <div class="swiper-button-next  special-offer-slider__next"></div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="swiper-container  special-offer-slider__container">
+
+                    <div class="swiper-wrapper">
+
+                      <div class="swiper-slide  special-offer-slider__slide">
+                        <article class="prod-card-simple" tabindex="0">
+                          <div class="row">
+
+                            <div class="prod-card-simple__col">
+
+                              <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-simple__img" title="Товар">
+                                <picture>
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 1280px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 1280px)">
+                                  <!-- 175x175 -->
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 992px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 992px)">
+                                  <!-- 285x285 -->
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 768px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 768px)">
+                                  <!-- 210x210 -->
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 480px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 480px)">
+                                  <!-- 270x270 -->
+                                  <source srcset="img/prod-card-simple-1.webp" type="image/webp">
+                                  <img class="swiper-lazy" data-src="img/prod-card-simple-1.jpg" alt="Фото Товара" width="210" height="210">
+                                </picture>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                              </a>
+
+                            </div>
+
+                            <div class="prod-card-simple__col">
+                              <div class="prod-card-simple__text">
+                                <h3 class="h4  prod-card-simple__title  clamp_l">
+                                  <a href="#" class="">Polar M200 optical HR белый с металлической застежкой</a>
+                                </h3>
+                                <span class="prod-code">Арт: 052 424 425 2567</span>
+                                <div class="prod-card-simple__price-block">
+                                  <span class="prod-card-simple__price-old">8 456</span>
+                                  <span class="prod-card-simple__price-new">7 456<sup>грн.</sup></span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="prod-card-simple__controls">
+                              <button class="btn  btn--icon  prod-card-simple__compare" type="button" title="Добавить к сравнению">
+                                <svg width="24" height="24" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                                </svg>
+                              </button>
+                              <button class="btn  btn--icon  prod-card-simple__favorite" type="button" title="Добавить в избранное">
+                                <svg width="26" height="24" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                                </svg>
+                              </button>
+                              <button class="btn  btn--icon  btn--cart" type="button" title="Добавить в корзину">
+                                <svg width="24" height="24" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                                </svg>
+                              </button>
+                            </div>
+
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="swiper-slide  special-offer-slider__slide">
+                        <article class="prod-card-simple" tabindex="0">
+                          <div class="row">
+
+                            <div class="prod-card-simple__col">
+
+                              <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-simple__img" title="Товар">
+                                <picture>
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 1280px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 1280px)">
+                                  <!-- 175x175 -->
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 992px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 992px)">
+                                  <!-- 285x285 -->
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 768px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 768px)">
+                                  <!-- 210x210 -->
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 480px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 480px)">
+                                  <!-- 270x270 -->
+                                  <source srcset="img/prod-card-simple-1.webp" type="image/webp">
+                                  <img class="swiper-lazy" data-src="img/prod-card-simple-1.jpg" alt="Фото Товара" width="210" height="210">
+                                </picture>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                              </a>
+
+                            </div>
+
+                            <div class="prod-card-simple__col">
+                              <div class="prod-card-simple__text">
+                                <h3 class="h4  prod-card-simple__title  clamp_l">
+                                  <a href="#" class="">Polar M200 optical HR белый с металлической застежкой</a>
+                                </h3>
+                                <span class="prod-code">Арт: 052 424 425 2567</span>
+                                <div class="prod-card-simple__price-block">
+                                  <span class="prod-card-simple__price-old">8 456</span>
+                                  <span class="prod-card-simple__price-new">7 456<sup>грн.</sup></span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="prod-card-simple__controls">
+                              <button class="btn  btn--icon  prod-card-simple__compare" type="button" title="Добавить к сравнению">
+                                <svg width="24" height="24" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                                </svg>
+                              </button>
+                              <button class="btn  btn--icon  prod-card-simple__favorite" type="button" title="Добавить в избранное">
+                                <svg width="26" height="24" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                                </svg>
+                              </button>
+                              <button class="btn  btn--icon  btn--cart" type="button" title="Добавить в корзину">
+                                <svg width="24" height="24" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                                </svg>
+                              </button>
+                            </div>
+
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="swiper-slide  special-offer-slider__slide">
+                        <article class="prod-card-simple" tabindex="0">
+                          <div class="row">
+
+                            <div class="prod-card-simple__col">
+
+                              <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-simple__img" title="Товар">
+                                <picture>
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 1280px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 1280px)">
+                                  <!-- 175x175 -->
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 992px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 992px)">
+                                  <!-- 285x285 -->
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 768px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 768px)">
+                                  <!-- 210x210 -->
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 480px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 480px)">
+                                  <!-- 270x270 -->
+                                  <source srcset="img/prod-card-simple-1.webp" type="image/webp">
+                                  <img class="swiper-lazy" data-src="img/prod-card-simple-1.jpg" alt="Фото Товара" width="210" height="210">
+                                </picture>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                              </a>
+
+                            </div>
+
+                            <div class="prod-card-simple__col">
+                              <div class="prod-card-simple__text">
+                                <h3 class="h4  prod-card-simple__title  clamp_l">
+                                  <a href="#" class="">Polar M200 optical HR белый с металлической застежкой</a>
+                                </h3>
+                                <span class="prod-code">Арт: 052 424 425 2567</span>
+                                <div class="prod-card-simple__price-block">
+                                  <span class="prod-card-simple__price-old">8 456</span>
+                                  <span class="prod-card-simple__price-new">7 456<sup>грн.</sup></span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="prod-card-simple__controls">
+                              <button class="btn  btn--icon  prod-card-simple__compare" type="button" title="Добавить к сравнению">
+                                <svg width="24" height="24" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                                </svg>
+                              </button>
+                              <button class="btn  btn--icon  prod-card-simple__favorite" type="button" title="Добавить в избранное">
+                                <svg width="26" height="24" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                                </svg>
+                              </button>
+                              <button class="btn  btn--icon  btn--cart" type="button" title="Добавить в корзину">
+                                <svg width="24" height="24" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                                </svg>
+                              </button>
+                            </div>
+
+                          </div>
+                        </article>
+                      </div>
+
+                      <div class="swiper-slide  special-offer-slider__slide">
+                        <article class="prod-card-simple" tabindex="0">
+                          <div class="row">
+
+                            <div class="prod-card-simple__col">
+
+                              <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-simple__img" title="Товар">
+                                <picture>
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 1280px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 1280px)">
+                                  <!-- 175x175 -->
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 992px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 992px)">
+                                  <!-- 285x285 -->
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 768px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 768px)">
+                                  <!-- 210x210 -->
+                                  <source data-srcset="img/prod-card-simple-1.webp" media="(min-width: 480px)" type="image/webp">
+                                  <source data-srcset="img/prod-card-simple-1.jpg" media="(min-width: 480px)">
+                                  <!-- 270x270 -->
+                                  <source srcset="img/prod-card-simple-1.webp" type="image/webp">
+                                  <img class="swiper-lazy" data-src="img/prod-card-simple-1.jpg" alt="Фото Товара" width="210" height="210">
+                                </picture>
+                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                              </a>
+
+                            </div>
+
+                            <div class="prod-card-simple__col">
+                              <div class="prod-card-simple__text">
+                                <h3 class="h4  prod-card-simple__title  clamp_l">
+                                  <a href="#" class="">Polar M200 optical HR белый с металлической застежкой</a>
+                                </h3>
+                                <span class="prod-code">Арт: 052 424 425 2567</span>
+                                <div class="prod-card-simple__price-block">
+                                  <span class="prod-card-simple__price-old">8 456</span>
+                                  <span class="prod-card-simple__price-new">7 456<sup>грн.</sup></span>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="prod-card-simple__controls">
+                              <button class="btn  btn--icon  prod-card-simple__compare" type="button" title="Добавить к сравнению">
+                                <svg width="24" height="24" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                                </svg>
+                              </button>
+                              <button class="btn  btn--icon  prod-card-simple__favorite" type="button" title="Добавить в избранное">
+                                <svg width="26" height="24" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                                </svg>
+                              </button>
+                              <button class="btn  btn--icon  btn--cart" type="button" title="Добавить в корзину">
+                                <svg width="24" height="24" role="img">
+                                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                                </svg>
+                              </button>
+                            </div>
+
+                          </div>
+                        </article>
+                      </div>
+
+                    </div>
+
+                  </div>
+
                 </div>
-                <h4 id="catalog-card-item" class="catalog-card__title">Коврики гимнастические  особенные</h4>
-              </a>
+
+              </div>
+
             </div>
-            <div class="col-1-2-3-4">
-              <a href="#" class="catalog-card" aria-labelledby="catalog-card-item">
-                <div class="embed-responsive  embed-responsive--4-3  catalog-card__img">
-                  <picture>
-                    <source data-srcset="img/catalog-img-3.webp" media="(min-width: 1280px)" type="image/webp">
-                    <source data-srcset="img/catalog-img-3.jpg" media="(min-width: 1280px)">
-                    <!-- 285x214 -->
-                    <source data-srcset="img/catalog-img-3.webp" media="(min-width: 992px)" type="image/webp">
-                    <source data-srcset="img/catalog-img-3.jpg" media="(min-width: 992px)">
-                    <!-- 400x300 -->
-                    <source data-srcset="img/catalog-img-3.webp" media="(min-width: 768px)" type="image/webp">
-                    <source data-srcset="img/catalog-img-3.jpg" media="(min-width: 768px)">
-                    <!-- 465x349 -->
-                    <source data-srcset="img/catalog-img-3.webp" media="(min-width: 480px)" type="image/webp">
-                    <source data-srcset="img/catalog-img-3.jpg" media="(min-width: 480px)">
-                    <!-- 570x427 -->
-                    <source data-srcset="img/catalog-img-3.webp" type="image/webp">
-                    <img class="b-lazy" data-src="img/catalog-img-3.jpg" alt="Заголовок Каталога" width="450" height="337">
-                  </picture>
+
+          </section>
+
+          <section class="news-block-slider">
+
+            <div class="row  title-wrapper-full">
+              <div class="title-wrapper-full__col-title">
+                <h2 class="">Последнее из блога</h2>
+              </div>
+
+              <div class="title-wrapper-full__col-controls">
+                <div class="title-wrapper-full__controls">
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination">1/12</div>
+                  <div class="swiper-button-next"></div>
                 </div>
-                <h4 id="catalog-card-item" class="catalog-card__title">Коврики гимнастические</h4>
-              </a>
+              </div>
             </div>
-            <div class="col-1-2-3-4">
-              <a href="#" class="catalog-card" aria-labelledby="catalog-card-item">
-                <div class="embed-responsive  embed-responsive--4-3  catalog-card__img">
-                  <picture>
-                    <source data-srcset="img/catalog-img-4.webp" media="(min-width: 1280px)" type="image/webp">
-                    <source data-srcset="img/catalog-img-4.jpg" media="(min-width: 1280px)">
-                    <!-- 285x214 -->
-                    <source data-srcset="img/catalog-img-4.webp" media="(min-width: 992px)" type="image/webp">
-                    <source data-srcset="img/catalog-img-4.jpg" media="(min-width: 992px)">
-                    <!-- 400x300 -->
-                    <source data-srcset="img/catalog-img-4.webp" media="(min-width: 768px)" type="image/webp">
-                    <source data-srcset="img/catalog-img-4.jpg" media="(min-width: 768px)">
-                    <!-- 465x349 -->
-                    <source data-srcset="img/catalog-img-4.webp" media="(min-width: 480px)" type="image/webp">
-                    <source data-srcset="img/catalog-img-4.jpg" media="(min-width: 480px)">
-                    <!-- 570x427 -->
-                    <source data-srcset="img/catalog-img-4.webp" type="image/webp">
-                    <img class="b-lazy" data-src="img/catalog-img-4.jpg" alt="Заголовок Каталога" width="450" height="337">
-                  </picture>
-                </div>
-                <h4 id="catalog-card-item" class="catalog-card__title">Коврики</h4>
-              </a>
-            </div>
-          </div>
+
+
+
+          </section>
 
         </div>
 
         <div class="container  container--bg-top">
           @@include('blocks/instagram-block/instagram-block.html')
+        </div>
+
+        <div class="container">
+          <article class="seo-text-article">
+            <h2 class="seo-text-article__title">О компании (сео-текст)</h2>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Буквенных своих, раз коварный бросил. Сих заманивший журчит за, текстами запятой рукопись, лучше собрал подзаголовок безопасную предупредила пояс предложения однажды своих использовало, рукописи, эта обеспечивает подпоясал. Составитель заголовок наш предложения маленькая, ручеек осталось домах имеет парадигматическая приставка единственное коварных, грамматики живет семантика, обеспечивает за пустился своих агенство.</p>
+            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись строчка ты, о скатился рукописи бросил. Вершину гор до взобравшись, эта, толку инициал.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quod deleniti numquam facere perferendis vero earum, est velit nisi ipsam. Eum non laboriosam repellendus necessitatibus dolor modi quas similique, quo ipsum doloremque corporis animi totam nihil, quam officia in, porro dolore quidem eius reprehenderit! Ratione facilis maiores recusandae harum officiis illum sit quae. Aspernatur officia labore ipsam rerum ipsa aut hic. Tenetur facilis quisquam, ducimus, vero dolores excepturi voluptates sequi quia nulla, repudiandae veritatis velit, cumque! A aspernatur, rerum quo sequi animi, cupiditate sunt ut! Quaerat nulla animi id, eius quos quas voluptatem voluptate veritatis quasi aliquam deleniti totam culpa veniam impedit molestias fugiat et perspiciatis doloribus sunt consectetur facilis dicta! Quasi dolor animi magnam, reprehenderit inventore commodi corporis, cupiditate nobis, eligendi eveniet, optio hic incidunt soluta.</p>
+          </article>
         </div>
 
       </main>

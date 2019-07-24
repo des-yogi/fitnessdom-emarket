@@ -86,7 +86,9 @@
     "brands-slider": [],
     "special-offer-slider": [],
     "last-from-blog-slider": [],
-    "double-tabs": []
+    "double-tabs": [],
+    "special-offer": [],
+    "news-block-slider": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -1,6 +1,14 @@
 .gift-choice {
   margin: 20px 0;
 
+  @media (min-width: $screen-md) {
+    margin: 40px 0;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin: 80px 0;
+  }
+
   $block-name:                &; // #{$block-name}__element
 
   .field-select__select {
