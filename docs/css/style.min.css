@@ -4799,6 +4799,8 @@ input:checked + .prod-slider__color-text {
     margin: 0; }
 .review-article__body p + p {
     margin-top: 0.5em; }
+.seo-text-article {
+  margin-bottom: 40px; }
 .socials {
   display: -webkit-box;
   display: -ms-flexbox;
