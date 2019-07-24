@@ -3470,12 +3470,12 @@ a[href^="tel:"] {
     background-color: #5499f0;
     pointer-events: none; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-07664759646289128.png);
+  background-image: url(../img/sprite-09292722599234455.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-07664759646289128.png);
+  background-image: url(../img/sprite-09292722599234455.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -5662,9 +5662,9 @@ input:checked + .prod-slider__color-text {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     text-align: right; }
 .special-offer-slider__title {
     margin: 0;
@@ -6528,6 +6528,10 @@ input:checked + .prod-slider__color-text {
         max-width: 33.33333%;
         padding-left: 10px;
         padding-right: 10px; }
+      .special-offer-slider__col-controls {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
       .special-offer-slider__title {
         padding-top: 15px; }
       .double-tabs .tabs__links::before {
