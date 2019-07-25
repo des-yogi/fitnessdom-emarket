@@ -4,9 +4,15 @@
   flex-direction: column;
   height: 100%;
   background-color: $white;
-  box-shadow: $shadow;
+  // box-shadow: $shadow;
   border-radius: $border-radius;
+  border: 2px solid $border-light;
   overflow: hidden;
+
+  &:hover,
+  &:focus {
+    border-color: $main-color;
+  }
 
   $block-name:                &; // #{$block-name}__element
 

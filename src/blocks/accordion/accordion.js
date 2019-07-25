@@ -307,13 +307,15 @@ Math.easeInOutQuad = function (t, b, c, d) {
 
   Accordion.prototype.closeSiblings = function(item) {
     //if only one accordion can be open -> search if there's another one open
-    var index = UtilAccordion.getIndexInArray(this.items, item);
+
+    /*var index = UtilAccordion.getIndexInArray(this.items, item);
     for( var i = 0; i < this.items.length; i++) {
       if(UtilAccordion.hasClass(this.items[i], this.showClass) && i != index) {
         this.animateAccordion(this.items[i].getElementsByClassName('js-accordion__trigger')[0], true);
         return false;
       }
-    }
+    }*/
+    return false;
   };
 
   //initialize the Accordion objects

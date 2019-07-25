@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var populatSlider = new Swiper('.popular-slider__container', {
       spaceBetween: 20,
       grabCursor: true,
+      autoHeight: true,
       breakpointsInverse: true,
       lazy: true,
       breakpoints: {

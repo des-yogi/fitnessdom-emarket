@@ -349,6 +349,65 @@ a {
   margin-bottom: 20px;
 }
 
+.aside-col {
+  @include col(xs, 12, $grid-columns, 30px);
+  @include col(md, 12);
+  @include col(lg, 4);
+  @include col(xl, 3);
+  margin-bottom: 20px;
+
+  &--right {
+    margin-bottom: 0;
+  }
+}
+
+.content-col {
+  @include col(xs, 12, $grid-columns, 30px);
+  @include col(md, 12);
+  @include col(lg, 8);
+  @include col(xl, 9);
+
+  &--fullwidth {
+    @include col(lg, 12);
+    @include col(xl, 12);
+    margin-bottom: 15px;
+    background-color: $white;
+    box-shadow: $shadow;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 25px;
+      background-color: rgba(255, 255, 255, 0);
+      box-shadow: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.content-item-col {
+  @include col(xs, 12, $grid-columns, 30px);
+  @include col(md, 6);
+  @include col(lg, 6);
+  @include col(xl, 4);
+  margin-bottom: 15px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 20px;
+  }
+
+  &--fullwidth {
+
+    @media (min-width: $screen-xl) {
+      flex-basis: 100% !important;
+      //width: 100%;
+      max-width: none !important;
+    }
+  }
+}
+
+
 /* &__element {
   @include col(); // малые ширины — 12 из 12, промежутки по умолчанию
   @include col(sm, 6, $grid-columns, 10px);  // SM (480 по умолчанию) — 6 из 12, промежутки 10px
@@ -489,6 +548,7 @@ a {
 }
 
 .title-wrapper-full {
+  margin-bottom: 20px;
 
   h2,
   .h2 {
@@ -509,6 +569,7 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: auto;
 
     div {
       position: static;
@@ -529,6 +590,8 @@ a {
 
       @media (min-width: $screen-sm) {
         display: block;
+        width: auto;
+        font-weight: 700;
         margin-left: 15px;
         margin-right: 15px;
       }

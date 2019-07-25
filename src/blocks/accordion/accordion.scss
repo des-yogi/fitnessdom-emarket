@@ -18,11 +18,11 @@ $accordion-icon-stroke-width: 2px !default;
 
 .accordion__header {
   // @include reset;
-  padding: 24px 24px;
+  padding: 15px 15px;
   width: 100%;
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
+  align-items: baseline;
   justify-content: flex-end;
   font-family: inherit;
   color: $title-color;
@@ -33,30 +33,47 @@ $accordion-icon-stroke-width: 2px !default;
 
   &:hover {
     color: $main-color;
+
+    .accordion__header-icon {
+      color: currentColor;
+    }
   }
 }
 
 .accordion__header-title {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
-  flex: 1 1;
-  font-size: 18px;
-  font-weight: 500;
+  width: 100%;
+  font-size: 16px;
+  font-family: $font-family--headings;
+  font-weight: 700;
   text-align: left;
 }
 
 .accordion__header-units {
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: 40px;
+  margin-left: auto;
   font-size: 14px;
+  text-align: right;
   color: $text-muted;
 }
 
 .accordion__header-icon  {
   float: right; //flex fallback
   flex-shrink: 0;
-  margin-right: 20px;
+  margin-right: 15px;
   display: none;
+  color: $icon-color;
+  transition: transform 0.2s ease-out;
+
+  svg {
+    display: block;
+    fill: currentColor;
+  }
 }
 
 .accordion__header-icon i { // arrow icon
@@ -89,7 +106,7 @@ $accordion-icon-stroke-width: 2px !default;
   }
 }
 
-.accordion__item--is-open > .accordion__header > .accordion__header-icon i {
+/* .accordion__item--is-open > .accordion__header > .accordion__header-icon i {
   &::before {
     transform: translateY(-80%) rotate(-135deg);
   }
@@ -97,7 +114,11 @@ $accordion-icon-stroke-width: 2px !default;
   &::after {
     transform: translateY(-80%) rotate(135deg);
   }
+} */
+.accordion__item--is-open > .accordion__header > .accordion__header-icon {
+  transform: translateY(-1px) rotate(180deg);
 }
+
 
 .accordion__header-icon .icon { // replace arrow with custom icon
   width: $accordion-icon-size;
@@ -111,8 +132,8 @@ $accordion-icon-stroke-width: 2px !default;
   &--range {
     min-height: 35px;
     padding-top: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -126,6 +147,8 @@ $accordion-icon-stroke-width: 2px !default;
     overflow: hidden;
     will-change: height;
     transform: translateZ(0px);
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .accordion__item--is-open > .accordion__panel {

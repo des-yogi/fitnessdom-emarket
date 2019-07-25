@@ -326,13 +326,19 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
   &__range-inputs {
     display: flex;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
+
+    .btn {
+      padding: 7px 13px;
+    }
   }
 
   &__input {
-    width: calc(50% - 10px);
+    //width: calc(33.33% - 10px);
+    flex: 1 1;
+    width: 35%;
     padding: 12px;
     font-family: inherit;
     font-size: 1em;
@@ -340,12 +346,27 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     border: none;
     border-radius: $border-radius;
 
+    & + & {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
     @media (min-width: $screen-lg) {
-      width: calc(50% - 5px);
+      //width: calc(33.33% - 5px);
+      width: 35%;
     }
 
     @media (min-width: 1200px) {
-      width: calc(50% - 10px);
+      //width: calc(33.33% - 10px);
+      width: 35%;
     }
+  }
+
+  &--simple {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 3px;
+    box-shadow: none;
   }
 }

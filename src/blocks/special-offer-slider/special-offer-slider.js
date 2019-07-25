@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
       slidesPerView: 2,
       slidesPerColumn: 2,
       spaceBetween: 20,
+      //autoHeight: true,
       //loop: true,
       observer: true,
       observeParents: true,

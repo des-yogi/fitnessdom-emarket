@@ -88,7 +88,10 @@
     "last-from-blog-slider": [],
     "double-tabs": [],
     "special-offer": [],
-    "news-block-slider": []
+    "news-block-slider": [],
+    "filter-controls-block": [],
+    "aside-nav": [],
+    "prod-filters-block": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -1,0 +1,31 @@
+.prod-filters-block {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__range-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    margin-bottom: 30px;
+
+    input[type=number] {
+      @include field-text;
+      width: 40%;
+      min-height: 1.35em;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-align: center;
+      border: none;
+      border-bottom: 2px solid $icon-color;
+    }
+  }
+
+  &__submit-wrapper {
+    padding: 20px 15px;
+
+    .btn {
+      width: 100%;
+    }
+  }
+}

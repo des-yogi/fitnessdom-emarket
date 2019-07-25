@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var newsSlider = new Swiper('#news-slider', {
       slidesPerView: 1,
       spaceBetween: 20,
+      autoHeight: true,
       //loop: true,
       observer: true,
       observeParents: true,
@@ -40,6 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var hitsSlider = new Swiper('#hits-slider', {
       slidesPerView: 1,
       spaceBetween: 20,
+      autoHeight: true,
       //loop: true,
       observer: true,
       observeParents: true,
