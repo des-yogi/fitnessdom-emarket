@@ -4359,11 +4359,6 @@ input:checked ~ .field-toggler__name-text:after {
   width: 50px;
   height: 50px;
   overflow: scroll; }
-/*! nouislider - 14.0.2 - 6/28/2019 */
-/* Functional styling;
- * These styles are required for noUiSlider to function.
- * You don't need to change these rules to apply your design.
- */
 .noUi-target,
 .noUi-target * {
   -ms-touch-action: none;
@@ -4639,14 +4634,11 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
             justify-content: space-between;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
-            align-items: baseline; }
+            align-items: baseline;
+    width: 100%; }
 .nouislider__range-inputs .btn {
       padding: 7px 13px; }
 .nouislider__input {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1;
-            flex: 1 1;
-    width: 35%;
     padding: 12px;
     font-family: inherit;
     font-size: 1em;
@@ -5357,12 +5349,12 @@ a[href^="tel:"] {
     background-color: #5499f0;
     pointer-events: none; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-09694639108854946.png);
+  background-image: url(../img/sprite-09842606816398236.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-09694639108854946.png);
+  background-image: url(../img/sprite-09842606816398236.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -6174,6 +6166,14 @@ a:hover, a:focus {
         background-size: cover; }
 .gift-choice {
   margin: 20px 0; }
+.gift-choice .nouislider__input {
+    width: calc(50% - 10px) !important;
+    margin: 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; }
+.gift-choice .nouislider__input:last-child {
+      margin-left: 20px; }
 .gift-choice .field-select__select {
     padding-left: 15px;
     padding-right: 15px;
