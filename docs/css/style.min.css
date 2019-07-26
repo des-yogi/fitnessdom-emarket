@@ -4644,7 +4644,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     font-size: 1em;
     background-color: #f8f8f8;
     border: none;
-    border-radius: 5px; }
+    border-radius: 5px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none; }
 .nouislider__input + .nouislider__input {
       margin-left: 10px;
       margin-right: 10px; }
@@ -6168,10 +6171,7 @@ a:hover, a:focus {
   margin: 20px 0; }
 .gift-choice .nouislider__input {
     width: calc(50% - 10px) !important;
-    margin: 0;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none; }
+    margin: 0; }
 .gift-choice .nouislider__input:last-child {
       margin-left: 20px; }
 .gift-choice .field-select__select {
