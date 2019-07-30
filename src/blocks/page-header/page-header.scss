@@ -43,7 +43,7 @@
     @include col(md, 7);
     @include col(xl, 9);
     padding-left: 15px;
-    background-image: linear-gradient(to right, $white, $white 75%, $main-color 75%);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0) 75%, $main-color 75%);
 
     @media (min-width: $screen-md) {
       background-image: none;

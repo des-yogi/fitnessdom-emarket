@@ -1,9 +1,15 @@
-// В этом файле должны быть стили для БЭМ-блока seo-text-article, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .seo-text-article {
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-xl) {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  &__title {
+    margin-top: 0;
+  }
 }

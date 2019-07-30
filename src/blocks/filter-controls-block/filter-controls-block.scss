@@ -1,0 +1,85 @@
+.filter-controls-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+
+  $block-name:                &; // #{$block-name}__element
+
+  .field-select__select-wrap {
+
+    @media (min-width: $screen-xl) {
+      flex: 1 1;
+      max-width: none;
+    }
+  }
+
+  .field-select--sort {
+
+    @media (min-width: $screen-xl) {
+      justify-content: space-between;
+    }
+  }
+
+  .field-select__name {
+
+    @media (min-width: $screen-xl) {
+      flex-basis: auto;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__sort {
+    width: 100%;
+
+    @media (min-width: $screen-xl) {
+      width: 65.5%;
+    }
+  }
+
+  &__display {
+    display: none;
+
+
+    @media (min-width: $screen-xl) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      box-shadow: $shadow;
+    }
+  }
+
+  &__btn-view {
+    padding: 10px 15px;
+    color: $icon-color;
+    background-color: $white;
+
+    &:hover,
+    &:focus {
+      // background-color: $main-color;
+      color: $main-color;
+      outline: none;
+
+      svg {
+        fill: currentColor;
+      }
+    }
+
+    svg {
+      fill: currentColor;
+    }
+
+    &--selected {
+      //background-color: $main-color;
+      color: $main-color;
+      user-select: none;
+      pointer-events: none;
+
+      svg {
+        fill: currentColor;
+      }
+    }
+  }
+}

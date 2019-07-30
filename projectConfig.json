@@ -80,7 +80,18 @@
     "special-offer-banner": [],
     "prod-specification": [],
     "review-block": [],
-    "login-modal": []
+    "login-modal": [],
+    "main-slider": [],
+    "popular-slider": [],
+    "brands-slider": [],
+    "special-offer-slider": [],
+    "last-from-blog-slider": [],
+    "double-tabs": [],
+    "special-offer": [],
+    "news-block-slider": [],
+    "filter-controls-block": [],
+    "aside-nav": [],
+    "prod-filters-block": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

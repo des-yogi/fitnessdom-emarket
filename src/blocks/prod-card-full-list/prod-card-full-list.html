@@ -9,7 +9,7 @@
   <div class="row">
 
     <div class="prod-card-full-list__img-col">
-      <a href="#" class="embed-responsive  embed-responsive--1-1  prod-card-full-list__img" title="Товар">
+      <a href="product-page.html" class="embed-responsive  embed-responsive--1-1  prod-card-full-list__img" title="Товар">
         <picture>
           <source data-srcset="img/prod-cart-img-1.webp" media="(min-width: 992px)" type="image/webp">
           <source data-srcset="img/prod-cart-img-1.jpg" media="(min-width: 992px)">
@@ -25,73 +25,99 @@
 
     <div class="prod-card-full-list__text-col">
       <div class="prod-card-full-list__text">
+
         <h3 class="prod-card-full-list__title">
-          <a href="#">Assault AirRunner Curve Black</a>
+          <a href="product-page.html">Assault AirRunner Curve Black</a>
         </h3>
-        <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
-        <dl class="prod-card-full-list__list">
-          <div class="prod-card-full-list__list-inner">
-            <dt class="prod-card-full-list__name">Класс:</dt>
-            <dd class="prod-card-full-list__value">Профессиональный</dd>
+
+        <div class="row">
+
+          <div class="prod-card-full-list__inner-left-col">
+
+            <div class="prod-card-full-list__text-inner">
+              <span class="prod-code">Арт: <span>052 424 425 2567</span></span>
+              <dl class="prod-card-full-list__list">
+                <div class="prod-card-full-list__list-inner">
+                  <dt class="prod-card-full-list__name">Класс:</dt>
+                  <dd class="prod-card-full-list__value">Профессиональный</dd>
+                </div>
+                <div class="prod-card-full-list__list-inner">
+                  <dt class="prod-card-full-list__name">Тип:</dt>
+                  <dd class="prod-card-full-list__value">Механические</dd>
+                </div>
+                <div class="prod-card-full-list__list-inner">
+                  <dt class="prod-card-full-list__name">Максимальная скорость:</dt>
+                  <dd class="prod-card-full-list__value">16 км/ч</dd>
+                </div>
+                <div class="prod-card-full-list__list-inner">
+                  <dt class="prod-card-full-list__name">Регулировка угла наклона:</dt>
+                  <dd class="prod-card-full-list__value">Механическая</dd>
+                </div>
+                <div class="prod-card-full-list__list-inner">
+                  <dt class="prod-card-full-list__name">Максимальный вес пользователя:</dt>
+                  <dd class="prod-card-full-list__value">110 кг</dd>
+                </div>
+                <div class="prod-card-full-list__list-inner">
+                  <dt class="prod-card-full-list__name">Страна производитель:</dt>
+                  <dd class="prod-card-full-list__value">США</dd>
+                </div>
+              </dl>
+            </div>
+
           </div>
-          <div class="prod-card-full-list__list-inner">
-            <dt class="prod-card-full-list__name">Тип:</dt>
-            <dd class="prod-card-full-list__value">Механические</dd>
+
+          <div class="prod-card-full-list__inner-right-col">
+
+            <div class="prod-card-full-list__rate-inner">
+
+              <div class="prod-card-full-list__rate">
+
+                <span class="prod-card-full-list__availability">В наличии</span>
+                <a href="#" class="prod-card-full-list__review-link"><span>3</span> отзыва</a>
+                @@include('../../blocks/star-rating-marks/star-rating-marks.html')
+              </div>
+
+            </div>
+
           </div>
-          <div class="prod-card-full-list__list-inner">
-            <dt class="prod-card-full-list__name">Максимальная скорость:</dt>
-            <dd class="prod-card-full-list__value">16 км/ч</dd>
-          </div>
-          <div class="prod-card-full-list__list-inner">
-            <dt class="prod-card-full-list__name">Регулировка угла наклона:</dt>
-            <dd class="prod-card-full-list__value">Механическая</dd>
-          </div>
-          <div class="prod-card-full-list__list-inner">
-            <dt class="prod-card-full-list__name">Максимальный вес пользователя:</dt>
-            <dd class="prod-card-full-list__value">110 кг</dd>
-          </div>
-          <div class="prod-card-full-list__list-inner">
-            <dt class="prod-card-full-list__name">Страна производитель:</dt>
-            <dd class="prod-card-full-list__value">США</dd>
-          </div>
-        </dl>
-        <div class="prod-card-full-list__price-block">
-          <span class="prod-card-full-list__price-old">150 400</span>
-          <span class="prod-card-full-list__price-new">148 400<sup>грн</sup></span>
+
         </div>
-      </div>
-    </div>
 
-    <div class="prod-card-full-list__rate-col">
-      <div class="prod-card-full-list__rate">
-        @@include('../../blocks/star-rating-marks/star-rating-marks.html')
-        <a href="#" class="prod-card-full-list__review-link"><span>3</span> отзыва</a>
-        <span class="prod-card-full-list__availability">В наличии</span>
-      </div>
+        <div class="row">
 
-      <div class="prod-card-full-list__bottom">
-        <a href="#" class="prod-card-full-list__logo-link" title="Airex">
-          <img src="img/airex.jpg" alt="Airex">
-        </a>
-        <div class="prod-card-full-list__controls">
-          <button class="btn  btn--icon  prod-card-full-list__compare" type="button" title="Добавить к сравнению">
-            <svg width="24" height="24" role="img">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
-            </svg>
-          </button>
-          <button class="btn  btn--icon  prod-card-full-list__favorite" type="button" title="Добавить в избранное">
-            <svg width="26" height="24" role="img">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
-            </svg>
-          </button>
-          <button class="btn  btn--icon  btn--cart" type="button" title="Добавить в корзину">
-            <svg width="24" height="24" role="img">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
-            </svg>
-          </button>
+          <div class="prod-card-full-list__inner-col">
+            <div class="prod-card-full-list__price-block">
+              <span class="prod-card-full-list__price-old">150 400</span>
+              <span class="prod-card-full-list__price-new">148 400<sup>грн</sup></span>
+            </div>
+          </div>
+
+          <div class="prod-card-full-list__inner-col">
+            <div class="prod-card-full-list__controls">
+              <button class="btn  btn--icon  prod-card-full-list__compare" type="button" title="Добавить к сравнению">
+                <svg width="24" height="24" role="img">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#compare-icon"></use>
+                </svg>
+              </button>
+              <button class="btn  btn--icon  prod-card-full-list__favorite" type="button" title="Добавить в избранное">
+                <svg width="26" height="24" role="img">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#favorite-icon"></use>
+                </svg>
+              </button>
+              <a href="#" class="prod-card-full-list__logo-link" title="Airex">
+                <img src="img/airex.jpg" alt="Airex" width="70">
+              </a>
+              <button class="btn  btn--icon  btn--cart" type="button" title="Добавить в корзину">
+                <svg width="24" height="24" role="img">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#cart-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
         </div>
-      </div>
 
+      </div>
     </div>
 
   </div>

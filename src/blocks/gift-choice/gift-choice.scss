@@ -1,7 +1,25 @@
 .gift-choice {
   margin: 20px 0;
 
+  @media (min-width: $screen-md) {
+    margin: 40px 0;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin: 80px 0;
+  }
+
   $block-name:                &; // #{$block-name}__element
+
+
+  .nouislider__input {
+    width: calc(50% - 10px) !important;
+    margin: 0;
+
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
 
   .field-select__select {
     padding-left: 15px;

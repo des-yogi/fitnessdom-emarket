@@ -1,0 +1,120 @@
+.aside-nav {
+  position: relative;
+
+  @media (min-width: $screen-md) {
+    position: static;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__toggler {
+    width: 100%;
+
+    &::after {
+      display: none;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    padding: 5px 20px;
+
+    @media (min-width: $screen-md) {
+      padding-top: 1.3em;
+      padding-bottom: 0;
+    }
+  }
+
+  &__menu {
+    width: 100%;
+    padding-bottom: 0;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+      position: static !important;
+      float: none;
+      padding-top: 0;
+      margin-top: 0;
+      border: none;
+      border-radius: 0;
+      box-shadow: $shadow;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+    li + li {
+      border-top: 2px solid $body-bg;
+    }
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    padding: 10px 30px 10px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    color: $text-color;
+    white-space: nowrap;
+    user-select: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    @media (min-width: $screen-md) {
+      padding-top: 16px;
+      padding-bottom: 14px;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      content: "";
+      width: 8px;
+      height: 15px;
+      background: svg-load('../blocks/sprite-svg/svg/right-arrow-s.svg', fill=$main-color);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      color: $white;
+      background-color: $main-color;
+
+      &::after {
+        background: svg-load('../blocks/sprite-svg/svg/right-arrow-s.svg', fill=$white);
+      }
+    }
+  }
+
+  &--overlay {
+
+    &::after {
+      display: block;
+      content: "";
+      position: fixed;
+      z-index: 10;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}

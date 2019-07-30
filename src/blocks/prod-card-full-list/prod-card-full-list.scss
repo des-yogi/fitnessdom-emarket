@@ -1,19 +1,21 @@
 .prod-card-full-list {
   display: none;
   position: relative;
+  border: 2px solid $border-light;
   border-radius: $border-radius;
 
   &:hover,
   &:focus {
-    box-shadow: $shadow--hover;
+    //box-shadow: $shadow--hover;
+    border-color: $main-color;
   }
 
   @media (min-width: $screen-md) {
     display: block;
         // padding: 15px 15px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
     background-color: $white;
-    box-shadow: $shadow;
+    // box-shadow: $shadow;
   }
 
   $block-name:                &; // #{$block-name}__element
@@ -22,21 +24,28 @@
     top: 25px;
   }
 
+  .prod-code {
+    margin-top: 0;
+  }
+
   &__img-col {
-    @include col(md, 4);
+    @include col(xl, 4);
   }
 
   &__text-col {
-    @include col(md, 5);
-    //@include col(xl, 4);
+    @include col(xl, 8);
   }
 
-  &__rate-col {
-    @include col(md, 3);
-    //@include col(xl, 4);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  &__inner-left-col {
+    @include col(xl, 9);
+  }
+
+  &__inner-right-col {
+    @include col(xl, 3);
+  }
+
+  &__inner-col {
+    @include col(xl, 6);
   }
 
   &__img {
@@ -44,15 +53,17 @@
   }
 
   &__text {
-    flex-wrap: wrap;
-    display: flex;
     height: 100%;
-    padding: 20px 0 10px;
+  }
+
+  &__text-inner {
+
   }
 
   &__title {
     flex-basis: 100%;
-    margin: 0;
+    padding-top: 20px;
+    margin: 0 0 15px;
   }
 
   &__list {
@@ -62,7 +73,7 @@
   &__list-inner {
     display: flex;
     flex-wrap: wrap;
-    // justify-content: space-between;
+    justify-content: flex-start;
     align-items: baseline;
     margin-bottom: 10px;
     font-size: 12px;
@@ -77,7 +88,12 @@
     }
   }
 
+  &__name {
+    flex: 0 1 auto;
+  }
+
   &__value {
+    flex: 1 1 auto;
     margin-left: 10px;
   }
 
@@ -89,6 +105,7 @@
   }
 
   &__price-old {
+    margin-right: 10px;
     font-size: 20px;
     text-decoration: line-through;
     color: $text-muted;
@@ -98,12 +115,23 @@
     font-size: 32px;
   }
 
-  &__rate {
+  &__rate-inner {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+    //padding-right: 20px;
+  }
+
+  &__rate {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: flex-end;
     //margin-bottom: 20px;
-    padding: 20px;
+    padding-right: 20px;
   }
 
   &__review-link {
@@ -111,6 +139,7 @@
     vertical-align: top;
     padding: 0 0 5px;
     margin-bottom: 10px;
+    margin-top: auto;
 
     span {
       color: $main-color;
@@ -122,22 +151,17 @@
     color: $main-color;
   }
 
-  &__bottom {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom: 17px;
-    padding-right: 20px;
-  }
-
   &__logo-link {
-    max-width: 75px;
-    flex-basis: 75px;
+    //flex-basis: 100%;
 
     @media (min-width: $screen-xl) {
-      margin-right: 20px;
+      // margin-right: 20px;
+      flex: 1 1;
+      width: auto;
+      max-width: 75px;
+      // margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     img {
@@ -146,20 +170,25 @@
   }
 
   &__controls {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    flex: 1 1;
+    //position: absolute;
+    // bottom: 0;
+    // right: 0;
+
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    //flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
 
     @media (min-width: $screen-xl) {
+      position: relative;
+      z-index: 1;
       flex-direction: row;
       justify-content: flex-end;
-      align-items: flex-end;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+      transform: translateY(2px) translateX(2px);
     }
   }
 
@@ -169,6 +198,7 @@
 
     @media (min-width: $screen-xl) {
       margin-bottom: 0;
+      background-color: rgba(255, 255, 255, 0);
     }
 
     &:hover,

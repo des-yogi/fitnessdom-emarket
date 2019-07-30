@@ -6,12 +6,14 @@
   height: 100%;
       // padding: 20px 20px 17px;
   background-color: $white;
-  box-shadow: $shadow;
+  //box-shadow: $shadow;
+  border: 2px solid $border-light;
   border-radius: $border-radius;
 
   &:hover,
   &:focus {
-    box-shadow: $shadow--hover;
+    //box-shadow: $shadow--hover;
+    border-color: $main-color;
   }
 
   $block-name:                &; // #{$block-name}__element
@@ -19,7 +21,8 @@
   &__compare,
   &__favorite {
     position: absolute;
-    top: 0;
+    top: -2px;
+    background-color: rgba(255, 255, 255, 0);
 
     &:hover,
     &:focus {
@@ -29,7 +32,7 @@
   }
 
   &__compare {
-    left: 0;
+    left: -2px;
     border-top-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
 
@@ -40,7 +43,7 @@
   }
 
   &__favorite {
-    right: 0;
+    right: -2px;
     border-top-right-radius: $border-radius;
     border-bottom-left-radius: $border-radius;
 
@@ -48,6 +51,11 @@
     &:focus {
       background-color: $color-danger;
     }
+  }
+
+  &__cart {
+    right: -2px !important;
+    bottom: -2px !important;
   }
 
   &__img {
@@ -84,8 +92,9 @@
 
     .btn {
       position: absolute;
-      bottom: 0;
-      right: 0;
+      right: -2px !important;
+      bottom: -2px !important;
+      background-color: rgba(255, 255, 255, 0);
     }
   }
 

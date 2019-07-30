@@ -105,12 +105,13 @@
     color: $color-success;
     border-top-left-radius: $border-radius;
     border-bottom-right-radius: $border-radius;
+    background-color: rgba(255, 255, 255, 0);
 
     &:hover,
     &:focus {
       outline: none;
       color: $white;
-      background-color: $color-success;
+      background-color: $color-success !important;
     }
 
     svg {

@@ -1,4 +1,8 @@
 .days-special-offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   background-color: $white;
   box-shadow: $shadow;
 

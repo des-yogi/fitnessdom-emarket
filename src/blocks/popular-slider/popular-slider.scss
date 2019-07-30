@@ -1,0 +1,55 @@
+.popular-slider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title-col {
+    @include col(xs, 8, $grid-columns, 20px);
+    @include col(md, 10);
+    margin-bottom: 20px;
+  }
+
+  &__controls-col {
+    @include col(xs, 4, $grid-columns, 20px);
+    @include col(md, 2);
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+
+    .swiper-button-prev,
+    .swiper-button-next,
+    .swiper-pagination-fraction {
+      position: static;
+      transform: none;
+      margin: 0;
+    }
+
+    .swiper-pagination-fraction {
+      width: auto;
+      margin: 0 5px;
+
+      @media (min-width: $screen-sm) {
+        margin: 0 15px;
+      }
+    }
+  }
+
+  &__container {
+
+  }
+
+  &__slide {
+    box-sizing: border-box;
+    height: 100% !important;
+  }
+}

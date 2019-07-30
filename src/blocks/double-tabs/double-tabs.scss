@@ -1,0 +1,123 @@
+.double-tabs {
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  @media (min-width: $screen-xl) {
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  .swiper-slide {
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  .tabs__content-wrapper {
+    padding: 0;
+    border: none;
+  }
+
+  .tabs__links {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+
+      @media (min-width: $screen-md) {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $border-light;
+      }
+    }
+
+    #{$block-name}__controls-wrapper {
+      display: flex;
+      width: auto;
+      height: 100%;
+      margin-left: auto;
+    }
+  }
+
+  .tabs__link-wrap {
+    border: none;
+  }
+
+  .tabs__link-wrap + .tabs__link-wrap {
+    margin-left: 10px;
+  }
+
+  .tabs__link {
+    font-weight: 700;
+    color: $text-color;
+    background-color: $border-light;
+    border-radius: $border-radius;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+
+    &:hover,
+    &:focus,
+    &.active {
+      color: $white;
+      background-color: $main-color;
+
+      @media (min-width: $screen-md) {
+        color: $main-color;
+        background-color: $white;
+        border-bottom: 2px solid $main-color;
+        border-radius: 0;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      padding-top: 0;
+      padding-bottom: 12px;
+      font-size: 20px;
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 24px;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    div {
+      position: static;
+      margin: 0;
+      transform: none;
+    }
+
+    div + div {
+      margin-left: 20px;
+    }
+  }
+
+  &__pagination {
+    display: none;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}
