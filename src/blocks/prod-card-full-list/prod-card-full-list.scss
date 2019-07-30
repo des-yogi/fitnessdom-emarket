@@ -36,6 +36,14 @@
     @include col(xl, 8);
   }
 
+  &__inner-left-col {
+    @include col(xl, 9);
+  }
+
+  &__inner-right-col {
+    @include col(xl, 3);
+  }
+
   &__inner-col {
     @include col(xl, 6);
   }
@@ -45,13 +53,11 @@
   }
 
   &__text {
-    flex-wrap: wrap;
-    display: flex;
     height: 100%;
   }
 
   &__text-inner {
-    padding-bottom: 10px;
+
   }
 
   &__title {
@@ -67,7 +73,7 @@
   &__list-inner {
     display: flex;
     flex-wrap: wrap;
-    //justify-content: space-between;
+    justify-content: flex-start;
     align-items: baseline;
     margin-bottom: 10px;
     font-size: 12px;
@@ -83,12 +89,12 @@
   }
 
   &__name {
-    flex-basis: calc(50% - 20px);
+    flex: 0 1 auto;
   }
 
   &__value {
     flex: 1 1 auto;
-    // margin-left: 10px;
+    margin-left: 10px;
   }
 
   &__price-block {
@@ -99,6 +105,7 @@
   }
 
   &__price-old {
+    margin-right: 10px;
     font-size: 20px;
     text-decoration: line-through;
     color: $text-muted;
@@ -114,15 +121,17 @@
     justify-content: space-between;
     align-items: flex-end;
     height: 100%;
-    padding-right: 20px;
+    //padding-right: 20px;
   }
 
   &__rate {
+    flex: 1 1;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: flex-end;
     //margin-bottom: 20px;
-    //padding: 20px 0;
+    padding-right: 20px;
   }
 
   &__review-link {
@@ -130,6 +139,7 @@
     vertical-align: top;
     padding: 0 0 5px;
     margin-bottom: 10px;
+    margin-top: auto;
 
     span {
       color: $main-color;
@@ -143,15 +153,15 @@
 
   &__logo-link {
     //flex-basis: 100%;
-    width: auto;
 
     @media (min-width: $screen-xl) {
       // margin-right: 20px;
       flex: 1 1;
+      width: auto;
       max-width: 75px;
-      margin-bottom: 20px;
+      // margin-bottom: 20px;
       margin-left: auto;
-      margin-right: 20px;
+      margin-right: auto;
     }
 
     img {
@@ -171,10 +181,14 @@
     align-items: flex-end;
 
     @media (min-width: $screen-xl) {
+      position: relative;
+      z-index: 1;
       flex-direction: row;
       justify-content: flex-end;
-      align-items: flex-end;
+      align-items: center;
       width: 100%;
+      height: 60px;
+      transform: translateY(2px) translateX(2px);
     }
   }
 
@@ -184,6 +198,7 @@
 
     @media (min-width: $screen-xl) {
       margin-bottom: 0;
+      background-color: rgba(255, 255, 255, 0);
     }
 
     &:hover,

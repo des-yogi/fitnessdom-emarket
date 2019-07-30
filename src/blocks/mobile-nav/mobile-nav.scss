@@ -1,9 +1,176 @@
-// В этом файле должны быть стили для БЭМ-блока mobile-nav, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .mobile-nav {
 
   $block-name:                &; // #{$block-name}__element
 
+  .mm-navbar,
+  .mm-navbars_top {
+    font-family: $font-family--headings;
+    font-weight: 700;
+    color: $white;
+    background-color: $text-color;
+  }
+
+  .mm-navbar {
+    flex-wrap: nowrap;
+  }
+
+  .mm-navbar__title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 20px;
+    font-size: 28px;
+
+    & > span {
+      margin-right: auto;
+      color: $main-color !important;
+    }
+  }
+
+  #mobile-nav-close {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    margin-right: 0;
+    background: svg-load('../blocks/sprite-svg/svg/close-icon.svg', fill=#fff);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .mm-navbar__btn:not(.mm-hidden) + .mm-navbar__title {
+    font-size: 16px !important;
+  }
+
+  .mm-btn_prev {
+
+    &::before {
+      border-top-color: #fff;
+      border-left-color: #fff;
+    }
+  }
+
+  .mm-listitem {
+
+    .mm-listitem__text {
+      padding-left: 15px;
+      font-family: $font-family--headings !important;
+      font-weight: 700;
+      color: $text-color;
+    }
+  }
+
+  .mm-listitem__btn,
+  .mm-listitem__text {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+
+    svg {
+      display: block;
+      margin-right: 15px;
+      fill: curentColor;
+    }
+  }
+
+  .mm-navbars_bottom {
+      padding: 20px 15px 1px;
+      border-top: 2px solid $border-light;
+
+    .mm-navbar {
+      align-items: center;
+      background-color: #fff;
+    }
+
+    .mobile-nav__social {
+      display: block;
+      padding: 0;
+      margin-right: 15px;
+      line-height: 1;
+
+      span {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+      }
+
+      &--fb {
+
+        span {
+          background: svg-load('../blocks/sprite-svg/svg/facebook-icon.svg', fill=$text-color);
+        }
+      }
+
+      &--insta {
+
+        span {
+          background: svg-load('../blocks/sprite-svg/svg/instagram-icon.svg', fill=$text-color);
+        }
+      }
+
+      &--youtube {
+
+        span {
+          background: svg-load('../blocks/sprite-svg/svg/youtube-icon.svg', fill=$text-color);
+        }
+      }
+    }
+  }
+
+  &__catalog {
+
+    a {
+      color: #fff !important;
+      background-color: $main-color;
+      background: linear-gradient(102.64deg, #5464F0 0%, #5499F0 100%), #5499F0;
+
+      &::after {
+        border-top-color: #fff;
+        border-left-color: #fff;
+      }
+    }
+  }
+
+  &__call-list {
+    padding-top: 20px;
+
+    .mm-listitem {
+      display: block;
+
+      span + a {
+        margin-top: 10px;
+      }
+    }
+
+    .mm-listitem + .mm-listitem {
+      margin-top: 15px;
+    }
+
+    .mm-listitem > span,
+    .mm-listitem > a {
+      width: 100% !important;
+    }
+
+    .mm-listitem > span {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .mm-listitem > a.listitem__text {
+    }
+  }
+
+  &__link,
+  &__stor-worktime {
+    font-weight: 400 !important;
+  }
 }

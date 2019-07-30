@@ -11,6 +11,16 @@
 
   $block-name:                &; // #{$block-name}__element
 
+
+  .nouislider__input {
+    width: calc(50% - 10px) !important;
+    margin: 0;
+
+    &:last-child {
+      margin-left: 20px;
+    }
+  }
+
   .field-select__select {
     padding-left: 15px;
     padding-right: 15px;
