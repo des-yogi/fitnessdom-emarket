@@ -11,7 +11,6 @@ $border-color:                hsl(0, 0%, 60%) !default;
   margin: 25px 0 50px;
 
   @media (min-width: $screen-md) {
-    justify-content: flex-start;
     margin-top: 30px;
   }
 
@@ -28,11 +27,39 @@ $border-color:                hsl(0, 0%, 60%) !default;
     padding-left: 0;
     list-style: none;
 
-    li + li {
-      margin-left: 13px;
+    li:not(:first-child) + li:not(:last-child) {
+      margin-left: 10px;
+
+      @media (min-width: $screen-sm) {
+        margin-left: 15px;
+      }
 
       @media (min-width: $screen-md) {
+        margin-left: 20px;
+      }
+    }
+
+    li:first-child {
+      margin-right: 10px;
+
+      @media (min-width: $screen-sm) {
+        margin-right: 15px;
+      }
+
+      @media (min-width: $screen-md) {
+        margin-right: 40px;
+      }
+    }
+
+    li:last-child {
+      margin-left: 10px;
+
+      @media (min-width: $screen-sm) {
         margin-left: 15px;
+      }
+
+      @media (min-width: $screen-md) {
+        margin-left: 40px;
       }
     }
   }
@@ -43,9 +70,37 @@ $border-color:                hsl(0, 0%, 60%) !default;
 
       a {
         color: $white;
-        background-color: $main-color;
+        background-color: darken($main-color, 10%);
         pointer-events: none;
       }
+    }
+
+    &.disabled {
+
+      a {
+        color: $white;
+        background-color: $icon-color;
+        pointer-events: none;
+
+        svg {
+          fill: $text-muted;
+        }
+      }
+    }
+  }
+
+  &__link {
+    padding: 6px 10px;
+    min-width: 50px;
+    height: 32px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1em;
+    color: $icon-color;
+
+    &:hover,
+    &:focus {
+      background-color: darken($main-color, 10%);
     }
   }
 }

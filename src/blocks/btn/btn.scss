@@ -120,6 +120,18 @@
     }
   }
 
+  &--invert {
+    background-color: $white;
+    color: inherit;
+    box-shadow: $shadow;
+
+    &.active {
+      color: $white;
+      background-color: darken($main-color, 10%);
+      pointer-events: none;
+    }
+  }
+
 
 
   // &--main {

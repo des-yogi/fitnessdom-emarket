@@ -282,6 +282,12 @@ a {
   // @include col(lg, 3);
   @include col(xl, 4);
   margin-bottom: 20px;
+
+  &--fullwidth {
+    @media (min-width: $screen-xl) {
+      @include col(xl, 12);
+    }
+  }
 }
 
 .col-cheaper-left {
@@ -442,11 +448,37 @@ a {
   border-top-right-radius: $border-radius;
   border-bottom-right-radius: $border-radius;
   pointer-events: none;
+
+  &--warning {
+    background-color: $color-warning;
+  }
+
+  &--danger {
+    background-color: $color-danger;
+  }
 }
 
 .publishedon {
   font-size: 1em;
   color: $text-muted;
+}
+
+.arhive-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+
+  a {
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
 }
 
 .embed-responsive {

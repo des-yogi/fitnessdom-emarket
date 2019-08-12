@@ -1,39 +1,38 @@
 <!--DEV
 @ @include('blocks/pagination/pagination.html')
 
+-->
 
 <div class="pagination" aria-label="Постраничная навигация" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement/Pagination">
   <ol class="pagination__list" >
 
-    <li class="pagination__item">
-      <a class="btn  btn--icon  btn--icon--disabled" aria-label="Предыдущая страница" itemprop="relatedLink/pagination">
-        <svg width="13" height="15" role="img">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#left-arrow"></use>
+    <li class="pagination__item  disabled">
+      <a class="btn  btn--invert  pagination__link" aria-label="Предыдущая страница" itemprop="relatedLink/pagination">
+        <svg width="9" height="20" role="img">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#left-arrow-icon"></use>
         </svg>
       </a>
     </li>
 
     <li class="pagination__item  active">
-      <a class="btn  btn--crumbs  pagination__link" itemprop="relatedLink/pagination">1</a>
+      <a class="btn  btn--invert  pagination__link" itemprop="relatedLink/pagination">1</a>
     </li>
 
     <li class="pagination__item">
-      <a href="#" class="btn  btn--crumbs  pagination__link" itemprop="relatedLink/pagination">2</a>
+      <a href="#" class="btn  btn--invert  pagination__link" itemprop="relatedLink/pagination">2</a>
     </li>
 
     <li class="pagination__item">
-      <a href="#" class="btn  btn--crumbs  pagination__link" itemprop="relatedLink/pagination">3</a>
+      <a href="#" class="btn  btn--invert  pagination__link" itemprop="relatedLink/pagination">39</a>
     </li>
 
     <li class="pagination__item">
-      <a href="#" class="btn  btn--icon" aria-label="Следующая страница" itemprop="relatedLink/pagination">
-        <svg width="13" height="15" role="img">
-          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#right-arrow"></use>
+      <a href="#" class="btn  btn--invert  pagination__link" aria-label="Следующая страница" itemprop="relatedLink/pagination">
+        <svg width="9" height="20" role="img">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#right-arrow-icon"></use>
         </svg>
       </a>
     </li>
 
   </ol>
 </div>
--->
-

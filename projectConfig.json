@@ -91,7 +91,8 @@
     "news-block-slider": [],
     "filter-controls-block": [],
     "aside-nav": [],
-    "prod-filters-block": []
+    "prod-filters-block": [],
+    "special-offer-card": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
