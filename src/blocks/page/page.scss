@@ -236,6 +236,15 @@ a {
   &--bg-top {
     background-image: linear-gradient(to bottom, $main-color, $main-color 175px, rgba(255, 255, 255, 0) 175px, rgba(255, 255, 255, 0));
   }
+
+  &--bg-main {
+    margin-bottom: 20px;
+    background-color: $main-color;
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 // Родитель. Указаны промежутки между ячейками: XS|SM|MD|LG|XL|XXL;

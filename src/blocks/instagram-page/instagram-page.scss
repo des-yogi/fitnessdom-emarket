@@ -1,0 +1,19 @@
+.instagram-page {
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 20px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__descr {
+
+    @media (min-width: $screen-md) {
+      padding-right: 16.4%;
+    }
+
+    @media (min-width: $screen-xl) {
+      padding-right: 33%;
+    }
+  }
+}

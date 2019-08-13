@@ -20,6 +20,11 @@
     }
   }
 
+  &__title {
+    margin-top: 0;
+    color: $white;
+  }
+
   &__descr {
     position: relative;
     padding: 20px 0 17px 60px;

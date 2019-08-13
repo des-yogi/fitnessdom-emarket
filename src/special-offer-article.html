@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Страница акции</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div id="page" class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main-content" role="main">
+
+        <div class="container">
+
+          @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+          <article class="special-offer-article">
+            <div class="row">
+
+              <div class="special-offer-article__col-img">
+                <div class="embed-responsive  embed-responsive--4-3  special-offer-article__img">
+                  <picture>
+                    <source srcset="img/special-offer-article-img.webp" media="(min-width: 992px)" type="image/webp">
+                    <source srcset="img/special-offer-article-img.jpg" media="(min-width: 992px)">
+                    <!-- 590x442 -->
+                    <source srcset="img/special-offer-article-img.webp" media="(min-width: 768px)" type="image/webp">
+                    <source srcset="img/special-offer-article-img.jpg" media="(min-width: 768px)">
+                    <!-- 385x289 -->
+                    <source srcset="img/special-offer-article-img.webp" media="(min-width: 480px)" type="image/webp">
+                    <source srcset="img/special-offer-article-img.jpg" media="(min-width: 480px)">
+                    <!-- 570x428 -->
+                    <source srcset="img/special-offer-article-img.webp" type="image/webp">
+                    <img src="img/special-offer-article-img.jpg" alt="Alt текст" width="450" height="337">
+                  </picture>
+                </div>
+              </div>
+
+              <div class="special-offer-article__col-text">
+                <div class="special-offer-article__text">
+                  <div class="publishedon">С: 30-го сентября До: 30-го октября</div>
+                  <h1>Скидка на продукцию компании Assault Fitness и True Form Runner</h1>
+                  <p>Assault AirRunner — это высококлассная беговая дорожка для элитных фитнес-клубов, сочетающая в себе компактные габариты с возможностями интенсивных тренировок. Assault AirRunner — это высококлассная беговая дорожка для элитных фитнес-клубов, сочетающая в себе компактные габариты с возможностями интенсивных тренировок.</p>
+                  <div class="special-offer-article__date">До конца акции осталось: <span>06д 23ч 59м 28с</span></div>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <section>
+
+            <h2>Товары, участвующие в акции</h2>
+
+            <div class="row">
+
+              <div class="aside-col">
+
+                <aside class="aside-nav  dropdown">
+
+                  <button class="btn  dropdown-toggle  aside-nav__toggler" type="button" id="asideFilter" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Фильтр товаров
+                  </button>
+
+                  <div class="dropdown-menu  aside-nav__menu  prod-filters-block" aria-labelledby="asideFilter" role="navigation">
+
+                    <form id="prod-filters-form" action="#" method="post">
+
+                      <ul class="accordion js-accordion  list-nostyled" data-animation="on" data-multi-items="off">
+
+                        <li class="accordion__item  accordion__item--is-open js-accordion__item">
+
+                          <button class="accordion__header" type="button">
+                            <span class="accordion__header-title">Цена<span class="accordion__header-units">грн</span></span>
+                            <em aria-hidden="true" class="accordion__header-icon">
+                              <svg width="20" height="9" role="img">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#down-arrow-icon"></use>
+                              </svg>
+                            </em>
+                          </button>
+
+                          <div class="accordion__panel js-accordion__panel">
+                            <div class="accordion__panel-content  accordion__panel-content--range">
+                              <div class="text-component margin-bottom--md">
+                                <div class="nouislider  nouislider--simple">
+                                  <div class="nouislider__range-inputs">
+                                    <input class="nouislider__input" type="number" id="input-with-keypress-0" value="" name="min-price">
+                                    <input class="nouislider__input" type="number" id="input-with-keypress-1" value="" name="max-price">
+                                    <button class="btn" type="button">Ок</button>
+                                  </div>
+                                  <div id="price-slider" class="nouislider__price-slider"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="accordion__item  accordion__item--is-open js-accordion__item">
+                          <button class="accordion__header" type="button">
+                            <span class="accordion__header-title">Класс<span class="accordion__header-units"></span></span>
+                            <em aria-hidden="true" class="accordion__header-icon">
+                              <svg width="20" height="9" role="img">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#down-arrow-icon"></use>
+                              </svg>
+                            </em>
+                          </button>
+
+                          <div class="accordion__panel js-accordion__panel">
+                            <div class="accordion__panel-content">
+                              <div class="text-component">
+                                <div class="field-checkbox">
+                                  <label class="field-checkbox__name" tabindex="0">
+                                    <input class="field-checkbox__input" type="checkbox">
+                                    <span class="field-checkbox__name-text  field-checkbox__name-text--bold">Профессиональный<span class="field-checkbox__quantity">12</span></span>
+                                  </label>
+                                </div>
+                                <div class="field-checkbox">
+                                  <label class="field-checkbox__name" tabindex="0">
+                                    <input class="field-checkbox__input" type="checkbox">
+                                    <span class="field-checkbox__name-text">Коммерческий<span class="field-checkbox__quantity">5</span></span>
+                                  </label>
+                                </div>
+                                <div class="field-checkbox">
+                                  <label class="field-checkbox__name" tabindex="0">
+                                    <input class="field-checkbox__input" type="checkbox">
+                                    <span class="field-checkbox__name-text">Домашний<span class="field-checkbox__quantity">32</span></span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="accordion__item  accordion__item--is-open js-accordion__item">
+                          <button class="accordion__header" type="button">
+                            <span class="accordion__header-title">Производитель<span class="accordion__header-units"></span></span>
+                            <em aria-hidden="true" class="accordion__header-icon">
+                              <svg width="20" height="9" role="img">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#down-arrow-icon"></use>
+                              </svg>
+                            </em>
+                          </button>
+
+                          <div class="accordion__panel js-accordion__panel">
+                            <div class="accordion__panel-content">
+                              <div class="text-component">
+                                <div class="field-checkbox">
+                                  <label class="field-checkbox__name" tabindex="0">
+                                    <input class="field-checkbox__input" type="checkbox">
+                                    <span class="field-checkbox__name-text  field-checkbox__name-text--bold">Pacemaster<span class="field-checkbox__quantity">54</span></span>
+                                  </label>
+                                </div>
+                                <div class="field-checkbox">
+                                  <label class="field-checkbox__name" tabindex="0">
+                                    <input class="field-checkbox__input" type="checkbox">
+                                    <span class="field-checkbox__name-text">True Form<span class="field-checkbox__quantity">15</span></span>
+                                  </label>
+                                </div>
+                                <div class="field-checkbox">
+                                  <label class="field-checkbox__name" tabindex="0">
+                                    <input class="field-checkbox__input" type="checkbox">
+                                    <span class="field-checkbox__name-text">ITREAD<span class="field-checkbox__quantity">15</span></span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="accordion__item  accordion__item--is-open js-accordion__item">
+                          <button class="accordion__header" type="button">
+                            <span class="accordion__header-title">Регулировка угла наклона<span class="accordion__header-units"></span></span>
+                            <em aria-hidden="true" class="accordion__header-icon">
+                              <svg width="20" height="9" role="img">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#down-arrow-icon"></use>
+                              </svg>
+                            </em>
+                          </button>
+
+                          <div class="accordion__panel js-accordion__panel">
+                            <div class="accordion__panel-content">
+                              <div class="text-component">
+                                <div class="field-checkbox">
+                                  <label class="field-checkbox__name" tabindex="0">
+                                    <input class="field-checkbox__input" type="checkbox">
+                                    <span class="field-checkbox__name-text  field-checkbox__name-text--bold">Механическая<span class="field-checkbox__quantity">13</span></span>
+                                  </label>
+                                </div>
+                                <div class="field-checkbox">
+                                  <label class="field-checkbox__name" tabindex="0">
+                                    <input class="field-checkbox__input" type="checkbox">
+                                    <span class="field-checkbox__name-text  field-checkbox__name-text--bold">Электрическая<span class="field-checkbox__quantity">11</span></span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                        <li class="accordion__item  accordion__item--is-open js-accordion__item">
+
+                          <button class="accordion__header" type="button">
+                            <span class="accordion__header-title">Максимальный вес пользователя<span class="accordion__header-units">кг</span></span>
+                            <em aria-hidden="true" class="accordion__header-icon">
+                              <svg width="20" height="9" role="img">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#down-arrow-icon"></use>
+                              </svg>
+                            </em>
+                          </button>
+
+                          <div class="accordion__panel js-accordion__panel">
+                            <div class="accordion__panel-content  accordion__panel-content--range">
+                              <div class="text-component margin-bottom--md">
+                                <div class="nouislider  nouislider--simple">
+                                  <div class="nouislider__range-inputs">
+                                    <input class="nouislider__input" type="number" id="input-with-keypress-01" value="" name="min-price">
+                                    <input class="nouislider__input" type="number" id="input-with-keypress-11" value="" name="max-price">
+                                    <button class="btn" type="button">Ок</button>
+                                  </div>
+                                  <div id="price-slider1" class="nouislider__price-slider"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+
+                      </ul>
+
+                      <div class="prod-filters-block__submit-wrapper">
+                        <button class="btn" type="button">Применить</button>
+                        <!-- <button id="filter-close" class="btn" type="button" data-toggle="dropdown">Закрыть</button> -->
+                      </div>
+
+                    </form>
+
+                  </div>
+                </aside>
+
+              </div>
+
+              <div class="content-col">
+
+                <section>
+
+                  <h2 class="visually-hidden">Товары в категории</h2>
+
+                  <div class="filter-controls-block">
+
+                    <div class="filter-controls-block__sort">
+
+                      <div class="field-select  field-select--sort">
+                        <label for="filter-sort" class="h5  field-select__name">Сортировать по:</label>
+                        <span class="field-select__select-wrap">
+                          <select id="filter-sort" class="field-select__select">
+                            <option value="По рейтингу" selected>По рейтингу</option>
+                            <option value="Цена ниже">Цена ниже</option>
+                            <option value="Цена выше">Цена выше</option>
+                          </select>
+                        </span>
+                      </div>
+
+                    </div>
+
+                    <div class="filter-controls-block__display">
+
+                      <button class="btn  btn--icon  btn-list-view  filter-controls-block__btn-view" type="button" title="Отображать списком">
+                        <svg width="24" height="24" role="img">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#sort-list-icon"></use>
+                        </svg>
+                      </button>
+
+                      <button class="btn  btn--icon  btn-card-view  filter-controls-block__btn-view  filter-controls-block__btn-view--selected" type="button" title="Отображать карточками">
+                        <svg width="24" height="24" role="img">
+                          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#sort-card-icon"></use>
+                        </svg>
+                      </button>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+
+                    <div class="content-item-col">
+                      @@include('blocks/prod-card-full/prod-card-full.html')
+                    </div>
+
+                    <div class="content-item-col">
+                      @@include('blocks/prod-card-full/prod-card-full.html')
+                    </div>
+
+                    <div class="content-item-col">
+                      @@include('blocks/prod-card-full/prod-card-full.html')
+                    </div>
+
+                    <div class="content-item-col  content-item-col--fullwidth">
+                      @@include('blocks/prod-card-full-list/prod-card-full-list.html')
+                    </div>
+
+                    <div class="content-item-col  content-item-col--fullwidth">
+                      @@include('blocks/prod-card-full-list/prod-card-full-list.html')
+                    </div>
+
+                  </div>
+
+                </section>
+
+                @@include('blocks/pagination/pagination.html')
+
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <!-- mobile-nav -->
+  @@include('blocks/mobile-nav/mobile-nav.html')
+
+  @@include('blocks/login-modal/login-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
