@@ -92,7 +92,10 @@
     "filter-controls-block": [],
     "aside-nav": [],
     "prod-filters-block": [],
-    "special-offer-card": []
+    "special-offer-card": [],
+    "special-offer-article": [],
+    "news-article": [],
+    "instagram-page": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

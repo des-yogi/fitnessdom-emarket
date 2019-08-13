@@ -88,6 +88,13 @@
       }
     }
 
+    .article-card__title {
+
+      @media (min-width: $screen-xl) {
+        font-size: 22px;
+      }
+    }
+
     .article-card__date {
 
       @media (min-width: $screen-xl) {
