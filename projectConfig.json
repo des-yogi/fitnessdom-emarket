@@ -95,7 +95,10 @@
     "special-offer-card": [],
     "special-offer-article": [],
     "news-article": [],
-    "instagram-page": []
+    "instagram-page": [],
+    "authorization-block": [],
+    "authorization-social": [],
+    "registration-block": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

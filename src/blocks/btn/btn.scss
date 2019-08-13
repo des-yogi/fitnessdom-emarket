@@ -132,6 +132,23 @@
     }
   }
 
+  &--fb {
+    background-color: #507cc0;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#507cc0, 10%);
+    }
+  }
+
+  &--gmail {
+    background-color: #e44d43;
+
+    &:hover,
+    &:focus {
+      background-color: darken(#e44d43, 10%);
+    }
+  }
 
 
   // &--main {

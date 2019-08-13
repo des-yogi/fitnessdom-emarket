@@ -533,6 +533,14 @@ a {
       opacity: 0.5;
     }
   }
+
+  &--authorization {
+    padding-bottom: 40px;
+
+    @media (min-width: $screen-md) {
+      padding-bottom: 80px;
+    }
+  }
 }
 
 // Swiper

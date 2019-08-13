@@ -1,0 +1,53 @@
+.authorization-social {
+  padding-top: 20px;
+  border-top: 2px solid $border-light;
+
+  $block-name:                &; // #{$block-name}__element
+
+  h5,
+  p {
+    margin-top: 0;
+  }
+
+  h5 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-bottom: 18px;
+
+    @media (min-width: $screen-md) {
+      min-height: 48px;
+    }
+  }
+
+  &__col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6);
+    @include col-offset(xl, 1);
+    @include col(xl, 5);
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    & > .btn {
+      width: 100%;
+
+      @media (min-width: $screen-md) {
+        width: calc(50% - 10px);
+      }
+
+      &:first-child {
+        margin-bottom: 20px;
+
+        @media (min-width: $screen-md) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
