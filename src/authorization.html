@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Авторизация 1</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div id="page" class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main-content  main-content--authorization" role="main">
+
+        <div class="container">
+
+          @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+          <h1>Авторизация</h1>
+
+          <div class="row">
+
+            <div class="authorization-block__col">
+              <div class="authorization-block">
+                <form class="form" action="/" method="post">
+                  <label class="field-text">
+                    <span class="h5  field-text__name">Введите email или телефон</span>
+                    <span class="field-text__input-wrap">
+                      <input class="field-text__input" type="text" name="email-phone">
+                      <span class="field-text__help-text"></span>
+                    </span>
+                  </label>
+                  <div class="field-actions">
+                    <button class="btn" type="button">Далее</button>
+                  </div>
+                  <span class="field-text__input-wrap">
+                    Нет аккаунта? <a href="#">Зарегестрируйтесь</a>
+                  </span>
+                </form>
+              </div>
+            </div>
+
+            <div class="authorization-social__col">
+              <div class="authorization-social">
+                <h5>Авторизация через социальные сети</h5>
+                <p>Вы можете авторизоваться на сайте с помощью учетных записей социальных сетей.</p>
+                <div class="authorization-social__inner">
+                  <a href="#" class="btn  btn--fb">Facebook</a>
+                  <a href="#" class="btn  btn--gmail">Gmail</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <!-- mobile-nav -->
+  @@include('blocks/mobile-nav/mobile-nav.html')
+
+  @@include('blocks/login-modal/login-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
