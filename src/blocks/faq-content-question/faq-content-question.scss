@@ -1,0 +1,71 @@
+.faq-content-question {
+  margin-top: 40px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  .h5 {
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+    }
+  }
+
+  .field-text {
+    font-size: 14px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 16px;
+    }
+  }
+
+  &__form {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    @media (min-width: $screen-xl) {
+      justify-content: flex-start;
+    }
+
+    & > * {
+
+      &:first-child {
+
+        @media (min-width: $screen-xl) {
+          margin-right: 80px;
+        }
+      }
+
+      @media (min-width: $screen-md) {
+        flex-basis: calc(50% - 10px);
+      }
+
+      @media (min-width: $screen-xl) {
+        flex-basis: 285px;
+      }
+    }
+
+    textarea.field-text__input {
+
+      @media (min-width: $screen-md) {
+        min-height: 103px;
+      }
+
+      @media (min-width: $screen-lg) {
+        min-height: 106px;
+      }
+    }
+  }
+
+  button[type=submit] {
+    margin-bottom: 0;
+  }
+}

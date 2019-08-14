@@ -98,7 +98,13 @@
     "instagram-page": [],
     "authorization-block": [],
     "authorization-social": [],
-    "registration-block": []
+    "registration-block": [],
+    "faq-aside-nav": [],
+    "faq-content-text": [],
+    "faq-content-office": [],
+    "faq-content-accordion": [],
+    "faq-content-question": [],
+    "faq-content-contacts": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

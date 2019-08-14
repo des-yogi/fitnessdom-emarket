@@ -422,6 +422,34 @@ a {
   }
 }
 
+.col-faq-aside {
+  @include col(xs, 12, $grid-columns, 30px);
+  @include col(md, 4);
+  @include col(xl, 3);
+}
+
+.col-faq-content {
+  @include col(xs, 12, $grid-columns, 30px);
+  @include col(md, 8);
+  @include col(xl, 9);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: $shadow;
+  border-radius: $border-radius;
+
+  @media (min-width: $screen-md) {
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  &--noshadow {
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
+
 
 /* &__element {
   @include col(); // малые ширины — 12 из 12, промежутки по умолчанию

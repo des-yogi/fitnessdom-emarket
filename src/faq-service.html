@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>FAQ - Доставка</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div id="page" class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main-content  main-content--authorization" role="main">
+
+        <div class="container">
+
+          @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+          <div class="row">
+
+            <div class="col-faq-aside">
+              <aside class="faq-aside-nav" role="navigation">
+
+                <div class="dropdown  faq-aside-nav__drop">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownFaqBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>FAQ Меню</span>
+                    <span>
+                      <svg width="20" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#down-arrow-icon"></use></svg>
+                    </span>
+                  </button>
+
+                  <div class="dropdown-menu  faq-aside-nav__menu" aria-labelledby="dropdownFaqBtn">
+                    <a class="dropdown-item  faq-aside-nav__item" href="#">Оплата и доставка</a>
+                    <a class="dropdown-item  faq-aside-nav__item  active">Сервисный центр</a>
+                    <a class="dropdown-item  faq-aside-nav__item" href="#">Сотрудничество</a>
+                    <a class="dropdown-item  faq-aside-nav__item" href="#">Вопросы-ответы</a>
+                    <a class="dropdown-item  faq-aside-nav__item" href="#">О магазине</a>
+                    <a class="dropdown-item  faq-aside-nav__item" href="#">Контакты</a>
+                    <a class="dropdown-item  faq-aside-nav__item" href="#">Вакансии</a>
+                  </div>
+                </div>
+
+              </aside>
+            </div>
+
+            <div class="col-faq-content">
+              <div class="faq-content-text">
+                <h1>Официальный сервисный центр производителей</h1>
+
+                <div class="faq-content-text__block  faq-content-text__block--service">
+
+                  <div class="faq-content-text__service">
+
+                    <div class="faq-content-text__service-img">
+                      <picture>
+                        <source srcset="img/service-img.webp" type="image/webp">
+                        <img src="img/service-img.jpg" alt="Alt текст">
+                      </picture>
+                    </div>
+
+                    <section class="faq-content-office">
+                      <h3 class="faq-content-office__title">Официальный сервисный центр Polar:</h3>
+
+                      <div class="row">
+
+                        <div class="faq-content-office__worktime-col">
+                          <div class="faq-content-office__worktime">
+                            <h5>Режим работы</h5>
+                            <ul class="list-nostyled">
+                              <li>ПН-ПТ <span>10.00 - 19.00</span></li>
+                              <li>СБ <span>11.00 - 15.00</span></li>
+                              <li>ВС <span>Выходной</span></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="faq-content-office__address-col">
+                          <div class="faq-content-office__address">
+                            <h5>Адрес</h5>
+                            <p>г. Киев, Борисоглебская, 17/1</p>
+                          </div>
+                        </div>
+
+                        <div class="faq-content-office__status-col">
+                          <div class="faq-content-office__status">
+                            <h5>Статус замовлення</h5>
+                            <div class="faq-content-office__status-inner">
+                              <label class="field-text">
+                                <span class="field-text__input-wrap">
+                                  <input class="field-text__input" type="text" placeholder="Введите номер телефона">
+                                  <span class="field-text__help-text"></span>
+                                </span>
+                              </label>
+                              <div class="field-actions">
+                                <button class="btn" type="button">Узнать</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                    </section>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <!-- mobile-nav -->
+  @@include('blocks/mobile-nav/mobile-nav.html')
+
+  @@include('blocks/login-modal/login-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
