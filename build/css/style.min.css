@@ -3661,12 +3661,12 @@ a[href^="tel:"] {
 .pagination__link:hover, .pagination__link:focus {
       background-color: #257dec; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-09378948900133597.png);
+  background-image: url(../img/sprite-012252387434111434.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-09378948900133597.png);
+  background-image: url(../img/sprite-012252387434111434.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -6690,6 +6690,41 @@ input:checked + .prod-slider__color-text {
     font-size: 14px; }
 .faq-content-question button[type=submit] {
     margin-bottom: 0; }
+.faq-content-contacts a {
+  font-size: 16px;
+  text-decoration: none; }
+.faq-content-contacts__tel-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  max-width: 320px; }
+.faq-content-contacts__tel-item {
+  margin-bottom: 10px; }
+.faq-content-contacts__tel-item:nth-child(odd) {
+    margin-right: 32px; }
+.faq-content-contacts__worktime-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  max-width: 320px; }
+.faq-content-contacts__worktime-item {
+  font-size: 16px; }
+.faq-content-contacts__worktime-item:first-of-type {
+    margin-right: 20px; }
 @media (min-width: 480px) {
       .logo img {
         max-width: none;
@@ -7770,7 +7805,13 @@ input:checked + .prod-slider__color-text {
       -ms-flex-preferred-size: calc(50% - 10px);
           flex-basis: calc(50% - 10px); }
     .faq-content-question__form textarea.field-text__input {
-      min-height: 103px; } }
+      min-height: 103px; }
+  .faq-content-contacts__email {
+    margin-bottom: 20px; }
+  .faq-content-contacts__tel {
+    margin-bottom: 10px; }
+  .faq-content-contacts__title {
+    margin-top: 0; } }
 @media (min-width: 992px) {
   .dropdown-menu-lg-left {
     right: auto;
@@ -8734,7 +8775,11 @@ input:checked + .prod-slider__color-text {
       margin-right: 80px; }
     .faq-content-question__form > * {
       -ms-flex-preferred-size: 285px;
-          flex-basis: 285px; } }
+          flex-basis: 285px; }
+  .faq-content-contacts__email {
+    margin-bottom: 40px; }
+  .faq-content-contacts__tel {
+    margin-bottom: 30px; } }
 @media (min-width: 1280px) and (min-width: 1280px) {
   .col-1-2-3--fullwidth {
     -webkit-box-flex: 0;
