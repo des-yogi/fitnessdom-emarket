@@ -1,0 +1,74 @@
+.faq-content-contacts {
+
+  $block-name:                &; // #{$block-name}__element
+
+  a {
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  &__email {
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__tel {
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__title {
+
+    @media (min-width: $screen-md) {
+      margin-top: 0;
+    }
+
+    &--email {
+
+    }
+  }
+
+  &__tel-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    max-width: 320px;
+  }
+
+  &__tel-item {
+    margin-bottom: 10px;
+
+    &:nth-child(odd) {
+      margin-right: 32px;
+    }
+  }
+
+  &__worktime-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    max-width: 320px;
+  }
+
+  &__worktime-item {
+    font-size: 16px;
+
+    &:first-of-type {
+      margin-right: 20px;
+    }
+  }
+}

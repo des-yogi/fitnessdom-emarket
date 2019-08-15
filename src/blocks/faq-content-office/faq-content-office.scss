@@ -1,0 +1,83 @@
+.faq-content-office {
+
+  @media (min-width: $screen-xl) {
+    flex: 1 1;
+    padding: 20px 40px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__worktime-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(sm, 6, $grid-columns, 30px);
+    @include col(md, 6);
+    margin-bottom: 20px;
+  }
+
+  &__address-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(sm, 6, $grid-columns, 30px);
+    @include col(md, 6);
+    margin-bottom: 20px;
+  }
+
+  &__status-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 12);
+  }
+
+  &__worktime {
+
+  }
+
+  &__address {
+
+  }
+
+  &__status {
+
+    h5 {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__status-inner {
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    button[type=button] {
+      margin-bottom: 0;
+    }
+
+    .field-text,
+    .field-actions {
+
+      @media (min-width: $screen-md) {
+        margin: 0;
+      }
+    }
+
+    .field-text {
+
+      @media (min-width: $screen-md) {
+        width: calc(66% - 20px);
+        margin-right: 20px;
+      }
+    }
+
+    .field-actions {
+
+      @media (min-width: $screen-md) {
+        flex: 1 1;
+      }
+    }
+  }
+}
