@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Профиль | Изменение данных</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div id="page" class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main-content  main-content--authorization" role="main">
+
+        <div class="container">
+
+          @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+          <div class="row">
+
+            <div class="col-faq-aside">
+              <aside class="faq-aside-nav" role="navigation">
+
+                <div class="profile-login">
+
+                  <div class="profile-login__inner">
+                    <div class="embed-responsive  embed-responsive--1-1  profile-login__img">
+                      <picture>
+                        <source srcset="img/profile-login-img.webp" type="image/webp">
+                        <img src="img/profile-login-img.jpg" alt="User Name" width="100" height="100">
+                      </picture>
+                    </div>
+
+                    <div class="profile-login__user">
+                      <span class="profile-login__name">Пальчук Андрей</span>
+                      <span class="profile-login__patronymic">Владимирович</span>
+                    </div>
+                  </div>
+
+                  <div class="profile-login__btn-wrapper">
+                    <button class="btn  profile-login__btn-exit" type="button">Выход</button>
+                    <button class="btn  profile-login__btn-change" type="button">Сменить пароль</button>
+                  </div>
+
+                </div>
+
+                <div class="dropdown  faq-aside-nav__drop">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownFaqBtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>Личные данные</span>
+                    <span>
+                      <svg width="20" height="9"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#down-arrow-icon"></use></svg>
+                    </span>
+                  </button>
+
+                  <div class="dropdown-menu  faq-aside-nav__menu" aria-labelledby="dropdownFaqBtn">
+                    <a class="dropdown-item  faq-aside-nav__item  active">Личные данные</a>
+                    <a class="dropdown-item  faq-aside-nav__item" href="#">Дисконтная карта</a>
+                    <a class="dropdown-item  faq-aside-nav__item" href="#">Мои отзывы</a>
+                    <a class="dropdown-item  faq-aside-nav__item" href="#">Избранное</a>
+                    <a class="dropdown-item  faq-aside-nav__item" href="#">Сообщения</a>
+                    <a class="dropdown-item  faq-aside-nav__item" href="#">История заказов</a>
+                    <a class="dropdown-item  faq-aside-nav__item" href="#">Просмотренные товары</a>
+                  </div>
+                </div>
+
+              </aside>
+            </div>
+
+            <div class="col-faq-content">
+              <div class="faq-content-text">
+                <h1>Профиль / Изменение данных</h1>
+
+                <div class="faq-content-text__block">
+                  <form class="profile-form" action="/" method="post">
+                    <div class="profile-form__block">
+                      <h3>ФИО</h3>
+
+                      <label class="field-text">
+                        <span class="field-text__name">Имя</span>
+                        <span class="field-text__input-wrap">
+                          <input class="field-text__input" type="text" name="name">
+                          <span class="field-text__help-text"></span>
+                        </span>
+                      </label>
+
+                      <label class="field-text">
+                        <span class="field-text__name">Фамилия</span>
+                        <span class="field-text__input-wrap">
+                          <input class="field-text__input" type="text" name="surname">
+                          <span class="field-text__help-text"></span>
+                        </span>
+                      </label>
+
+                      <label class="field-text">
+                        <span class="field-text__name">Отчество</span>
+                        <span class="field-text__input-wrap">
+                          <input class="field-text__input" type="text" name="patronymic">
+                          <span class="field-text__help-text"></span>
+                        </span>
+                      </label>
+
+                      <div class="field-radio">
+                        <div class="field-radio__title">Пол</div>
+                        <div class="field-radio__input-wrap">
+                          <label class="field-radio__name">
+                            <input class="field-radio__input" type="radio" name="sex" value="man" checked>
+                            <span class="field-radio__name-text">Мужской</span>
+                          </label>
+                        </div>
+                        <div class="field-radio__input-wrap">
+                          <label class="field-radio__name">
+                            <input class="field-radio__input" type="radio" name="sex" value="woman">
+                            <span class="field-radio__name-text">Женский</span>
+                          </label>
+                        </div>
+                        <div class="field-radio__help-text-wrap">
+                          <div class="field-radio__help-text  error"></div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="profile-form__block">
+                      <h3>Контактные данные</h3>
+                      <label class="field-text">
+                        <span class="field-text__name">Телефон</span>
+                        <span class="field-text__input-wrap">
+                          <input class="field-text__input" type="tel" name="tel">
+                          <span class="field-text__help-text"></span>
+                        </span>
+                      </label>
+                      <label class="field-text">
+                        <span class="field-text__name">Электронная почта</span>
+                        <span class="field-text__input-wrap">
+                          <input class="field-text__input" type="email" name="email">
+                          <span class="field-text__help-text"></span>
+                        </span>
+                      </label>
+                    </div>
+                    <div class="profile-form__block">
+                      <h3>Адрес проживания</h3>
+                      <label class="field-text  field-text--textarea">
+                        <span class="field-text__input-wrap">
+                          <textarea class="field-text__input" name="address" placeholder="Ваш адрес"></textarea>
+                          <span class="field-text__help-text"></span>
+                        </span>
+                      </label>
+                    </div>
+
+                    <div class="field-actions">
+                      <button class="btn  profile-form__submit" type="submit">Внести изменения</button>
+                    </div>
+
+                  </form>
+                </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <!-- mobile-nav -->
+  @@include('blocks/mobile-nav/mobile-nav.html')
+
+  @@include('blocks/login-modal/login-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

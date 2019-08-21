@@ -422,6 +422,18 @@ a {
   }
 }
 
+.content-favorite-col {
+  @include col(xs, 12, $grid-columns, 30px);
+  @include col(md, 9);
+  @include col(lg, 6);
+  @include col(xl, 4);
+  margin-bottom: 15px;
+
+  @media (min-width: $screen-md) {
+    margin-bottom: 20px;
+  }
+}
+
 .col-faq-aside {
   @include col(xs, 12, $grid-columns, 30px);
   @include col(md, 4);
