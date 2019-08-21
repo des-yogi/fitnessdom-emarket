@@ -1,0 +1,83 @@
+.profile-login {
+  margin-bottom: 20px;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    margin-bottom: 20px;
+    background-color: $main-color;
+    border-radius: $border-radius;
+  }
+
+  &__img {
+    flex-basis: 18%;
+    margin-right: 20px;
+    border: 2px solid $white;
+    border-radius: $border-radius;
+
+    img {
+      @include object-fit(cover);
+    }
+  }
+
+  &__user {
+    flex: 1 1;
+    padding-right: 15px;
+
+    & > span {
+      display: block;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 700;
+      color: $white;
+    }
+  }
+
+  &__name {
+
+  }
+
+  &__patronymic {
+
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > button {
+      flex: 1 1;
+    }
+
+    #{$block-name}__btn-exit,
+    #{$block-name}__btn-change {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 14px;
+      background-color: $white;
+      box-shadow: $shadow;
+
+      &:hover,
+      &:focus {
+        color: $white;
+        background-color: darken($main-color, 10%);
+      }
+    }
+  }
+
+  &__btn-exit {
+    max-width: 95px;
+    margin-right: 20px;
+    color: $color-danger;
+  }
+
+  &__btn-change {
+    color: $color-main;
+  }
+}

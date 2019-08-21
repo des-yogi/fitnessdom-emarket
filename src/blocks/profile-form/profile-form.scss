@@ -1,0 +1,108 @@
+.profile-form {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      width: 100%;
+    }
+
+    h3:first-of-type {
+
+      @media (min-width: $screen-md) {
+        margin-top: 0;
+      }
+    }
+
+    .field-text,
+    .field-radio {
+      width: 100%;
+
+      @media (min-width: $screen-md) {
+        width: calc(50% - 10px);
+      }
+
+      @media (min-width: $screen-xl) {
+        max-width: 285px;
+        margin-right: 85px;
+      }
+
+      &--textarea {
+        width: 100% !important;
+        margin-bottom: 0;
+
+        @media (min-width: $screen-xl) {
+          max-width: 655px;
+        }
+      }
+    }
+
+    .field-radio {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      &__title {
+        width: 100%;
+      }
+
+      &__input-wrap {
+        width: 50%;
+        margin-top: 0;
+      }
+
+      &__name {
+        padding-left: 35px;
+        padding-right: 0;
+      }
+
+      &__name-text {
+        font-size: 14px;
+
+        &::before {
+          left: 0;
+        }
+
+        &::after {
+          left: 5px;
+        }
+
+        @media (min-width: $screen-xl) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 40px;
+    }
+
+    @media (min-width: $screen-xl) {
+      justify-content: flex-start;
+    }
+  }
+
+  .field-actions {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__submit {
+    width: 100%;
+    margin-bottom: 0 !important;
+
+    @media (min-width: $screen-md) {
+      width: calc(50% - 20px) !important;
+    }
+
+    @media (min-width: $screen-xl) {
+      width: calc(33.33% - 20px) !important;
+    }
+  }
+}

@@ -104,7 +104,10 @@
     "faq-content-office": [],
     "faq-content-accordion": [],
     "faq-content-question": [],
-    "faq-content-contacts": []
+    "faq-content-contacts": [],
+    "profile-login": [],
+    "profile-form": [],
+    "prod-card-full-profile": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
