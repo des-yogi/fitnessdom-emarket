@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Корзина покупателя</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div id="page" class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main-content  main-content--authorization" role="main">
+
+        <div class="container">
+
+          @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+          <div class="shopping-cart">
+            <h1>Корзина покупателя</h1>
+
+            <div class="shopping-cart__header">
+
+              <div class="row">
+
+                <div class="shopping-cart__product-col">
+                  <span class="h5">Товар</span>
+                </div>
+
+                <div class="shopping-cart__price-col">
+                  <span class="h5">Цена</span>
+                </div>
+
+                <div class="shopping-cart__quantity-col">
+                  <span class="h5">Количество</span>
+                </div>
+
+                <div class="shopping-cart__total-col">
+                  <span class="h5">Общая цена</span>
+                </div>
+
+                <div class="shopping-cart__delete-col">
+                  <span class="h5">Убрать</span>
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="shopping-cart__body">
+
+              @@include('blocks/cart-item/cart-item.html')
+
+              @@include('blocks/cart-item/cart-item.html')
+
+              @@include('blocks/cart-complect/cart-complect.html')
+
+              @@include('blocks/cart-item/cart-item.html')
+
+            </div>
+
+            <div class="shopping-cart__footer">
+              <div class="row">
+
+                <div class="shopping-cart__footer-left-col">
+                  <section class="discount-coupon">
+                    <h5 class="discount-coupon__title">Купон</h5>
+                    <div class="row">
+                      <div class="discount-coupon__input-col">
+                        <label class="field-text">
+                          <span class="field-text__input-wrap">
+                            <input class="field-text__input" type="text" placeholder="Код купона">
+                            <span class="field-text__help-text error"></span>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="discount-coupon__btn-col">
+                        <button class="btn  discount-coupon__btn" type="button">Применить</button>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <div class="shopping-cart__footer-right-col">
+                  <div class="order-confirm">
+                    <div class="order-confirm__order">
+                      Итого:<span class="order-confirm__order-sum">1 148 400<sup>грн</sup></span>
+                    </div>
+                    <div class="order-confirm__order-submit-wrapper">
+                      <button class="btn  order-confirm__order-submit" type="button">Оформить заказ</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <!-- mobile-nav -->
+  @@include('blocks/mobile-nav/mobile-nav.html')
+
+  @@include('blocks/login-modal/login-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+.order-confirm {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__order {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  &__order-sum {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 10px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  &__order-submit-wrapper {
+
+  }
+
+  &__order-submit {
+    width: 100%;
+  }
+}
