@@ -1,0 +1,99 @@
+.shopping-cart {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__header {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__body {
+
+  }
+
+  &__product-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 4);
+    @include col(lg, 5);
+  }
+
+  &__price-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 2);
+  }
+
+  &__quantity-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 2);
+  }
+
+  &__total-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 2);
+  }
+
+  &__delete-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 2);
+    @include col(lg, 1);
+    //order: -1;
+    text-align: right;
+
+    @media (min-width: $screen-md) {
+      //order: 0;
+    }
+
+    .cart-item__title {
+      //visibility: hidden;
+    }
+  }
+
+  &__footer {
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    @media (min-width: $screen-md) {
+      margin-top: 40px;
+    }
+  }
+
+  &__footer-left-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6);
+    @include col(lg, 6);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    box-shadow: $shadow;
+    border-radius: $border-radius;
+
+    @media (min-width: $screen-md) {
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      box-shadow: none;
+    }
+  }
+
+  &__footer-right-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6);
+    @include col-offset(lg, 2);
+    @include col(lg, 4);
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 20px;
+    }
+  }
+}

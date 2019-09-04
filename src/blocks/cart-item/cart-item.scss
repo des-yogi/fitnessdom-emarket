@@ -1,0 +1,144 @@
+.cart-item {
+  padding: 20px 0;
+  border-bottom: 2px solid $border-light;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  &__product-img {
+    flex: 0 1 20%;
+    margin-right: 10px;
+
+    @media (min-width: $screen-md) {
+      flex: 0 1 26%;
+    }
+
+    @media (min-width: $screen-xl) {
+      flex: 0 1 37%;
+      margin-right: 20px;
+    }
+
+    img {
+      @include object-fit(cover);
+    }
+  }
+
+  &__product-descr {
+    flex: 1 1;
+
+    .prod-code {
+      margin-bottom: 0;
+    }
+  }
+
+  &__product-title {
+    margin-top: 0;
+    color: currentColor;
+  }
+
+  &__delete,
+  &__price,
+  &__total,
+  &__quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 100%;
+    font-size: 16px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__price {
+
+  }
+
+  &__price-old {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      font-size: 12px;
+      text-decoration: line-through;
+      color: $text-muted;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 14px;
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 16px;
+    }
+  }
+
+  &__price-new {
+    font-weight: 700;
+
+    @media (min-width: $screen-lg) {
+      font-size: 20px;
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 24px;
+    }
+  }
+
+  &__quantity {
+
+    .field-num {
+      margin-bottom: 0;
+    }
+  }
+
+  &__total {
+
+  }
+
+  &__total-title {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-danger;
+  }
+
+  &__delete {
+
+    @media (min-width: $screen-md) {
+      justify-content: flex-end;
+      //align-items: flex-start;
+    }
+  }
+}

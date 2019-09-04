@@ -1,0 +1,106 @@
+.cart-complect {
+  margin: 15px 0;
+  border-bottom: none;
+  outline: 2px solid $color-danger;
+  outline-offset: 13px;
+
+  @media (min-width: $screen-md) {
+    outline-offset: 18px;
+  }
+
+  @media (min-width: $screen-lg) {
+    outline-offset: 18px;
+  }
+
+  @media (min-width: $screen-xl) {
+    outline: none;
+    padding: 20px;
+    margin-top: 0;
+    border: 2px solid $color-danger;
+    border-radius: $border-radius;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  .row {
+
+    &--second {
+      margin-top: 10px;
+    }
+  }
+
+  &__col-left {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6);
+    @include col(lg, 7);
+  }
+
+  &__col-right {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6);
+    @include col(lg, 5);
+
+    @media (min-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      //align-items: center;
+    }
+  }
+
+  &__col-product {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 8);
+    @include col(lg, 9);
+
+    @media (min-width: $screen-lg) {
+      //padding-right: 0;
+      flex: 0 0 calc(75% - 23px);
+    }
+  }
+
+  &__col-price {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 4);
+    @include col(lg, 3);
+    flex: 0 1 100%;
+    margin-left: calc(20% + 5px);
+
+    @media (min-width: $screen-md) {
+      margin-left: 0;
+      flex: 0 0 100%;
+    }
+  }
+
+  &__col-quantity {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 4);
+    @include col(lg, 5);
+  }
+
+  &__col-total {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 6);
+    @include col(lg, 5);
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $screen-lg) {
+      padding-left: 0;
+    }
+
+    .cart-item__total {
+      margin-bottom: 0;
+    }
+  }
+
+  &__col-delete {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(md, 2);
+    @include col(lg, 2);
+
+    // @media (min-width: $screen-md) {
+    //   height: 100%;
+    // }
+  }
+}

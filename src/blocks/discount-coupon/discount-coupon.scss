@@ -1,0 +1,35 @@
+.discount-coupon {
+
+  @media (min-width: $screen-md) {
+    padding: 20px 15px;
+    box-shadow: $shadow;
+    border-radius: $border-radius;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__input-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(lg, 8);
+  }
+
+  &__btn-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col(lg, 4);
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__btn {
+    width: 100%;
+  }
+
+  .field-text {
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+    }
+  }
+}

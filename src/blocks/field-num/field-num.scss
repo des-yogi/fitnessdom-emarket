@@ -18,15 +18,15 @@ $typo-margin-vertical: 10px !default;
   &__input-and-btns {
     position: relative;
     display: block;
-    max-width: 140px;
+    max-width: 100px;
   }
 
   &__input {
     @include field-text;
-    width: 150px;
-    padding: $field-padding-vertical 35px;
-    font-size: 14px;
-    font-weight: 500;
+    width: 95px;
+    padding: $field-padding-vertical 25px;
+    font-size: 16px;
+    //font-weight: 700;
     color: $title-color;
     text-align: center;
     border: none;
@@ -44,15 +44,12 @@ $typo-margin-vertical: 10px !default;
     height: 20px;
     border: none;
     padding: 0;
-    border-top-right-radius: $border-radius;
-    border-bottom-right-radius: $border-radius;
     font: 0/0 a; // stylelint-disable-line
     color: transparent;
     background: transparent;
 
     &:hover,
     &:focus {
-      //background-color: $main-color;
       cursor: pointer;
     }
 
@@ -67,7 +64,7 @@ $typo-margin-vertical: 10px !default;
 
       &:hover,
       &:focus {
-        background: $main-color svg-load('../blocks/field-num/bg-img/up-arrow-icon.svg', fill=$white) center no-repeat;
+        background: svg-load('../blocks/field-num/bg-img/up-arrow-icon.svg', fill=$main-color) center no-repeat;
       }
     }
 
@@ -78,7 +75,7 @@ $typo-margin-vertical: 10px !default;
 
       &:hover,
       &:focus {
-        background: $main-color svg-load('../blocks/field-num/bg-img/down-arrow-icon.svg', fill=$white) center no-repeat;
+        background: svg-load('../blocks/field-num/bg-img/down-arrow-icon.svg', fill=$main-color) center no-repeat;
       }
     }
 

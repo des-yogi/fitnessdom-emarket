@@ -107,7 +107,15 @@
     "faq-content-contacts": [],
     "profile-login": [],
     "profile-form": [],
-    "prod-card-full-profile": []
+    "prod-card-full-profile": [],
+    "cart-item": [],
+    "cart-complect": [],
+    "discount-coupon": [],
+    "order-confirm": [],
+    "checkout-form": [],
+    "registration-form": [],
+    "comparison-lists": [],
+    "shopping-cart": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
