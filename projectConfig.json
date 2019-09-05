@@ -115,7 +115,8 @@
     "checkout-form": [],
     "registration-form": [],
     "comparison-lists": [],
-    "shopping-cart": []
+    "shopping-cart": [],
+    "page-404": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

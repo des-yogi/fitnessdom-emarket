@@ -1,9 +1,67 @@
-// В этом файле должны быть стили для БЭМ-блока comparison-lists, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .comparison-lists {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__switcher {
+    margin-bottom: 20px;
+
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__list-item {
+    width: 100%;
+    margin-bottom: 20px;
+
+    @media (min-width: $screen-md) {
+      margin-right: 20px;
+      margin-bottom: 0;
+      width: auto;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: $text-color;
+    background-color: $white;
+    box-shadow: $shadow;
+
+    &--active {
+      color: $white;
+      background-color: $main-color;
+      box-shadow: none;
+      pointer-events: none;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $main-color;
+      box-shadow: none;
+    }
+  }
+
+  &__action-col {
+    @include col(xs, 12, $grid-columns, 30px);
+    @include col-offset(md, 6);
+    @include col(md, 6);
+    @include col-offset(xl, 8);
+    @include col(xl, 4);
+
+    & > .btn {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 }

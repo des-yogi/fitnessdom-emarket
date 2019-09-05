@@ -15,10 +15,6 @@
     }
   }
 
-  &__body {
-
-  }
-
   &__product-col {
     @include col(xs, 12, $grid-columns, 30px);
     @include col(md, 4);
