@@ -1,14 +1,13 @@
 .prod-card-simple {
+  position: relative;
   height: 100%;
   padding: 15px 15px 0;
   background-color: $white;
-  // box-shadow: $shadow;
   border-radius: $border-radius;
   border: 2px solid $border-light;
 
   &:hover,
   &:focus {
-    //box-shadow: $shadow--hover;
     border-color: $main-color;
   }
 
@@ -18,9 +17,14 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  .close {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+
   .row {
     height: 100%;
-    //align-content: space-between;
 
     @media (min-width: $screen-md) {
       margin-left: -15px;
@@ -140,6 +144,9 @@
 
   &__img {
 
+    img {
+      @include object-fit(cover);
+    }
   }
 
   &__text {
@@ -147,6 +154,13 @@
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
+  }
+
+  &__availability {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: $main-color;
   }
 
   &__title {

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Списки сравнений</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div id="page" class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main-content  main-content--authorization" role="main">
+
+        <div class="container">
+
+          <div class="page-404">
+            <div class="row">
+              <div class="page-404__col">
+                <div class="page-404__img">
+                  <img src="img/p404.svg" alt="Error 404">
+                </div>
+                <h1>Страница не найдена или не существует...</h1>
+                <a href="index.html" class="btn">Вернуться на главную</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <!-- mobile-nav -->
+  @@include('blocks/mobile-nav/mobile-nav.html')
+
+  @@include('blocks/login-modal/login-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
