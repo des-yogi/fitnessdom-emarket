@@ -292,6 +292,7 @@
       border: 2px solid currentColor;
       background-color: currentColor;
       border-radius: $border-radius;
+      box-shadow: 0 0 0 2px $border-light;
     }
 
     &--selected {
@@ -303,7 +304,8 @@
     }
   }
 
-  &__color-input {
+  &__color-input,
+  &__size-input {
     position: absolute;
     visibility: hidden;
     appearance: none;
@@ -329,9 +331,59 @@
     opacity: 1;
   }
 
+  &__sizes {
+    width: 100%;
+  }
+
+  &__size-name {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-family: $font-family--headings;
+    font-size: inherit;
+    line-height: 1.2em;
+
+    &:hover,
+    &:focus {
+      #{$block-name}__size-text {
+        color: $main-color;
+        border-color: $main-color;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__size-text {
+    display: block;
+    padding: 3px 7px 1px;
+    border: 2px solid $border-light;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: all 0.2s linear;
+  }
+
+  @at-root input:checked + #{$block-name}__size-text {
+    //font-weight: 700;
+    color: $white !important;
+    border-color: $main-color;
+    background-color: $main-color;
+    pointer-events: none;
+  }
+
+  @at-root input:disabled + #{$block-name}__size-text {
+    color: $border-light !important;
+    border-color: $border-light !important;
+    pointer-events: none;
+  }
+
   &__producer {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     padding: 15px 0;
     margin: 0 0 20px;
     border-bottom: 2px solid $border-light;
@@ -339,9 +391,15 @@
     @media (min-width: $screen-md) {
       margin-bottom: auto;
     }
+
+    &--middle {
+      padding-bottom: 5px;
+    }
   }
 
   &__producer-name {
+    margin-top: 0;
+    margin-bottom: 0;
     margin-right: 10px;
   }
 
