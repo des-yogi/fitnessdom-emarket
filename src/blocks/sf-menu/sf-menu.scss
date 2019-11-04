@@ -172,10 +172,17 @@
   border-left-color: white;
 }
 
+.sf-vertical__item > a {
+  white-space: normal;
+}
+
 .sf-vertical__item.sfHover {
 
-  .sf-vertical__item-link::after {
-    background-image: svg-load('../blocks/sf-menu/bg-img/right-arrow-icon.svg', fill=$white);
+  .sf-vertical__item-link {
+
+    &::after {
+      background-image: svg-load('../blocks/sf-menu/bg-img/right-arrow-icon.svg', fill=$white);
+    }
   }
 }
 
@@ -216,9 +223,6 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-content: flex-start;
-  // width: 100%;
-  // width: 915px;
-  //height: 300px;
   max-height: 100vh;
   // overflow-y: auto;
   background-color: red;
