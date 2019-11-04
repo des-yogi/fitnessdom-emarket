@@ -85,7 +85,7 @@
       content: "";
       width: 8px;
       height: 15px;
-      background: svg-load('../blocks/sprite-svg/svg/right-arrow-s.svg', fill=$main-color);
+      //background: svg-load('../blocks/sprite-svg/svg/right-arrow-s.svg', fill=$main-color);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -98,7 +98,7 @@
       background-color: $main-color;
 
       &::after {
-        background: svg-load('../blocks/sprite-svg/svg/right-arrow-s.svg', fill=$white);
+        //background: svg-load('../blocks/sprite-svg/svg/right-arrow-s.svg', fill=$white);
       }
     }
   }

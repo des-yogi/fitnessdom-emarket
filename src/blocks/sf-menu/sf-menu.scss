@@ -150,7 +150,7 @@
   top: 0;
 }
 .sf-vertical > li {
-  position: static;
+  //position: static;
 
   float: none;
 }
@@ -170,6 +170,13 @@
 .sf-vertical.sf-arrows li:hover > .sf-with-ul:after,
 .sf-vertical.sf-arrows .sfHover > .sf-with-ul:after {
   border-left-color: white;
+}
+
+.sf-vertical__item.sfHover {
+
+  .sf-vertical__item-link::after {
+    background-image: svg-load('../blocks/sf-menu/bg-img/right-arrow-icon.svg', fill=$white);
+  }
 }
 
 .sf-vertical__item-link,
