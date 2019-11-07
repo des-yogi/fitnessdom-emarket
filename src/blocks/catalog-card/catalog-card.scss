@@ -19,8 +19,12 @@
   }
 
   &__title {
-    padding: 15px 20px;
+    padding: 15px;
     margin: 0;
     color: currentColor;
+
+    @media (min-width: $screen-xl) {
+      padding: 20px;
+    }
   }
 }

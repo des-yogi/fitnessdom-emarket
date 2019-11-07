@@ -28,4 +28,14 @@
       width: 100%;
     }
   }
+
+  &--brands {
+    margin-top: 20px;
+    box-shadow: $shadow;
+    border-radius: $border-radius;
+
+    .accordion__header {
+      border-radius: $border-radius;
+    }
+  }
 }

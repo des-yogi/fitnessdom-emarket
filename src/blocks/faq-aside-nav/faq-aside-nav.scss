@@ -51,12 +51,25 @@
     }
   }
 
+  &__menu-title {
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display: block;
+      margin: 0;
+      padding: 20px;
+      border-bottom: 2px solid $border-light;
+    }
+
+  }
+
   &__item {
     padding: 10px 20px;
     font-family: $font-family--headings;
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
+    white-space: normal;
 
     @media (min-width: $screen-md) {
       padding-top: 15px;
