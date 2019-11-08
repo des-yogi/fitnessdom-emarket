@@ -1,42 +1,195 @@
 .field-search {
+  height: 100%;
   padding: 10px 0;
 
   @media (min-width: $screen-md) {
     display: flex;
     align-items: center;
-    height: 100%;
   }
 
   $block-name:                &; // #{$block-name}__element
 
   &__form {
     width: 100%;
+    height: 100%;
+  }
+
+  &__inner {
+    height: 42px;
+
+    @media (min-width: $screen-md) {
+      position: relative;
+    }
+  }
+
+  &__input-wwrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
   }
 
   &__input {
+    position: relative;
+    z-index: 0;
     width: 100%;
+    height: 42px;
     max-width: 100%;
-    padding: 12px 10px 12px 45px;
+    padding: 12px 45px;
     background-color: $input-bg;
     background-image: svg-load('../blocks/field-search/bg-img/search-icon.svg', fill=$text-muted);
     background-repeat: no-repeat;
     background-position: left 15px center;
     border: none;
     border-radius: $border-radius;
+    transition: all 0.25s ease-out;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-image: svg-load('../blocks/field-search/bg-img/search-icon.svg', fill=$main-color);
       background-repeat: no-repeat;
       background-position: left 15px center;
     }
 
     &:focus {
+      position: absolute;
+      z-index: 5;
+      top: 10px;
+      left: 14px;
+      right: 14px;
+      width: calc(100% - 28px);
+      border-right: 4px solid $main-color;
+
       outline: none;
+
+      @media (min-width: $screen-md) {
+        position: static;
+        width: 100%;
+      }
     }
 
     @media (min-width: $screen-xl) {
       border-right: 4px solid $main-color;
+    }
+  }
+
+  &__clear {
+    visibility: hidden;
+    display: block;
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: svg-load('../blocks/field-search/bg-img/close-sm-icon.svg', fill=$text-muted);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-image: svg-load('../blocks/field-search/bg-img/close-sm-icon.svg', fill=$color-danger);
+    }
+
+    @media (min-width: $screen-md) {
+      right: 15px;
+    }
+
+    &--visible {
+      visibility: visible;
+    }
+  }
+
+  &__result-wwrapper {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+    left: 0;
+    width: 100vw;
+    padding-bottom: 10px;
+    background-color: $white;
+    box-shadow: $shadow;
+    border-radius: $border-radius;
+
+    @media (min-width: $screen-md) {
+      top: calc(100% + 5px);
+      left: 0;
+      width: 100%;
+      min-width: 480px;
+      max-width: 500px;
+    }
+  }
+
+  &__container {
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+  }
+
+  &__result {
+    list-style: none;
+    padding: 15px 20px 15px 15px;
+    margin: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    height: auto;
+
+    li {
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &--main {
+      border-bottom: 2px solid $border-light;
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-decoration: none;
+  }
+
+  &__result-text {
+    flex: 1 1 auto;
+    margin-right: 20px;
+  }
+
+  &__result-price {
+    flex: 1 0 25%;
+    text-align: right;
+
+    @media (min-width: $screen-sm) {
+      flex-basis: auto;
+    }
+  }
+
+  &__scrollbar {
+    position: absolute;
+    right: 3px;
+    top: 10px !important;
+    z-index: 50;
+    width: 5px;
+    height: calc(100% - 20px) !important;
+    background: $border-light !important;
+
+    .swiper-scrollbar-drag {
+      width: 100%;
+      position: relative;
+      background: $main-color !important;
+      border-radius: 5px;
+      left: 0;
+      top: 0;
     }
   }
 }
