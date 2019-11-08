@@ -3,24 +3,6 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  .field-search__input {
-    transition: all 0.25s ease-out;
-
-    &:focus {
-      position: absolute;
-      z-index: 10;
-      width: calc(100% - 28px);
-      left: 14px;
-      right: 14px;
-      border-right: 4px solid $main-color;
-
-      @media (min-width: $screen-md) {
-        position: static;
-        width: 100%;
-      }
-    }
-  }
-
   &__top {
     box-shadow: $shadow;
 
@@ -137,13 +119,15 @@
 
   &__bottom-search-col {
     @include col(xs, 6, $grid-columns, 30px);
-    @include col(md, 5);
+    @include col(md, 7);
+    @include col(lg, 5);
     @include col(xl, 4);
   }
 
   &__bottom-shop-col {
     @include col(xs, 6, $grid-columns, 30px);
-    @include col(md, 7);
+    @include col(md, 5);
+    @include col(lg, 7);
     @include col(xl, 5);
     padding-left: 0;
   }
@@ -166,7 +150,7 @@
     span {
       display: none;
 
-      @media (min-width: $screen-xl) {
+      @media (min-width: $screen-lg) {
         display: block;
         margin-left: 20px;
       }
