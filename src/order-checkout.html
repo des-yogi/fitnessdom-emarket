@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Оформление заказа</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div id="page" class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main-content" role="main">
+
+        <div class="container">
+
+          @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+          <h1 class="catalog__title">Оформление заказа</h1>
+
+          <form class="checkout-form" action="" method="post">
+
+            <div class="row">
+
+              <div class="checkout-form__col-main">
+
+                <section class="checkout-form__step  checkout-form__step--customer">
+                  <div class="row">
+
+                    <div class="checkout-form__col-num">
+                      <a href="#" class="checkout-form__step-num"><span>1</span></a>
+                    </div>
+
+                    <div class="checkout-form__col-content">
+
+                      <div class="checkout-form__content">
+                        <h2>Ваши данные <a href="#" class="checkout-form__edit">Изменить</a></h2>
+
+                        <div class="checkout-form__btn-group">
+                          <button class="btn  checkout-form__btn  checkout-form__btn--guest" type="button">Я новый покупатель</button>
+                          <button class="btn  checkout-form__btn  checkout-form__btn--regular" type="button">Я постоянный покупатель</button>
+                        </div>
+
+                        <div class="checkout-form__fields">
+                          <label class="field-text">
+                            <span class="field-text__name">Имя</span>
+                            <span class="field-text__input-wrap">
+                              <input class="field-text__input" type="text" name="name" value="">
+                              <span class="field-text__help-text  error"></span>
+                            </span>
+                          </label>
+                          <label class="field-text">
+                            <span class="field-text__name">Фамилия</span>
+                            <span class="field-text__input-wrap">
+                              <input class="field-text__input" type="text" name="surname" value="">
+                              <span class="field-text__help-text  error"></span>
+                            </span>
+                          </label>
+                          <label class="field-text">
+                            <span class="field-text__name">Отчество</span>
+                            <span class="field-text__input-wrap">
+                              <input class="field-text__input" type="text" name="patronymic" value="">
+                              <span class="field-text__help-text  error"></span>
+                            </span>
+                          </label>
+                          <label class="field-text">
+                            <span class="field-text__name">Электронная почта</span>
+                            <span class="field-text__input-wrap">
+                              <input class="field-text__input" type="email" name="email" value="">
+                              <span class="field-text__help-text  error"></span>
+                            </span>
+                          </label>
+                          <label class="field-text">
+                            <span class="field-text__name">Телефон</span>
+                            <span class="field-text__input-wrap">
+                              <input class="field-text__input" type="tel" name="tel" value="">
+                              <span class="field-text__help-text  error"></span>
+                            </span>
+                          </label>
+                        </div>
+
+                        <button class="checkout-form__go-next" type="button">Далее</button>
+
+                        <p class="checkout-form__info-text">Указав адрес электронной почты, вы сможете получить на него информацию о заказе</p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </section>
+
+                <section class="checkout-form__step  checkout-form__step--delivery">
+                  <div class="row">
+
+                    <div class="checkout-form__col-num">
+                      <a href="#" class="checkout-form__step-num"><span>2</span></a>
+                    </div>
+
+                    <div class="checkout-form__col-content">
+
+                      <div class="checkout-form__content">
+                        <h2>Доставка <a href="#" class="checkout-form__edit">Изменить</a></h2>
+
+                        <div class="checkout-form__delivery-method">
+                          <div class="field-radio">
+                            <h3>Способы доставки</h3>
+
+                            <ul class="list-nostyled">
+
+                              <li>
+                                <div class="field-radio__input-wrap">
+                                  <label class="field-radio__name">
+                                    <input class="field-radio__input" type="radio" name="delivery-method" checked>
+                                    <span class="field-radio__name-text">Самовывоз из магазина</span>
+                                  </label>
+                                  <div class="checkout-form__text-wrap">
+                                    <span class="checkout-form__help-text">Стоимость доставки: Бесплатно</span>
+                                    <div class="checkout-form__hidden-data" hidden>
+                                      <p>ул. Борисоглебская, 17/1 (м. Контрактова Площа)</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+
+                              <li>
+                                <div class="field-radio__input-wrap">
+                                  <label class="field-radio__name">
+                                    <input class="field-radio__input" type="radio" name="delivery-method">
+                                    <span class="field-radio__name-text error">Доставка курьером по Киеву</span>
+                                  </label>
+                                  <div class="checkout-form__text-wrap">
+                                    <span class="checkout-form__help-text">Стоимость доставки: Бесплатно</span>
+                                    <div class="checkout-form__hidden-data" hidden>
+                                      <label class="field-text">
+                                        <span class="field-text__name">Улица</span>
+                                        <span class="field-text__input-wrap">
+                                          <input class="field-text__input" type="text" name="delivery-street" value="">
+                                          <span class="field-text__help-text  error"></span>
+                                        </span>
+                                      </label>
+                                      <label class="field-text">
+                                        <span class="field-text__name">Дом</span>
+                                        <span class="field-text__input-wrap">
+                                          <input class="field-text__input" type="text" name="delivery-house" value="">
+                                          <span class="field-text__help-text  error"></span>
+                                        </span>
+                                      </label>
+                                      <label class="field-text">
+                                        <span class="field-text__name">Кв.</span>
+                                        <span class="field-text__input-wrap">
+                                          <input class="field-text__input" type="text" name="delivery-app" value="">
+                                          <span class="field-text__help-text  error"></span>
+                                        </span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </li>
+
+                              <li>
+                                <div class="field-radio__input-wrap">
+                                  <label class="field-radio__name">
+                                    <input class="field-radio__input" type="radio" name="delivery-method">
+                                    <span class="field-radio__name-text error">«Нова Пошта»</span>
+                                  </label>
+
+                                  <div class="checkout-form__text-wrap">
+                                    <span class="checkout-form__help-text">Стоимость доставки: по тарифам НП</span>
+                                  </div>
+
+
+                                  <div class="checkout-form__hidden-data" hidden>
+                                    <div class="checkout-form__btn-group">
+                                      <button class="btn  checkout-form__btn" type="button">Доставка курьером</button>
+                                      <button class="btn  checkout-form__btn" type="button">Доставка в отделение</button>
+                                    </div>
+
+                                    <div class="field-select">
+                                      <span class="field-select__name">Укажите город</span>
+                                      <span class="field-select__select-wrap">
+                                        <select class="field-select__select" name="city-select">
+                                          <option>Город 1</option>
+                                          <option>Город 2</option>
+                                          <option>Город 3</option>
+                                        </select>
+                                      </span>
+                                    </div>
+                                    <label class="field-text">
+                                      <span class="field-text__name">Дом</span>
+                                      <span class="field-text__input-wrap">
+                                        <input class="field-text__input" type="text" name="delivery-house" value="">
+                                        <span class="field-text__help-text  error"></span>
+                                      </span>
+                                    </label>
+                                    <label class="field-text">
+                                      <span class="field-text__name">Подъезд</span>
+                                      <span class="field-text__input-wrap">
+                                        <input class="field-text__input" type="text" name="front-door" value="">
+                                        <span class="field-text__help-text  error"></span>
+                                      </span>
+                                    </label>
+                                    <label class="field-text">
+                                      <span class="field-text__name">Этаж</span>
+                                      <span class="field-text__input-wrap">
+                                        <input class="field-text__input" type="text" name="floor" value="">
+                                        <span class="field-text__help-text  error"></span>
+                                      </span>
+                                    </label>
+                                    <label class="field-text">
+                                      <span class="field-text__name">Кв.</span>
+                                      <span class="field-text__input-wrap">
+                                        <input class="field-text__input" type="text" name="delivery-app" value="">
+                                        <span class="field-text__help-text  error"></span>
+                                      </span>
+                                    </label>
+                                  </div>
+
+                                  <div class="checkout-form__hidden-data" hidden>
+                                    <div class="field-select">
+                                      <span class="field-select__name">Укажите город</span>
+                                      <span class="field-select__select-wrap">
+                                        <select class="field-select__select" name="city-select">
+                                          <option>Город 1</option>
+                                          <option>Город 2</option>
+                                          <option>Город 3</option>
+                                        </select>
+                                      </span>
+                                    </div>
+
+                                    <div class="field-select">
+                                      <span class="field-select__name">Укажите отделение</span>
+                                      <span class="field-select__select-wrap">
+                                        <select class="field-select__select" name="np-post-office">
+                                          <option>Отделение №1, ул. Калачевская, д. 1</option>
+                                          <option>Отделение №2, ул. Калачевская, д. 2</option>
+                                          <option>Отделение №3, ул. Калачевская, д. 3</option>
+                                        </select>
+                                      </span>
+                                      <div class="checkout-form__po-details">
+                                        <p>Грузоподъемность: до <span>1000</span> кг</p>
+                                        <p>График работы отделения: <br>
+                                          Пн-Пт: <span>08:00-21:00</span><br>
+                                          Сб: <span>09:00-18:00</span><br>
+                                          Вс: <span>11:00-16:00</span>
+                                        </p>
+                                        <p>Тел. <a href="tel:+380800500609">+380 800 500 609</a></p>
+                                      </div>
+                                    </div>
+
+                                  </div>
+
+                                </div>
+                              </li>
+
+                            </ul>
+
+                          </div>
+
+                        </div>
+
+                        <button class="checkout-form__go-next" type="button">Далее</button>
+
+                        <p class="checkout-form__info-text">Указав адрес электронной почты, вы сможете получить на него информацию о заказе</p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </section>
+
+                <section class="checkout-form__step  checkout-form__step--payment">
+                  <div class="row">
+
+                    <div class="checkout-form__col-num">
+                      <a href="#" class="checkout-form__step-num"><span>3</span></a>
+                    </div>
+
+                    <div class="checkout-form__col-content">
+
+                      <div class="checkout-form__content">
+                        <h2>Оплата</h2>
+
+                        <div class="checkout-form__delivery-method">
+
+                          <div class="field-radio">
+                            <h3>Способы оплаты</h3>
+
+                            <ul class="list-nostyled">
+
+                              <li>
+                                <div class="field-radio__input-wrap">
+                                  <label class="field-radio__name">
+                                    <input class="field-radio__input" type="radio" name="payment-method" checked>
+                                    <span class="field-radio__name-text">Наличными</span>
+                                  </label>
+                                </div>
+                              </li>
+
+                              <li>
+                                <div class="field-radio__input-wrap">
+                                  <label class="field-radio__name">
+                                    <input class="field-radio__input" type="radio" name="payment-method">
+                                    <span class="field-radio__name-text">Оплата картой</span>
+                                  </label>
+                                </div>
+                              </li>
+
+                              <li>
+                                <div class="field-radio__input-wrap">
+                                  <label class="field-radio__name">
+                                    <input class="field-radio__input" type="radio" name="payment-method">
+                                    <span class="field-radio__name-text">Оплата частями (ПриватБанк)<br>
+                                      <a href="#">Читать условия</a>
+                                    </span>
+                                  </label>
+                                </div>
+                              </li>
+
+                            </ul>
+
+                            <p>Возможность оплаты картой в кредит уточняйте у менеджера</p>
+                          </div>
+
+                          <div class="checkout-form__other-recipient" hidden>
+
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input class="field-checkbox__input" type="checkbox" checked>
+                                <span class="field-checkbox__name-text">Я получатель</span>
+                              </label>
+                            </div>
+                            <div class="checkout-form__fields">
+                              <label class="field-text">
+                                <span class="field-text__name">Имя</span>
+                                <span class="field-text__input-wrap">
+                                  <input class="field-text__input" type="text" name="name" value="">
+                                  <span class="field-text__help-text  error"></span>
+                                </span>
+                              </label>
+                              <label class="field-text">
+                                <span class="field-text__name">Фамилия</span>
+                                <span class="field-text__input-wrap">
+                                  <input class="field-text__input" type="text" name="surname" value="">
+                                  <span class="field-text__help-text  error"></span>
+                                </span>
+                              </label>
+                              <label class="field-text">
+                                <span class="field-text__name">Отчество</span>
+                                <span class="field-text__input-wrap">
+                                  <input class="field-text__input" type="text" name="patronymic" value="">
+                                  <span class="field-text__help-text  error"></span>
+                                </span>
+                              </label>
+                              <label class="field-text">
+                                <span class="field-text__name">Телефон</span>
+                                <span class="field-text__input-wrap">
+                                  <input class="field-text__input" type="tel" name="tel" value="">
+                                  <span class="field-text__help-text  error"></span>
+                                </span>
+                              </label>
+                            </div>
+                          </div>
+
+                        </div>
+
+                        <button class="checkout-form__go-next" type="button">Далее</button>
+
+                        <p class="checkout-form__info-text">Указав адрес электронной почты, вы сможете получить на него информацию о заказе</p>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+                </section>
+
+              </div>
+
+              <div class="checkout-form__col-total">
+                <div class="checkout-form__total">
+
+                  <div class="checkout-form__recipient">
+                    <p>Получатель: <span>Павленко Андрей Олександрович</span></p>
+                  </div>
+
+                  <div class="checkout-form__result-info">
+                    <h3>Итого:</h3>
+                    <ul class="list-nostyled  checkout-form__total-list">
+                      <li class="checkout-form__sum">
+                        <span><strong>2</strong> Товара на сумму</span>
+                        <span><strong>24 999</strong> грн</span>
+                      </li>
+                      <li class="checkout-form__sum-delivery">
+                        <span>Стоимость доставки:</span>
+                        <span><strong>25</strong> грн</span>
+                      </li>
+                    </ul>
+                    <p>К оплате: <span class="checkout-form__total-sum">1 148 400 грн</span></p>
+                  </div>
+
+                  <div class="checkout-form__result-action">
+                    <div class="field-checkbox">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox">
+                        <span class="field-checkbox__name-text">Не перезванвайте мне, я уверен в заказе</span>
+                      </label>
+                    </div>
+                    <div class="field-actions">
+                      <button class="btn" type="button">Оформить заказ</button>
+                    </div>
+                    <p>Нажимая кнопку оформить заказ, я принимаю условия <a href="#" class="">пользовательского соглашения</a></p>
+                  </div>
+
+                  <div class="checkout-form__comment">
+                    <a class="checkout-form__comment-link">Коментарий к заказу</a>
+                    <div class="checkout-form__comment-field" hidden>
+                      <label class="field-text">
+                        <span class="field-text__input-wrap">
+                          <textarea class="field-text__input" name="message"></textarea>
+                          <span class="field-text__help-text"></span>
+                        </span>
+                      </label>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  <!-- mobile-nav -->
+  @@include('blocks/mobile-nav/mobile-nav.html')
+
+  @@include('blocks/login-modal/login-modal.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
