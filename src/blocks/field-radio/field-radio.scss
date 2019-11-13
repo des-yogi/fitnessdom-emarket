@@ -26,15 +26,14 @@ $line-height:                 1.375em !default;
     display: block;
     padding-top: 9px;
     padding-bottom: 9px;
-    padding-left: 65px;
-    padding-right: 25px;
+    padding-left: 35px;
+    padding-right: 0;
     font-weight: 400;
     line-height: $line-height;
     cursor: pointer;
 
     &:hover,
     &:focus {
-      background-color: $body-bg;
 
       #{$block-name}__name-text {
         color: $main-color;
@@ -48,15 +47,27 @@ $line-height:                 1.375em !default;
     justify-content: space-between;
     align-items: baseline;
 
-    &:before {
+    &:hover,
+    &:focus {
+
+      &:before {
+        border-color: $main-color;
+      }
+    }
+
+    &:before,
+    &:after {
+      display: block;
       content: '';
       position: absolute;
-      //top: 6px;
       top: 50%;
-      transform: translateY(-50%);
-      left: 25px;
-      width: 22px;
-      height: 22px;
+      transform: translateY(-51%);
+    }
+
+    &:before {
+      left: 0;
+      width: 20px;
+      height: 20px;
       border: 2px solid $text-color;
       border-radius: 50%;
 
@@ -65,18 +76,15 @@ $line-height:                 1.375em !default;
       }
     }
 
-    @at-root input:focus ~ &:before {
-      @include field-focus;
-    }
+    // @at-root input:focus ~ &:before {
+    //   @include field-focus;
+    //   box-shadow: none !important;
+    // }
 
     &:after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: calc(25px + 5px);
-      width: 12px;
-      height: 12px;
+      left: 5px;
+      width: 10px;
+      height: 10px;
       opacity: 0;
       border-radius: 50%;
       background-color: $main-color;
@@ -90,7 +98,7 @@ $line-height:                 1.375em !default;
 
   &__input {
     position: absolute;
-    top: 0.8em;
+    top: 0.7em;
     left: 0;
     padding: 0;
     margin: 0;
@@ -99,6 +107,15 @@ $line-height:                 1.375em !default;
     &:focus,
     &:active {
       @include field-focus;
+      box-shadow: none !important;
+
+      & + #{$block-name}__name-text {
+        color: $main-color;
+
+        &:before {
+          border-color: $main-color;
+        }
+      }
     }
 
     // сокрытие инпута в случае использования своей радиокнопки

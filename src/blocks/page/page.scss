@@ -173,6 +173,10 @@ a {
   opacity: 0;
 }
 
+.collapse:not(.show) {
+  display: none;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -258,6 +262,17 @@ a {
     $xl-grid-gutter:  $grid-gutter-width,
     $xxl-grid-gutter: $grid-gutter-width
   );
+
+  &--inner {
+    @include row(
+      $xs-grid-gutter:  20px,
+      $sm-grid-gutter:  20px,
+      $md-grid-gutter:  $grid-gutter-width,
+      $lg-grid-gutter:  $grid-gutter-width,
+      $xl-grid-gutter:  $grid-gutter-width,
+      $xxl-grid-gutter: $grid-gutter-width
+    );
+  }
 }
 
 .row-min {

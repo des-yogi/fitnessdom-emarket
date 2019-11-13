@@ -116,8 +116,7 @@
     "registration-form": [],
     "comparison-lists": [],
     "shopping-cart": [],
-    "page-404": [],
-    "field-search.js": []
+    "page-404": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
@@ -142,6 +141,7 @@
     "./node_modules/superfish/dist/js/hoverIntent.js",
     "./node_modules/superfish/dist/js/superfish.js",
     "./src/js/libs/popper.min.js",
+    "./src/js/libs/collapse.js",
     "./src/js/libs/jquery.downCount.js",
     "./src/js/libs/util.min.js"
   ],
