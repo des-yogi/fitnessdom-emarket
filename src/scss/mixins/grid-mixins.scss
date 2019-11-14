@@ -191,7 +191,14 @@ $grid-gutter-width:           20px !default;
   max-width: $width;
 }
 
+@mixin half-width ($column: 1, $columns: $grid-columns) {
+  $width: (100% / $columns) * $column;
+  left: -$width - 2.6%;
 
+  @media (min-width: $screen-xl) {
+    left: -$width - 4%;
+  }
+}
 
 //------------------------------------------------------------------------------
 //  Генератор правил для одной ячейки

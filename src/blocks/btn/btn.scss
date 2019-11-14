@@ -171,3 +171,58 @@
   //   }
   // }
 }
+
+.btn-order {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  padding: 10px  $field-padding-horizontal;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: $font-family--headings;
+  line-height: $line-height;
+  text-decoration: none;
+  text-transform: none;
+  color: inherit;
+  border-radius: 0;
+  border: none;
+  background-color: $white;
+  cursor: pointer;
+
+  &:first-child {
+    border-bottom: 1px solid $border-color;
+
+    @media (min-width: $screen-xl) {
+      border-bottom: none;
+      border-right: 1px solid $border-color;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.active {
+    color: $white;
+    background-color: $main-color;
+    outline: none;
+
+    &:first-child {
+      border-color: $white;
+    }
+  }
+
+  &--disabled,
+  &:disabled {
+    cursor: not-allowed;
+    color: $text-color;
+    background-color: $icon-color;
+    pointer-events: none;
+
+    @at-root a.btn--disabled {
+      pointer-events: none;
+    }
+  }
+}
