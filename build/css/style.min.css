@@ -3842,12 +3842,12 @@ a[href^="tel:"] {
 .pagination__link:hover, .pagination__link:focus {
       background-color: #257dec; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-05354086325551284.png);
+  background-image: url(../img/sprite-011782455966931882.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-05354086325551284.png);
+  background-image: url(../img/sprite-011782455966931882.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -7397,6 +7397,9 @@ input:disabled + .prod-slider__size-text {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-top: 0; }
+.checkout-form h2.disabled,
+  .checkout-form .h2.disabled {
+    color: #cdcdce; }
 .checkout-form .field-text__input {
   padding-right: 35px; }
 .checkout-form .field-text__input--required {
@@ -7444,6 +7447,11 @@ input:disabled + .prod-slider__size-text {
     width: 4px;
     height: calc(100% - 44px - 20px);
     background-color: #f3f3f3; }
+.checkout-form__col-num--checked::after {
+    background-color: #5499f0; }
+.checkout-form__col-num--checked .checkout-form__step-num {
+    color: white;
+    background-color: #5499f0; }
 .checkout-form__col-content {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 83.33333%;
@@ -7499,15 +7507,13 @@ input:disabled + .prod-slider__size-text {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none; }
-.checkout-form__step-num.active {
-    color: white;
-    background-color: #5499f0; }
 .checkout-form__edit {
   font-family: -apple-system, BlinkMacSystemFont, "Source Sans Pro", "Ubuntu", "Droid Sans", "Helvetica Neue", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-decoration: underline;
-  color: inherit; }
+  color: inherit;
+  cursor: pointer; }
 .checkout-form__edit:hover, .checkout-form__edit:focus {
     text-decoration: underline; }
 .checkout-form__btn-group {

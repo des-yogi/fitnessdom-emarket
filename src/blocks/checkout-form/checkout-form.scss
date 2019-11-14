@@ -12,6 +12,10 @@
     @media (min-width: $screen-sm) {
       justify-content: flex-start;
     }
+
+    &.disabled {
+      color: $icon-color;
+    }
   }
 
   .field-text__input {
@@ -93,6 +97,18 @@
         transform: translateX(-50%);
       }
     }
+
+    &--checked {
+
+      &::after {
+        background-color: $main-color;
+      }
+
+      #{$block-name}__step-num {
+        color: $white;
+        background-color: $main-color;
+      }
+    }
   }
 
   &__col-content {
@@ -168,11 +184,6 @@
     border-radius: 50%;
     user-select: none;
     pointer-events: none;
-
-    &.active {
-      color: $white;
-      background-color: $main-color;
-    }
   }
 
   &__content {
@@ -184,6 +195,7 @@
     font-weight: 400;
     text-decoration: underline;
     color: inherit;
+    cursor: pointer;
 
     @media (min-width: $screen-sm) {
       margin-left: 20px;
