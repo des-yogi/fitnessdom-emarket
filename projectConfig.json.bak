@@ -122,7 +122,7 @@
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "../../node_modules/mmenu-js/dist/mmenu.css",
-    "../../node_modules/swiper/dist/css/swiper.css"
+    "../../node_modules/swiper/swiper-bundle.css"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"
@@ -140,10 +140,10 @@
     "./node_modules/ellipsis.js/ellipsis.js",
     "./node_modules/superfish/dist/js/hoverIntent.js",
     "./node_modules/superfish/dist/js/superfish.js",
-    "./src/js/libs/popper.min.js",
-    "./src/js/libs/collapse.js",
+    "./src/js/libs/popper.min.js",    
     "./src/js/libs/jquery.downCount.js",
-    "./src/js/libs/util.min.js"
+    "./src/js/libs/util.min.js",
+    "./src/js/libs/collapse.js"
   ],
   "addJsAfter": [
     "./src/js/global-script.js"
@@ -152,7 +152,8 @@
     "./src/img/*.{jpg,jpeg,gif,png,svg,ico,webp}"
   ],
   "copiedCss": [],
-  "copiedJs": [],
+  "copiedJs": [
+  ],
   "dirs": {
     "srcPath": "./src/",
     "buildPath": "./build/",
