@@ -599,6 +599,11 @@ a {
 
 // Swiper
 
+.swiper-slide {
+  box-sizing: border-box !important;
+  //height: 100%;
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   display: block;
