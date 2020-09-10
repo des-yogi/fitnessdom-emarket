@@ -86,8 +86,7 @@
     overflow: hidden;
 
     img {
-      // display: block;
-      @include object-fit(cover);
+      @include object-fit(contain);
     }
   }
 
