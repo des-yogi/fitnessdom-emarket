@@ -3757,12 +3757,12 @@ a[href^="tel:"] {
 .pagination__link:hover, .pagination__link:focus {
       background-color: #257dec; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-01118511399982709.png);
+  background-image: url(../img/sprite-06332404076397748.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-01118511399982709.png);
+  background-image: url(../img/sprite-06332404076397748.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -4886,9 +4886,8 @@ a:hover, a:focus {
     padding: 15px 0 5px;
     border-bottom: 2px solid #f3f3f3; }
 .prod-slider__color-title {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 20px 0 0; }
+    width: 100%;
+    margin: 0 20px 10px 0; }
 .prod-slider__group {
     display: inline-block;
     vertical-align: top;

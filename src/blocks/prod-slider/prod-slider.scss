@@ -247,9 +247,10 @@
   }
 
   &__color-title {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 20px 0 0;
+    //display: inline-block;
+    //vertical-align: top;
+    width: 100%;
+    margin: 0 20px 10px 0;
   }
 
   &__group {
