@@ -3757,12 +3757,12 @@ a[href^="tel:"] {
 .pagination__link:hover, .pagination__link:focus {
       background-color: #257dec; }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-08602640339031056.png);
+  background-image: url(../img/sprite-021917152840854515.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px; }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-08602640339031056.png);
+  background-image: url(../img/sprite-021917152840854515.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px; }
@@ -5650,7 +5650,7 @@ input:disabled + .prod-slider__size-text {
   /* no auto sub width for IE7, see white-space comment below */ }
 .sf-menu a {
   border-top: 1px solid #fff;
-  padding: 15px 20px;
+  padding: 10px 20px;
   text-decoration: none;
   zoom: 1;
   /* IE7 */ }
@@ -5770,7 +5770,7 @@ input:disabled + .prod-slider__size-text {
   background-color: red; }
 .sf-vertical__catalog-item a {
   display: block;
-  padding: 15px 40px; }
+  padding: 8.5px 20px; }
 .sf-vertical__catalog-item a:hover, .sf-vertical__catalog-item a:focus {
     background: #5499f0;
     color: white; }
