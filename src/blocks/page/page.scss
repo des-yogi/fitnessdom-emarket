@@ -620,10 +620,9 @@ a {
   background-position: center !important;
   cursor: pointer;
 
-  // &[aria-disabled=true] {
-  //   opacity: 0.5;
-  //   pointer-events: none;
-  // }
+  &::after {
+    @include visually-hidden;
+  }
 }
 
 .swiper-button-prev {
